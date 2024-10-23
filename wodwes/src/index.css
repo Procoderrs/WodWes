@@ -3,3 +3,19 @@
 @tailwind utilities;
 
 
+.hidden {
+  display: none;
+}
+
+@media (min-width: 996px) {
+  .md\:block {
+    display: block;
+  }
+}
+.dropdown{
+  position: absolute;
+  visibility: hidden;
+}
+.nav__container{
+  visibility: visible;
+}
