@@ -123,7 +123,7 @@ const NavLinks = () => {
                 {/* Desktop Dropdown */}
                 <div 
                   className='absolute top-16 left-0 hidden group-hover:flex transition-all duration-300 ease-in-out w-full z-50' 
-                  style={{ backgroundColor: 'white', padding: '1rem', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }}
+                  style={{ backgroundColor: 'white', padding: '1rem' }}
                 >
                   <div className='bg-white flex justify-around items-start w-full max-w-screen-lg mx-auto gap-4'>
                     {link.sublinks.map((mysublinks) => (
