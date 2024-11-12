@@ -190,7 +190,7 @@ const Nav = () => {
         <div className="w-40 p-4">
           <img src="/wodweslogo.png" alt="" />
         </div>
-        <ul className="flex lg:flex-row items-center space-x-4 lg:text-lg pr-8">
+        <ul className="flex lg:flex-row items-center space-x-4  pr-8">
           {navItems.map((item, index) => (
             <li key={index} className="p-3">
               {item.dropdown ? (
@@ -203,7 +203,7 @@ const Nav = () => {
                     <FontAwesomeIcon icon={faChevronDown} className={`ml-2 transition-transform ${openDropdown === item.label ? 'rotate-180': ''}`} />
                   </div>
                   {openDropdown === item.label && (
-                    <div className="absolute top-full left-0 right-6 mt-4 p-4 ml-10 mr-10  rounded shadow-lg grid grid-cols-4 gap-4 z-10">
+                    <div className="absolute top-full left-0 right-6 pl-4 ml-10 mr-10  rounded shadow-lg grid grid-cols-4 gap-4 z-10">
                       
                       {item.dropdownItems.map((category, idx) => (
                         <div key={idx} className="pt-20 p-2">
@@ -215,7 +215,7 @@ const Nav = () => {
                         )}
                           {/* Only show title if it exists */}
                           {category.title && (
-                            <h3 className="font-bold text-black mb-6 text-lg">
+                            <h3 className="font-bold text-black mb-6 text-base">
                               {category.title}
                             </h3>
                           )}
@@ -228,9 +228,9 @@ const Nav = () => {
                             >
                               <div className="flex gap-2 items-center cursor-pointer">
                              {dropdownItem.logo &&(
-                              <img src={dropdownItem.logo} alt={dropdownItem.label} className="w-5 h-5 mb-2"   />
+                              <img src={dropdownItem.logo} alt={dropdownItem.label} className="w-3 h-4 mb-2"   />
                               )}
-                              <p className="text-lg text-black mb-4 hover:text-pink-700">{dropdownItem.label}</p>
+                              <p className="text-sm text-black mb-4 hover:text-pink-700">{dropdownItem.label}</p>
                               </div>
                             </a>
                           ))}
@@ -275,7 +275,7 @@ const Nav = () => {
 
       {/* Mobile Menu Items */}
       {isMobileMenuOpen && (
-        <ul className="lg:hidden flex flex-col space-y-2 mt-4  p-4 rounded">
+        <ul className="lg:hidden flex flex-col space-y-2 mt-4  p-4 rounded text-xl">
           {navItems.map((item, index) => (
             <li key={index} className="p-3 relative">
               {item.dropdown ? (
@@ -297,7 +297,7 @@ const Nav = () => {
                         )}
                           {/* Only show title if it exists */}
                           {category.title && (
-                            <h3 className="font-bold text-pink-300 mb-2">
+                            <h3 className="font-bold text-black mb-2">
                               {category.title}
                             </h3>
                           )}
@@ -312,7 +312,7 @@ const Nav = () => {
                               {dropdownItem.logo && (
                                 <img src={dropdownItem.logo} alt={dropdownItem.label} className="w-5 h-5 mb-2"  />
                               )}
-                              <p className="mb-2">{dropdownItem.label}</p>
+                              <p className="mb-2 text-sm">{dropdownItem.label}</p>
                               </div>
                             </a>
                           ))}
