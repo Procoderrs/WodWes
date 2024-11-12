@@ -190,7 +190,7 @@ const Nav = () => {
         <div className="w-40 p-4">
           <img src="/wodweslogo.png" alt="" />
         </div>
-        <ul className="flex lg:flex-row items-center space-x-4 lg:text-xl pr-8">
+        <ul className="flex lg:flex-row items-center space-x-4 lg:text-lg pr-8">
           {navItems.map((item, index) => (
             <li key={index} className="p-3">
               {item.dropdown ? (
@@ -215,7 +215,7 @@ const Nav = () => {
                         )}
                           {/* Only show title if it exists */}
                           {category.title && (
-                            <h3 className="font-extrabold text-black mb-6 text-xl">
+                            <h3 className="font-bold text-black mb-6 text-lg">
                               {category.title}
                             </h3>
                           )}
