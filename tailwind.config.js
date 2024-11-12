@@ -33,7 +33,11 @@ export default {
       'md-to-lg': { min: '768px', max: '992px' },
       'lg-to-xl': { min: '992px', max: '1199px' },
     },
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'banner-image':"url('/banner.png')"
+      }
+    },
   },
   plugins: [],
 }

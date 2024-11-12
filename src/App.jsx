@@ -1,5 +1,6 @@
 
 import Nav from './componenets/Nav'
+import HomeSection from './componenets/HomeSection'
 
 import './App.css'
 
@@ -8,7 +9,8 @@ function App() {
 
   return (
     <>
-    <Nav/>
+    <HomeSection/>
+    
     </>
   )
 }
