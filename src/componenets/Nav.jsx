@@ -183,9 +183,9 @@ const Nav = () => {
       </div>
 
     
-    <nav className="bg-white sticky top-0  mx-auto ">
+    <nav className="bg-white sticky  top-0 z-50 mx-auto ">
       {/* Desktop View */}
-      <div className="hidden lg:flex px-8  justify-between items-center relative z-100 bottom-top">
+      <div className="hidden lg:flex px-8  justify-between items-center relative   border-2 border-gray-300">
         <div className="w-56 p-4">
           <img src="/wodweslogo.png" alt="" />
         </div>
@@ -255,7 +255,7 @@ const Nav = () => {
       </div>
 
       {/* Mobile View */}
-      <div className="flex lg:hidden justify-between items-center px-8 py-4 ">
+      <div className="flex lg:hidden justify-between items-center px-8 py-4  h-full">
         <div className=" w-36">
           <img src="./wodweslogo.png" alt="" />
         </div>
@@ -274,7 +274,7 @@ const Nav = () => {
 
       {/* Mobile Menu Items */}
       {isMobileMenuOpen && (
-        <ul className="lg:hidden flex flex-col space-y-2 mt-4  p-4 rounded text-xl">
+        <ul className="lg:hidden flex flex-col space-y-2 mt-4  p-4 rounded text-xl h-screen">
           {navItems.map((item, index) => (
             <li key={index} className="p-3 relative">
               {item.dropdown ? (
