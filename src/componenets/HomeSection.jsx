@@ -42,7 +42,7 @@ const HomeSection = () => {
       <h1 className="text-3xl font-black text-white md:text-4xl md:leading-[60px] lg:text-6xl ">
         We're a Full-Service
        
-         <div className=" inline-block">
+          <div className=" inline-block">
           <Slider {...settings}>
             {slides.map((text, index) => (
               <div
@@ -55,7 +55,10 @@ const HomeSection = () => {
               </div>
             ))}
           </Slider>
-        </div> 
+        </div>  
+
+
+				
         <br />
         Development Agency
       </h1>
@@ -310,14 +313,15 @@ const HomeSection = () => {
 			</div>
 
 
-			<div className="grid  gap-5 w-[90%] max-w-[1440px] mx-auto pb-20 pt-12  lg:grid-cols-2">
+			<div className="grid gap-5 w-[90%] max-w-[1440px] mx-auto pb-20 pt-12 lg:flex lg:flex-row">
   {/* Left Column: Sticky Content */}
-  <div className="h-full md:sticky  md:top-10  lg:max-w[500px] 2xl:w-[549px]  ">
+  <div className="h-full lg:sticky md:top-10 lg:max-w-[500px] ">
     <h2 className="text-4xl font-bold text-[#282922]">
       What you get with <span className="text-[#f72d74]">WODWES</span> product and service design
     </h2>
     <p className="my-5 text-sm leading-8">
-		With WODWES product and service design, you get a transformative experience that marries innovation, aesthetics, and functionality. We craft solutions that resonate with your audience, fuel growth, and elevate your brand. Expect meticulous attention to detail, seamless user experiences, and a creative spark that sets you apart in today's competitive landscape. We're your partners in turning ideas into tangible success stories    </p>
+      With WODWES product and service design, you get a transformative experience that marries innovation, aesthetics, and functionality. We craft solutions that resonate with your audience, fuel growth, and elevate your brand. Expect meticulous attention to detail, seamless user experiences, and a creative spark that sets you apart in today's competitive landscape. We're your partners in turning ideas into tangible success stories.
+    </p>
     <button className="border-[#f72d74] border-2 px-12 py-3 font-bold hover:bg-[#f72d74] hover:text-white">
       Get Started
     </button>
@@ -394,7 +398,9 @@ const HomeSection = () => {
   </div>
 </div>
 
-
+<div className="py-20 w-[90%] mx-auto max-w-[1440px]">
+	<h2 className="text-3xl font-bold"><span className="text-[#f72d74]">Technologies</span> We Use</h2>
+</div>
 		</>
 	);
 };

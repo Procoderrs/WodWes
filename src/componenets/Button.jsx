@@ -20,7 +20,14 @@ const Button = () => {
     <>
 
 
-<div className="w-64 h-96 mx-auto">
+
+
+
+
+
+<h1 className="text-3xl font-black text-black md:text-4xl md:leading-[60px] lg:text-6xl ">
+        We're a Full-Service
+        <div className=" mx-auto inline-block">
       <Carousel
         showThumbs={false}
         showStatus={false}
@@ -35,15 +42,40 @@ const Button = () => {
         {slides.map((slide) => (
           <div
             key={slide.id}
-            className="flex justify-center items-center h-full bg-blue-300"
+            className="flex justify-center items-center h-full"
           >
-            <h2 className="text-2xl font-bold text-blue-600">{slide.text}</h2>
+            <h2 className="text-4xl p-2 font-bold text-blue-600">{slide.text}</h2>
             
           </div>
           
         ))}
       </Carousel>
     </div>
+
+
+
+       
+         {/* <div className=" inline-block">
+          <Slider {...settings}>
+            {slides.map((text, index) => (
+              <div
+                key={index}
+                className="flex justify-center items-center w-full"
+              >
+                <span className="text-3xl lg:text-6xl text-[#f72d74] font-black  md:text-4xl md:leading-[60px] ">
+                  {text}
+                </span>
+              </div>
+            ))}
+          </Slider>
+        </div>  */}
+
+
+				
+        <br />
+        Development Agency
+      </h1>
+
 
 
 
@@ -69,7 +101,7 @@ const Button = () => {
 </div> */}
 
 
-<p className='bg-green-500'>hello</p>
+
     </>
   )
 }
