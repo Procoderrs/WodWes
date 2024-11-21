@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faBars,faPhone,faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -23,10 +24,10 @@ const Nav = () => {
           logo:'./e-commerce.png',
           title: "E-commerce Development",
           items: [
-            { label: "Laravel E-commerce development", href: "#" },
-            { label: "PHP E-commerce development", href: "#" },
-            { label: "WordPress E-commerce Development", href: "#" },
-            { label: "Shopify Development", href: "#" },
+            { label: "Laravel E-commerce development", to: "/" },
+            { label: "PHP E-commerce development", to: "/" },
+            { label: "WordPress E-commerce Development", to: "/" },
+            { label: "Shopify Development", to: "/" },
           ],
 
           
@@ -37,9 +38,9 @@ const Nav = () => {
           logo:'./front-end.png',
           title: "Front-end Development",
           items: [
-            { label: "React Development", href: "#" },
-            { label: "Vue.js Development", href: "#" },
-            { label: "Angular Development", href: "#" },
+            { label: "React Development", to: "/" },
+            { label: "Vue.js Development", to: "/" },
+            { label: "Angular Development", to: "/" },
           ],
         },
 
@@ -47,10 +48,10 @@ const Nav = () => {
           logo:'./software.png',
           title: "Software Development",
           items: [
-            { label: "PHP Software Development", href: "#" },
-            { label: "CodeIgniter Development", href: "#" },
-            { label: "Laravel Software Development", href: "#" },
-            { label: "MERN Software Development", href: "#" },
+            { label: "PHP Software Development", to: "/" },
+            { label: "CodeIgniter Development", to: "/" },
+            { label: "Laravel Software Development", to: "/" },
+            { label: "MERN Software Development", to: "/" },
           ],
         },
 
@@ -58,11 +59,11 @@ const Nav = () => {
           logo:'cms.png',
           title: "CMS Development",
           items: [
-            { label: "WordPress Development", href: "#" },
-            { label: "Magento Development", href: "#" },
-            { label: " Drupal  Software Development", href: "#" },
-            { label: "BigCommerce Development", href: "#" },
-            { label: "Joomla Development", href: "#" },
+            { label: "WordPress Development",to: "/" },
+            { label: "Magento Development", to: "/" },
+            { label: " Drupal  Software Development", to: "/" },
+            { label: "BigCommerce Development", to: "/" },
+            { label: "Joomla Development", to: "/" },
 
           ],
         },
@@ -78,29 +79,29 @@ const Nav = () => {
         {
           items: [
             
-            {logo:'./healthlogo.png', label: "Healthcare", href: "#" },
+            {logo:'./healthlogo.png', label: "Healthcare", to: "/" },
            
-            { logo:'./healthlogo.png'   ,label: "Travel", href: "#" },
+            { logo:'./healthlogo.png'   ,label: "Travel", to: "/" },
             
-            { logo:'healthlogo.png',label: "Insurance", href: "#" },
+            { logo:'healthlogo.png',label: "Insurance", to: "/" },
           ],
         },
         {
           items: [
-            { logo:'./healthlogo.png',label: "Manufacturing" },
-            { logo:'./healthlogo.png',label: "Transportation and Logistics" },
+            { logo:'./healthlogo.png',label: "Manufacturing", to: "/" },
+            { logo:'./healthlogo.png',label: "Transportation and Logistics",to: "/" },
           ],
         },
         {
           items: [
-            { logo:'healthlogo.png' , label: "EdTech" },
-            { logo:'healthlogo.png',label: "Enterprise" },
+            { logo:'healthlogo.png' , label: "EdTech",to: "/" },
+            { logo:'healthlogo.png',label: "Enterprise",to: "/" },
           ],
         },
         {
           items: [
-            { logo:'./healthlogo.png',label: "Media and Entertainment" },
-            { logo:'./healthlogo.png',label: "Telecom" },
+            { logo:'./healthlogo.png',label: "Media and Entertainment",to: "/" },
+            { logo:'./healthlogo.png',label: "Telecom",to: "/" },
           ],
         },
       ],
@@ -116,33 +117,33 @@ const Nav = () => {
       dropdownItems: [
         {
           items:[
-        { logo:'healthlogo.png',label: "IOS Developers", href: "#" },
-        { logo:'healthlogo.png',label: "Android Developers", href: "#" },
-        { logo:'healthlogo.png',label: "Node Js Developers", href: "#" },
+        { logo:'healthlogo.png',label: "IOS Developers", to: "/" },
+        { logo:'healthlogo.png',label: "Android Developers", to: "/" },
+        { logo:'healthlogo.png',label: "Node Js Developers", to: "/" },
           ]
         },
         
         {
           items:[
-        { logo:'healthlogo.png',label: "Blockchain Developers", href: "#" },
-        { logo:'healthlogo.png',label: "TypeScript  Developers", href: "#" },
-        { logo:'healthlogo.png',label: "MEAN Stack Developers", href: "#" },
+        { logo:'healthlogo.png',label: "Blockchain Developers", to: "/" },
+        { logo:'healthlogo.png',label: "TypeScript  Developers", to: "/" },
+        { logo:'healthlogo.png',label: "MEAN Stack Developers", to: "/" },
           ]
         },
 
         {
           items:[
-        {logo:'healthlogo.png', label: "MERN Stack Developers", href: "#" },
-        {logo:'healthlogo.png', label: "Python Developers", href: "#" },
-        {logo:'healthlogo.png', label: "Mobile Application Developers", href: "#" },
+        {logo:'healthlogo.png', label: "MERN Stack Developers", to: "/" },
+        {logo:'healthlogo.png', label: "Python Developers", to: "/" },
+        {logo:'healthlogo.png', label: "Mobile Application Developers", to: "/" },
           ]
         },
 
         {
           items:[
-        { logo:'healthlogo.png',label: "WordPress Developers", href: "#" },
-        { logo:'healthlogo.png',label: "React Js Developers", href: "#" },
-        { logo:'healthlogo.png',label: "Node Js Developers", href: "#" },
+        { logo:'healthlogo.png',label: "WordPress Developers", to: "/" },
+        { logo:'healthlogo.png',label: "React Js Developers", to: "/" },
+        { logo:'healthlogo.png',label: "Node Js Developers", to: "/" },
           ]
         },
       ],
@@ -166,11 +167,11 @@ const Nav = () => {
         <div className="flex items-center justify-center gap-2">
          <p className="text-sm"> 
          <span>
-         <a href="/" className="border-b-[1px] text-sm mr-2  ">
+         <Link to ="/" className="border-b-[1px] text-sm mr-2  ">
             Get a Quote
-          </a> 
+          </Link>
           </span>
-          today to claim $200 free credit.</p>
+          <span>today to claim $200 free credit.</span></p>
         </div>
         <div className="flex items-center justify-center gap-2">
           <FontAwesomeIcon icon={faPhone} className="text-lg"/>

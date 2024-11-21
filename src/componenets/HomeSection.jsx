@@ -801,13 +801,13 @@ const HomeSection = () => {
           >
             <button
               onClick={() => toggleAnswer(index)}
-              className="flex w-full items-center justify-between py-4 md:py-6 maxsm:text-sm"
+              className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
             >
               <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
                 {item.question}
               </span>
               <span
-                className={`h-6 w-6 flex items-center justify-center text-[#f72d74] font-bold border-2 border-[#f72d74] rounded-full`}
+                className={`h-6 w-6 flex items-center justify-center text-[#f72d74] font-bold border-2 p-2 border-[#f72d74] rounded-full`}
               >
                 {activeIndex === index ? "-" : "+"}
               </span>
