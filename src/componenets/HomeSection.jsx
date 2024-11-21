@@ -64,6 +64,44 @@ const HomeSection = () => {
   const handleButtonClick = (category) => {
     setActiveDropdown(category);
   };
+
+
+
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAnswer = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+
+
+  const faqData = [
+    {
+      question: "What is Wodwes?",
+      answer: "WODWES (Women-Driven Web Solutions) is a well-recognized US-based agency offering a wide range of services including website design and development, CMS development, ERP development, custom Ecommerce development, and UI/UX design. We house a professional team of designers, developers, consultants, and engineers, who are dedicatedly available to help businesses in achieving digital goals.",
+    },
+    {
+      question: "How long does it keep to develop a website or web application?",
+      answer: "The time it takes to develop a website or web application varies depending on the complexity of the project, the number of features and pages, and the level of customization required. We typically provide an estimated timeline during the discovery phase based on our assessment of the project requirements. To get a free quote, email us at sales@wodwes.com",
+    },
+    {
+      question: "What programming languages and frameworks do you use?",
+      answer: 
+      "We use a variety of programming languages and frameworks depending on the project requirements. Some of the languages and frameworks we commonly use include PHP, JavaScript, React, Angular, Vue, Node.js, Python, and Django.",
+    },
+    {
+      question: "Do you provide website hosting and maintenance services?",
+      answer: 
+      "Yes, we offer website hosting and maintenance services to ensure that our client's websites are secure, up-to-date, and performing optimally. Our hosting services include server maintenance, security updates, and backups. Our maintenance services include content updates, bug fixes, and feature enhancements.",
+    },
+    {
+      question: "What is your wen development process?",
+      answer:
+       "Our web development process typically involves the following steps: discovery, design, development, testing, and launch. During the discovery phase, we gather requirements, define the project scope, and create a project plan. The design phase involves creating wireframes, mockups, and visual designs. The development phase involves coding, integrating with third-party services, and setting up databases. The testing phase involves conducting functional testing, usability testing, and performance testing. Finally, we launch the website or application and provide ongoing support. To get started with our web development services, please email us at sales@wodwes.com.",
+    },
+    
+  ];
+
   return (
     <>
       <Nav />
@@ -654,7 +692,7 @@ const HomeSection = () => {
       </div>
 </div>
 
-<div className="flex coxs:flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto pb-20 pt-12 lg:flex lg:flex-row">
+<div className="flex coxs:flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto my-16  lg:flex lg:flex-row">
         {/* Left Column: Sticky Content */}
         <div className="h-full flex-1 lg:sticky lg:top-10 lg:max-w-[500px] ">
           <img src="./team.png" className="rounded-lg" alt="" />
@@ -701,7 +739,7 @@ const HomeSection = () => {
               <p className="text-lg leading-9 mb-5">
               Team WODWES believes that every business is unique, and that's why we offer tailored development solutions to meet your specific needs. We work closely with our clients to identify their unique business requirements and develop customized solutions that help them achieve their goals.
               </p>
-              <button><a href="/"  className="border-2 font-semibold px-9 py-3 hover:bg-[#f72d74] hover:text-white  border-[#f72d74]">Get Started</a></button>
+              <button className="mb-5"><a href="/"  className="border-2 font-semibold px-9 py-3   hover:bg-[#f72d74] hover:text-white  border-[#f72d74]">Get Started</a></button>
             </div>
           </div>
 
@@ -709,6 +747,175 @@ const HomeSection = () => {
         </div>
       </div>
       
+
+      <div className="mx-auto">
+  <div className="flex coxs:flex-col coxs:items-center gap-10  coxs:p-4 justify-end h-full w-full lg:flex-row lg:gap-10">
+    {/* Left Div */}
+    <div className="h-full lg:w-[50%] lg:top-10 max-w-md lg:sticky lg:ml-[-10%] lg:pt-16">
+      <h2 className="mb-5 text-3xl  font-bold md:text-4xl xl:text-5xl">
+        Get in Touch
+      </h2>
+      <p className="text-lg font-normal">
+        We love hearing about how our work has helped businesses succeed and how
+        WODWES became their go-to development team.
+                      </p>
+
+    </div>
+
+    {/* Right Div */}
+    <div className="rounded-lg  coxs:w-full  lg:w-[50%] coxs:p-9 bg-[#272821] lg:p-20">
+      <form action="">
+        <div className="grid max-w-2xl xs:grid-cols-2 gap-10">
+        <input type="text" placeholder="Enter your name" className="col-span-2 w-full border-b border-[#9c9c9c] bg-transparent pb-1 text-[#9c9c9c] outline-none  placeholder:text-[#9c9c9c] required:"  />
+  <input type="email" placeholder="Email" className="maxcosm:col-span-2 w-full border-b border-[#9c9c9c] bg-transparent pb-1 text-[#9c9c9c] outline-none  placeholder:text-[#9c9c9c] required:"  />
+  <input type="number" placeholder="Phone Number" className="maxcosm:col-span-2 w-full border-b border-[#9c9c9c] bg-transparent pb-1 text-[#9c9c9c] outline-none  placeholder:text-[#9c9c9c] required:"  />
+  <textarea rows={10} placeholder="Your message here..." className="col-span-2 w-full  rounded-[10px] border border-[#9c9c9c] bg-transparent p-2 text-[#9c9c9c] outline-none placeholder:text-[#9c9c9c] required:">
+
+  </textarea>
+  <button className="mb-5 ml-[-10px]"><a href="/"  className="border-2 font-semibold px-12 py-3 text-white   hover:bg-[#f72d74] hover:text-white  border-[#f72d74]">Get Started</a></button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div className="my-12 lg:my-16 mx-auto w-[90%] max-x-[1440px]">
+      <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
+        Frequently Asked <span className="text-[#f72d74]">Questions!</span>
+      </h2>
+      <p className="mb-7 mt-4 text-left text-base font-normal text-[#272821]">
+        We love hearing about how our work has helped businesses succeed and how WODWES became their go-to development team.
+      </p>
+      <div className="mx-auto md:max-w-[1000px]">
+        {faqData.map((item, index) => (
+          <div
+            key={index}
+            className="border-t border-gray-200 first:!border-t-0"
+          >
+            <button
+              onClick={() => toggleAnswer(index)}
+              className="flex w-full items-center justify-between py-4 md:py-6 maxsm:text-sm"
+            >
+              <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
+                {item.question}
+              </span>
+              <span
+                className={`h-6 w-6 flex items-center justify-center text-[#f72d74] font-bold border-2 border-[#f72d74] rounded-full`}
+              >
+                {activeIndex === index ? "-" : "+"}
+              </span>
+            </button>
+            {activeIndex === index && (
+              <p className="py-4 text-base text-[#272821]">{item.answer}</p>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+
+
+
+    <footer className="bg-[#272821]">
+    <div className="w-[90%] mx-auto max-w-[1440px] grid py-12 xl:grid-cols-2">
+      <div className="">
+      <h3 className="text-lg font-bold text-[#f72d74]">services</h3>
+      <ul className="mt-2 sm:columns-2">
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Laravel E-commerce Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">PHP E-commerce Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">WordPress E-commerce Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Shopify Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">React Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Vue.js Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Angular  Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">PHP Software Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">CodeIgniter Software Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Laravel Software Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">MERN  Software Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">WordPress  Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Magento Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Drupal Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">BigCommerce Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Joomla Software Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Social Media Creatives </a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Website UI/UX Development</a></li>
+
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Mobile App UI/UX Development</a></li>
+ </ul>
+
+      </div>
+
+
+<div className="grid sm:grid-cols-2 2xl:grid-cols-4">
+<div className="mt-4">
+<h3 className="text-lg font-bold text-[#f72d74]">Quick Links</h3>
+<ul className="mt-2">
+<li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Contact US</a></li>
+</ul>
+</div>
+
+<div className="mt-4 ">
+<h3 className="text-lg font-bold text-[#f72d74]">Contact US</h3>
+<ul className="mt-2">
+  <li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Info@wodwes.com</a></li>
+  <li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">sales@wodwes.com</a></li>
+  <li><a href="/" className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">+1 917 000 3956</a></li>
+</ul>
+</div>
+
+<div className="mt-4 2xl:col-span-2 2xl:pl-6">
+<h3 className="text-lg font-bold text-[#f72d74]">NEWSLETTER</h3>
+<input type="text" className="mt-2 w-full py-3.5 pl-4 text-base outline-none" placeholder="Enter your email address" />
+<a href="/" className="flex items-center justify-center border-2    hover:bg-transparent hover:text-[#f72d74] font-bold bg-[#f72d74] border-[#f72d74] mt-3 w-full text-white py-3 px-5">Get Started</a>
+
+</div>
+<div className="ml-auto mt-6 sm:pt-14 2xl:col-span-4">
+  <div className="mt-4 flex flex-row gap-x-4">
+    <a href="/" className="flex items-center space-x-4">
+      {/* Facebook Icon */}
+      <img
+        src="./svgexport-8.png"
+        className="w-8 h-8  border border-white rounded-2xl hover:border-[#f72d74]"
+        alt="Facebook"
+      />
+      {/* LinkedIn Icon */}
+      <img
+        src="./svgexport-9.png"
+        className="w-8 h-8 border border-white rounded-2xl hover:border-[#f72d74]"
+        alt="LinkedIn"
+      />
+    </a>
+  </div>
+</div>
+</div>
+
+       </div>
+<p className="py-4 text-center text-sm text-[#a9a9ab]">&#169;  Copyright 2023 All right reserved by Wodwes</p>
+    </footer>
+
     </>
   );
 };
