@@ -167,9 +167,9 @@ const Nav = () => {
         <div className="flex items-center justify-center gap-2">
          <p className="text-sm"> 
          <span>
-         <Link to ="/" className="border-b-[1px] text-sm mr-2  ">
+         <a href="/" className="border-b-[1px] text-sm mr-2  ">
             Get a Quote
-          </Link>
+          </a>
           </span>
           <span>today to claim $200 free credit.</span></p>
         </div>
