@@ -4,8 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
-import Footer from "./Footer";
-import ContactUs from "./ContactUs";
+
+import { Link, NavLink } from "react-router-dom";
+
 
 const HomeSection = () => {
   // Array of image paths
@@ -49,7 +50,6 @@ const HomeSection = () => {
       { name: "Firebase", src: "./firebase.png" },
       { name: "Codeigniter", src: "./codeigniter.svg" },
       { name: "Angular", src: "./angular.png" },
-      
     ],
     cms: [
       { name: "WordPress", src: "./wordpress.png" },
@@ -60,14 +60,12 @@ const HomeSection = () => {
       { name: "Commerce", src: "./commerce-2.png" },
       { name: "shopify", src: "./shopify.png" },
     ],
-  }
+  };
 
   // Handle button click
   const handleButtonClick = (category) => {
     setActiveDropdown(category);
   };
-
-
 
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -75,39 +73,37 @@ const HomeSection = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-
-
   const faqData = [
     {
       question: "What is Wodwes?",
-      answer: "WODWES (Women-Driven Web Solutions) is a well-recognized US-based agency offering a wide range of services including website design and development, CMS development, ERP development, custom Ecommerce development, and UI/UX design. We house a professional team of designers, developers, consultants, and engineers, who are dedicatedly available to help businesses in achieving digital goals.",
+      answer:
+        "WODWES (Women-Driven Web Solutions) is a well-recognized US-based agency offering a wide range of services including website design and development, CMS development, ERP development, custom Ecommerce development, and UI/UX design. We house a professional team of designers, developers, consultants, and engineers, who are dedicatedly available to help businesses in achieving digital goals.",
     },
     {
-      question: "How long does it keep to develop a website or web application?",
-      answer: "The time it takes to develop a website or web application varies depending on the complexity of the project, the number of features and pages, and the level of customization required. We typically provide an estimated timeline during the discovery phase based on our assessment of the project requirements. To get a free quote, email us at sales@wodwes.com",
+      question:
+        "How long does it keep to develop a website or web application?",
+      answer:
+        "The time it takes to develop a website or web application varies depending on the complexity of the project, the number of features and pages, and the level of customization required. We typically provide an estimated timeline during the discovery phase based on our assessment of the project requirements. To get a free quote, email us at sales@wodwes.com",
     },
     {
       question: "What programming languages and frameworks do you use?",
-      answer: 
-      "We use a variety of programming languages and frameworks depending on the project requirements. Some of the languages and frameworks we commonly use include PHP, JavaScript, React, Angular, Vue, Node.js, Python, and Django.",
+      answer:
+        "We use a variety of programming languages and frameworks depending on the project requirements. Some of the languages and frameworks we commonly use include PHP, JavaScript, React, Angular, Vue, Node.js, Python, and Django.",
     },
     {
       question: "Do you provide website hosting and maintenance services?",
-      answer: 
-      "Yes, we offer website hosting and maintenance services to ensure that our client's websites are secure, up-to-date, and performing optimally. Our hosting services include server maintenance, security updates, and backups. Our maintenance services include content updates, bug fixes, and feature enhancements.",
+      answer:
+        "Yes, we offer website hosting and maintenance services to ensure that our client's websites are secure, up-to-date, and performing optimally. Our hosting services include server maintenance, security updates, and backups. Our maintenance services include content updates, bug fixes, and feature enhancements.",
     },
     {
       question: "What is your wen development process?",
       answer:
-       "Our web development process typically involves the following steps: discovery, design, development, testing, and launch. During the discovery phase, we gather requirements, define the project scope, and create a project plan. The design phase involves creating wireframes, mockups, and visual designs. The development phase involves coding, integrating with third-party services, and setting up databases. The testing phase involves conducting functional testing, usability testing, and performance testing. Finally, we launch the website or application and provide ongoing support. To get started with our web development services, please email us at sales@wodwes.com.",
+        "Our web development process typically involves the following steps: discovery, design, development, testing, and launch. During the discovery phase, we gather requirements, define the project scope, and create a project plan. The design phase involves creating wireframes, mockups, and visual designs. The development phase involves coding, integrating with third-party services, and setting up databases. The testing phase involves conducting functional testing, usability testing, and performance testing. Finally, we launch the website or application and provide ongoing support. To get started with our web development services, please email us at sales@wodwes.com.",
     },
-    
   ];
 
   return (
     <>
-      <Nav />
-
       <section className="z-0 bg-banner-image bg-cover py-28">
         <div className="flex items-center justify-center ">
           <div className="mx-auto text-center w-full">
@@ -144,7 +140,7 @@ const HomeSection = () => {
             </p>
             <div className="flex justify-center">
               <button className="bg-[#f72d74] border-2 border-transparent text-white px-14 font-bold py-3 hover:bg-[#282922] hover:border-2 hover:border-[#f72d74] transition-colors duration-300">
-                <a href="#">Let's Talk</a>
+                <Link to={"/contact"}>Let's Talk</Link>
               </button>
             </div>
           </div>
@@ -171,7 +167,7 @@ const HomeSection = () => {
               stories and helping you thrive in today's interconnected world.
             </p>
             <button className="bg-white font-Inter px-14 py-3 text-black hover:bg-[#f72d74] hover:text-white border-2 border-[#f72d74] font-medium">
-              <a href="#">Get Started</a>
+              <Link to={"/contact"}>Get Started</Link>
             </button>
           </div>
 
@@ -238,12 +234,12 @@ const HomeSection = () => {
             </p>
           </div>
           {/* Button */}
-          <a
-            href="/"
+          <Link
+            to={"/contact"}
             className="text-white border-2 border-[#f72d74] hover:bg-[#f72d74]  px-5 py-3 max-w-xs w-44 font-bold text-center "
           >
             Let's Talk
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -425,12 +421,12 @@ const HomeSection = () => {
             </p>
           </div>
           {/* Button */}
-          <a
-            href="/"
+          <Link
+            to={"/contact"}
             className="text-white border-2 border-[#f72d74] hover:bg-[#f72d74]  px-5 py-3 max-w-xs w-44 font-bold text-center "
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -451,7 +447,7 @@ const HomeSection = () => {
             ideas into tangible success stories.
           </p>
           <button className="border-[#f72d74] border-2 px-12 py-3 font-bold hover:bg-[#f72d74] hover:text-white">
-            Get Started
+            <Link to={"/contact"}>Get Started</Link>
           </button>
         </div>
 
@@ -535,12 +531,12 @@ const HomeSection = () => {
                 your existing product, website, or software solution.
               </p>
             </div>
-            <a
-              href="/"
+            <Link
+              to={"/"}
               className="text-white border-2 border-[#f72d74] w-44 px-7 py-3 hover:bg-[#f72d74] font-bold "
             >
               Give it a Try?
-            </a>
+            </Link>
           </div>
           <div className="grid coxs:grid-cols-1 md:grid-cols-2  mt-8">
             <img src="cv-maker.png" alt="CV Maker" />
@@ -554,160 +550,167 @@ const HomeSection = () => {
           <span className="text-[#f72d74]">Technologies</span> We Use
         </h2>
         <p className="mt-4 w-full max-w-[896px] text-lg  font-normal font-Inter text-[#272821]">
-        We leverage cutting-edge technologies to create innovative solutions, ensuring your digital projects remain at the forefront of industry standards.
+          We leverage cutting-edge technologies to create innovative solutions,
+          ensuring your digital projects remain at the forefront of industry
+          standards.
         </p>
         <div className="mx-auto max-w-[950px]">
-      {/* Buttons for selecting dropdown */}
-      <div className="my-10 gap-4 flex items-center justify-between">
-  <button
-    onClick={() => handleButtonClick("frontend")}
-    className={`border-b-2 ${
-      activeDropdown === "frontend"
-        ? "border-[#f72d74] text-[#f72d74]"
-        : "border-transparent text-black"
-    } text-sm font-semibold sm-text-lg hover:text-[#f72d74] lg:text-xl`}
-  >
-    Frontend Technologies
-  </button>
-  <button
-    onClick={() => handleButtonClick("backend")}
-    className={`border-b-2 ${
-      activeDropdown === "backend"
-        ? "border-[#f72d74] text-[#f72d74]"
-        : "border-transparent text-black"
-    } text-sm font-semibold sm-text-lg hover:text-[#f72d74] lg:text-xl`}
-  >
-    Backend Technologies
-  </button>
-  <button
-    onClick={() => handleButtonClick("cms")}
-    className={`border-b-2 ${
-      activeDropdown === "cms"
-        ? "border-[#f72d74] text-[#f72d74]"
-        : "border-transparent text-black"
-    } text-sm font-semibold sm-text-lg hover:text-[#f72d74] lg:text-xl`}
-  >
-    CMS Technologies
-  </button>
-</div>
-
-      {/* Dropdown content */}
-      <div className="mt-6   rounded-lg">
-        
-        <div className="mt-4 flex flex-wrap coxs:gap-10 md:gap-20 xl:gap-36  justify-center">
-          {technologies[activeDropdown].map((tech, index) => (
-            <div
-              key={index}
-              className="w-20 h-20 flex  items-center justify-center  rounded-full  box "
+          {/* Buttons for selecting dropdown */}
+          <div className="my-10 gap-4 flex items-center justify-between">
+            <button
+              onClick={() => handleButtonClick("frontend")}
+              className={`border-b-2 ${
+                activeDropdown === "frontend"
+                  ? "border-[#f72d74] text-[#f72d74]"
+                  : "border-transparent text-black"
+              } text-sm font-semibold sm-text-lg hover:text-[#f72d74] lg:text-xl`}
             >
-              <img
-                src={tech.src}
-                alt={tech.name}
-                className="w-12 h-12 object-contain"
-              />
-            </div>
-          ))}
-      </div>
-    </div>
-      </div>
-      </div>
-
-
-
-
-    <div className="relative py-20">
-
-
-      <img src="./img-back.png" className="absolute top-0 z-0  h-full w-full  object-cover" alt="" />
-      <div className=" relative z-10 flex  coxs:flex-col  gap-20  w-[90%] max-w-[1440px] mx-auto  lg:flex lg:flex-row">
-     
-        {/* Left Column: Sticky Content */}
-        <div className="h-full flex-1  lg:sticky lg:top-32 lg:max-w-[505px] ">
-          <h2 className="text-4xl font-black text-white">
-          Why Choose <span className="text-[#f72d74]">WODWES</span> for Website Design and Development Services?
-          </h2>
-          <p className="my-5 text-[20px] leading-9 text-white">
-          We’re not a typical development agency — We’re your technology partner striving to achieve your specific goals.
-          </p>
-          
-        </div>
-
-        {/* Right Column: Grid Boxes */}
-        <div className="grid coxs:grid-cols-1 gap-5 flex-1  lg:grid-cols-1 xl:grid-cols-1 space-y-10 lg:mt-24 lg:max-w-[699px] lg:space-y-20">
-          {/* Box 1 */}
-          <div className=" ">
-            <div className=" ">
-              <img
-                src="./experience.png"
-                alt="experience"
-                className="w-9 h-9 object-contain"
-              />
-              <h3 className=" text-base my-2 font-bold  text-white lg:text-[28px]">
-              Pool of Experience and Expertise
-              </h3>
-              <p className="text-base text-white  font-normal   leading-9">
-              With a diverse team of professionals with expertise in various areas of web development, including front-end and back-end development, database design, user interface design, and e-commerce solutions, we can handle all aspects of your web development project efficiently and effectively.
-
-
-              </p>
-            </div>
+              Frontend Technologies
+            </button>
+            <button
+              onClick={() => handleButtonClick("backend")}
+              className={`border-b-2 ${
+                activeDropdown === "backend"
+                  ? "border-[#f72d74] text-[#f72d74]"
+                  : "border-transparent text-black"
+              } text-sm font-semibold sm-text-lg hover:text-[#f72d74] lg:text-xl`}
+            >
+              Backend Technologies
+            </button>
+            <button
+              onClick={() => handleButtonClick("cms")}
+              className={`border-b-2 ${
+                activeDropdown === "cms"
+                  ? "border-[#f72d74] text-[#f72d74]"
+                  : "border-transparent text-black"
+              } text-sm font-semibold sm-text-lg hover:text-[#f72d74] lg:text-xl`}
+            >
+              CMS Technologies
+            </button>
           </div>
 
-          {/* Box 2 */}
-          <div className=" ">
-            <div className=" ">
-              <img
-                src="./transparency.png"
-                alt="transparency"
-                className="w-9 h-9 object-contain"
-              />
-              <h3 className=" text-base my-2 font-bold  text-white lg:text-[28px]">
-              Transparency and Quality
-              </h3>
-              <p className="text-base text-white  font-normal   leading-9">
-              We have an in-house rigorous quality assurance process in place to ensure that our development solutions are of the highest quality. We conduct thorough testing and debugging to identify and fix any issues before delivering the final product to you.
-
-
-
-              </p>
-            </div>
-          </div>
-
-          {/* Box 3 */}
-          <div className=" ">
-            <div className=" ">
-              <img
-                src="./flexible.png"
-                alt="flexible"
-                className="w-9 h-9 object-contain"
-              />
-              <h3 className=" text-base my-2 font-bold  text-white lg:text-[28px]">
-              Flexible Hiring Models
-              </h3>
-              <p className="text-base text-white  font-normal   leading-9">
-              We have flexible hiring models for our partners. Whether you need to hire on an hourly basis, a project basis, or a dedicated team for a project, team WODWES got you covered with the flexibility and efficiency.
-
-              </p>
+          {/* Dropdown content */}
+          <div className="mt-6   rounded-lg">
+            <div className="mt-4 flex flex-wrap coxs:gap-10 md:gap-20 xl:gap-36  justify-center">
+              {technologies[activeDropdown].map((tech, index) => (
+                <div
+                  key={index}
+                  className="w-20 h-20 flex  items-center justify-center  rounded-full  box "
+                >
+                  <img
+                    src={tech.src}
+                    alt={tech.name}
+                    className="w-12 h-12 object-contain"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
-</div>
 
-<div className="flex coxs:flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto my-16  lg:flex lg:flex-row">
+      <div className="relative py-20">
+        <img
+          src="./img-back.png"
+          className="absolute top-0 z-0  h-full w-full  object-cover"
+          alt=""
+        />
+        <div className=" relative z-10 flex  coxs:flex-col  gap-20  w-[90%] max-w-[1440px] mx-auto  lg:flex lg:flex-row">
+          {/* Left Column: Sticky Content */}
+          <div className="h-full flex-1  lg:sticky lg:top-32 lg:max-w-[505px] ">
+            <h2 className="text-4xl font-black text-white">
+              Why Choose <span className="text-[#f72d74]">WODWES</span> for
+              Website Design and Development Services?
+            </h2>
+            <p className="my-5 text-[20px] leading-9 text-white">
+              We’re not a typical development agency — We’re your technology
+              partner striving to achieve your specific goals.
+            </p>
+          </div>
+
+          {/* Right Column: Grid Boxes */}
+          <div className="grid coxs:grid-cols-1 gap-5 flex-1  lg:grid-cols-1 xl:grid-cols-1 space-y-10 lg:mt-24 lg:max-w-[699px] lg:space-y-20">
+            {/* Box 1 */}
+            <div className=" ">
+              <div className=" ">
+                <img
+                  src="./experience.png"
+                  alt="experience"
+                  className="w-9 h-9 object-contain"
+                />
+                <h3 className=" text-base my-2 font-bold  text-white lg:text-[28px]">
+                  Pool of Experience and Expertise
+                </h3>
+                <p className="text-base text-white  font-normal   leading-9">
+                  With a diverse team of professionals with expertise in various
+                  areas of web development, including front-end and back-end
+                  development, database design, user interface design, and
+                  e-commerce solutions, we can handle all aspects of your web
+                  development project efficiently and effectively.
+                </p>
+              </div>
+            </div>
+
+            {/* Box 2 */}
+            <div className=" ">
+              <div className=" ">
+                <img
+                  src="./transparency.png"
+                  alt="transparency"
+                  className="w-9 h-9 object-contain"
+                />
+                <h3 className=" text-base my-2 font-bold  text-white lg:text-[28px]">
+                  Transparency and Quality
+                </h3>
+                <p className="text-base text-white  font-normal   leading-9">
+                  We have an in-house rigorous quality assurance process in
+                  place to ensure that our development solutions are of the
+                  highest quality. We conduct thorough testing and debugging to
+                  identify and fix any issues before delivering the final
+                  product to you.
+                </p>
+              </div>
+            </div>
+
+            {/* Box 3 */}
+            <div className=" ">
+              <div className=" ">
+                <img
+                  src="./flexible.png"
+                  alt="flexible"
+                  className="w-9 h-9 object-contain"
+                />
+                <h3 className=" text-base my-2 font-bold  text-white lg:text-[28px]">
+                  Flexible Hiring Models
+                </h3>
+                <p className="text-base text-white  font-normal   leading-9">
+                  We have flexible hiring models for our partners. Whether you
+                  need to hire on an hourly basis, a project basis, or a
+                  dedicated team for a project, team WODWES got you covered with
+                  the flexibility and efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex coxs:flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto my-16  lg:flex lg:flex-row">
         {/* Left Column: Sticky Content */}
         <div className="h-full flex-1 lg:sticky lg:top-10 lg:max-w-[500px] ">
           <img src="./team.png" className="rounded-lg" alt="" />
-          
-          
         </div>
 
         {/* Right Column: Grid Boxes */}
         <div className="flex flex-1 coxs:flex-col  gap-10 lg:flex-col ">
-        <h2 className="text-3xl font-black">Your Development <span className="text-[#f72d74]">Partner!</span></h2>
-        <p className="text-base font-Inter leading-9">
-        We love hearing about how our work has helped businesses succeed and how WODWES became their go-to development team. Don't just take our word for it - read what our satisfied clients have to say!
-        </p>
+          <h2 className="text-3xl font-black">
+            Your Development <span className="text-[#f72d74]">Partner!</span>
+          </h2>
+          <p className="text-base font-Inter leading-9">
+            We love hearing about how our work has helped businesses succeed and
+            how WODWES became their go-to development team. Don't just take our
+            word for it - read what our satisfied clients have to say!
+          </p>
           {/* Box 1 */}
           <div className="space-y-4 ">
             <div className=" rounded-lg ">
@@ -717,12 +720,15 @@ const HomeSection = () => {
                 className="w-9 h-9"
               />
               <h3 className=" text-xl mt-3 flex items-center font-bold mb-4">
-              Developing feature-enriched web and software solutions for businesses
+                Developing feature-enriched web and software solutions for
+                businesses
               </h3>
               <p className="text-lg leading-9">
-              At WODWES, we understand that technology is constantly evolving, and we're committed to staying ahead of the curve. Whether you need a simple website or a complex web application, we have the expertise and experience to deliver innovative solutions that help you achieve your business goals.
-
-
+                At WODWES, we understand that technology is constantly evolving,
+                and we're committed to staying ahead of the curve. Whether you
+                need a simple website or a complex web application, we have the
+                expertise and experience to deliver innovative solutions that
+                help you achieve your business goals.
               </p>
             </div>
           </div>
@@ -736,96 +742,113 @@ const HomeSection = () => {
                 className="w-9 h-9"
               />
               <h3 className=" text-xl mt-3 flex items-center font-bold mb-4">
-              Tailored development solutions to meet your business needs!             
-               </h3>
+                Tailored development solutions to meet your business needs!
+              </h3>
               <p className="text-lg leading-9 mb-5">
-              Team WODWES believes that every business is unique, and that's why we offer tailored development solutions to meet your specific needs. We work closely with our clients to identify their unique business requirements and develop customized solutions that help them achieve their goals.
+                Team WODWES believes that every business is unique, and that's
+                why we offer tailored development solutions to meet your
+                specific needs. We work closely with our clients to identify
+                their unique business requirements and develop customized
+                solutions that help them achieve their goals.
               </p>
-              <button className="mb-5"><a href="/"  className="border-2 font-semibold px-9 py-3   hover:bg-[#f72d74] hover:text-white  border-[#f72d74]">Get Started</a></button>
+              <button className="mb-5">
+                <Link
+                  to={"/contact"}
+                  className="border-2 font-semibold px-9 py-3   hover:bg-[#f72d74] hover:text-white  border-[#f72d74]"
+                >
+                  Get Started
+                </Link>
+              </button>
             </div>
           </div>
-
-          
         </div>
       </div>
-      
 
       <div className="mx-auto">
-  <div className="flex coxs:flex-col coxs:items-center gap-10  coxs:p-4 justify-end h-full w-full lg:flex-row lg:gap-10">
-    {/* Left Div */}
-    <div className="h-full lg:w-[50%] lg:top-10 max-w-md lg:sticky lg:ml-[-10%] lg:pt-16">
-      <h2 className="mb-5 text-3xl  font-bold md:text-4xl xl:text-5xl">
-        Get in Touch
-      </h2>
-      <p className="text-lg font-normal">
-        We love hearing about how our work has helped businesses succeed and how
-        WODWES became their go-to development team.
-                      </p>
-
-    </div>
-
-    {/* Right Div */}
-    <div className="rounded-lg  coxs:w-full  lg:w-[50%] coxs:p-9 bg-[#272821] lg:p-20">
-      <form action="">
-        <div className="grid max-w-2xl xs:grid-cols-2 gap-10">
-        <input type="text" placeholder="Enter your name" className="col-span-2 w-full border-b border-[#9c9c9c] bg-transparent pb-1 text-[#9c9c9c] outline-none  placeholder:text-[#9c9c9c] required:"  />
-  <input type="email" placeholder="Email" className="maxcosm:col-span-2 w-full border-b border-[#9c9c9c] bg-transparent pb-1 text-[#9c9c9c] outline-none  placeholder:text-[#9c9c9c] required:"  />
-  <input type="number" placeholder="Phone Number" className="maxcosm:col-span-2 w-full border-b border-[#9c9c9c] bg-transparent pb-1 text-[#9c9c9c] outline-none  placeholder:text-[#9c9c9c] required:"  />
-  <textarea rows={10} placeholder="Your message here..." className="col-span-2 w-full  rounded-[10px] border border-[#9c9c9c] bg-transparent p-2 text-[#9c9c9c] outline-none placeholder:text-[#9c9c9c] required:">
-
-  </textarea>
-  <button className="mb-5 ml-[-10px]"><a href="/"  className="border-2 font-semibold px-12 py-3 text-white   hover:bg-[#f72d74] hover:text-white  border-[#f72d74]">Get Started</a></button>
-
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-<div className="my-12 lg:my-16 mx-auto w-[90%] max-x-[1440px]">
-      <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
-        Frequently Asked <span className="text-[#f72d74]">Questions!</span>
-      </h2>
-      <p className="mb-7 mt-4 text-left text-base font-normal text-[#272821]">
-        We love hearing about how our work has helped businesses succeed and how WODWES became their go-to development team.
-      </p>
-      <div className="mx-auto md:max-w-[1000px]">
-        {faqData.map((item, index) => (
-          <div
-            key={index}
-            className="border-t border-gray-200 first:!border-t-0"
-          >
-            <button
-              onClick={() => toggleAnswer(index)}
-              className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
-            >
-              <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
-                {item.question}
-              </span>
-              <span
-                className={`h-6 w-6 flex items-center justify-center text-[#f72d74] font-bold border-2 p-2 border-[#f72d74] rounded-full`}
-              >
-                {activeIndex === index ? "-" : "+"}
-              </span>
-            </button>
-            {activeIndex === index && (
-              <p className="py-4 text-base text-[#272821]">{item.answer}</p>
-            )}
+        <div className="flex coxs:flex-col coxs:items-center gap-10  coxs:p-4 justify-end h-full w-full lg:flex-row lg:gap-10">
+          {/* Left Div */}
+          <div className="h-full lg:w-[50%] lg:top-10 max-w-md lg:sticky lg:ml-[-10%] lg:pt-16">
+            <h2 className="mb-5 text-3xl  font-bold md:text-4xl xl:text-5xl">
+              Get in Touch
+            </h2>
+            <p className="text-lg font-normal">
+              We love hearing about how our work has helped businesses succeed
+              and how WODWES became their go-to development team.
+            </p>
           </div>
-        ))}
+
+          {/* Right Div */}
+          <div className="rounded-lg  coxs:w-full  lg:w-[50%] coxs:p-9 bg-[#272821] lg:p-20">
+            <form action="">
+              <div className="grid max-w-2xl xs:grid-cols-2 gap-10">
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  className="col-span-2 w-full border-b border-[#9c9c9c] bg-transparent pb-1 text-[#9c9c9c] outline-none  placeholder:text-[#9c9c9c] required:"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="maxcosm:col-span-2 w-full border-b border-[#9c9c9c] bg-transparent pb-1 text-[#9c9c9c] outline-none  placeholder:text-[#9c9c9c] required:"
+                />
+                <input
+                  type="number"
+                  placeholder="Phone Number"
+                  className="maxcosm:col-span-2 w-full border-b border-[#9c9c9c] bg-transparent pb-1 text-[#9c9c9c] outline-none  placeholder:text-[#9c9c9c] required:"
+                />
+                <textarea
+                  rows={10}
+                  placeholder="Your message here..."
+                  className="col-span-2 w-full  rounded-[10px] border border-[#9c9c9c] bg-transparent p-2 text-[#9c9c9c] outline-none placeholder:text-[#9c9c9c] required:"
+                ></textarea>
+                <button className="mb-5 ml-[-10px]">
+                  <Link
+                    to={"/contact"}
+                    className="border-2 font-semibold px-12 py-3 text-white   hover:bg-[#f72d74] hover:text-white  border-[#f72d74]"
+                  >
+                    Get Started
+                  </Link>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
 
-
-
-    <Footer/>
-
+      <div className="my-12 lg:my-16 mx-auto w-[90%] max-x-[1440px]">
+        <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
+          Frequently Asked <span className="text-[#f72d74]">Questions!</span>
+        </h2>
+        <p className="mb-7 mt-4 text-left text-base font-normal text-[#272821]">
+          We love hearing about how our work has helped businesses succeed and
+          how WODWES became their go-to development team.
+        </p>
+        <div className="mx-auto md:max-w-[1000px]">
+          {faqData.map((item, index) => (
+            <div
+              key={index}
+              className="border-t border-gray-200 first:!border-t-0"
+            >
+              <button
+                onClick={() => toggleAnswer(index)}
+                className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
+              >
+                <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
+                  {item.question}
+                </span>
+                <span
+                  className={`h-6 w-6 flex items-center justify-center text-[#f72d74] font-bold border-2 p-2 border-[#f72d74] rounded-full`}
+                >
+                  {activeIndex === index ? "-" : "+"}
+                </span>
+              </button>
+              {activeIndex === index && (
+                <p className="py-4 text-base text-[#272821]">{item.answer}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 };
