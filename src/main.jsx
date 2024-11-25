@@ -20,7 +20,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
   <Route path="/" element={<HomeSection />} />
 
-  <Route path="services" element={<Services />}/>
+  
   <Route path="services/laravel" element={<Laravel />} />
   
 
