@@ -75,22 +75,26 @@ const Footer = () => {
 </div>
 <div className="ml-auto mt-6 sm:pt-14 2xl:col-span-4">
   <div className="mt-4 flex flex-row gap-x-4">
-    <Link to={""} className="flex items-center space-x-4">
-      {/* Facebook Icon */}
-      <img
-        src="./svgexport-8.png"
+    <div className="flex items-center space-x-4">
+      <a href='/'> 
+    {/* Facebook Icon */}
+       <img
+        src={`$/{svgexport-8.png}`}
         className="w-8 h-8  border border-white rounded-2xl hover:border-[#f72d74]"
         alt="Facebook"
       />
-      </Link>
-      <Link>
-      {/* LinkedIn Icon */}
-      <img
-        src="./svgexport-9.png"
-        className="w-8 h-8 border border-white rounded-2xl hover:border-[#f72d74]"
-        alt="LinkedIn"
+      </a>
+      
+     <a href="/">
+     <img
+        src={`$/{svgexport-9.png}`}
+        className="w-8 h-8  border border-white rounded-2xl hover:border-[#f72d74]"
+        alt="Facebook"
       />
-    </Link>
+     </a>
+      
+    
+    </div>
   </div>
 </div>
 </div>

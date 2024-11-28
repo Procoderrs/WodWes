@@ -80,7 +80,7 @@ const Nav = () => {
       dropdownItems: [
         {
           items: [
-            { logo: "./healthlogo.png", label: "Healthcare", to: "/" },
+            { logo: "./healthlogo.png", label: "Healthcare", to: "industries/healthcare" },
 
             { logo: "./healthlogo.png", label: "Travel", to: "/" },
 
@@ -239,7 +239,7 @@ const Nav = () => {
                             <div className="flex gap-2 items-center">
                               {category.logo && (
                                 <img
-                                  src={category.logo}
+                                  src={`/${category.logo}`}
                                   alt={category.title}
                                   className="w-8 h-6 mb-4 "
                                 />
@@ -262,7 +262,7 @@ const Nav = () => {
                                 <div className="flex gap-2 items-center cursor-pointer">
                                   {dropdownItem.logo && (
                                     <img
-                                      src={dropdownItem.logo}
+                                      src={`/${dropdownItem.logo}`}
                                       alt={dropdownItem.label}
                                       className="w-3 h-4 mb-2"
                                     />
@@ -282,7 +282,7 @@ const Nav = () => {
                   <NavLink
                     to={item.to}
                     className={({ isActive }) =>
-                      `${isActive ? "text-[#f72d74]" : ""}`
+                      `${isActive ? "text-[#f72d74] font-medium" : "font-medium"}`
                     }
                   >
                     {item.label}
@@ -305,7 +305,7 @@ const Nav = () => {
         {/* Mobile View */}
         <div className="flex lg:hidden justify-between items-center px-8 py-4  h-full">
           <div className=" coxs:w-24 sm:w-32    w-36">
-            <img src="./wodweslogo.png" alt="" />
+            <img src="/wodweslogo.png" alt="" />
           </div>
           <div className="flex items-center space-x-4">
             <button className="px-4 py-2 bg-[#f72d74] text-white  hover:bg-[#f74d74]">

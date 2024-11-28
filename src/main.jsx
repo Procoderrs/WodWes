@@ -14,6 +14,7 @@ import HomeSection from "./componenets/HomeSection.jsx";
 import ContactUs from "./componenets/ContactUs.jsx";
 import Services from "./componenets/Services.jsx";
 import Laravel from "./componenets/Laravel.jsx";
+import Healthcare from "./componenets/Healthcare.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
 
   
   <Route path="services/laravel" element={<Laravel />} />
+  <Route path="industries/healthcare" element={<Healthcare/>}/>
   
 
 

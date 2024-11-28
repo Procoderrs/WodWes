@@ -104,7 +104,7 @@ const HomeSection = () => {
 
   return (
     <>
-      <section className="z-0 bg-banner-image bg-cover py-28">
+      <section className="z-0 bg-banner-image bg-cover py-24">
         <div className="flex items-center justify-center ">
           <div className="mx-auto text-center w-full">
             <h1 className="text-3xl font-bold text-white md:text-4xl 	 lg:text-5xl xl:text-6xl lg:grid lg:grid-cols-2 items-center lg:mr-36 lg:my-4">
