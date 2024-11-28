@@ -79,7 +79,7 @@ const Footer = () => {
       <a href='/'> 
     {/* Facebook Icon */}
        <img
-        src={`$/{svgexport-8.png}`}
+        src="./svgexportf.png"
         className="w-8 h-8  border border-white rounded-2xl hover:border-[#f72d74]"
         alt="Facebook"
       />
@@ -87,7 +87,7 @@ const Footer = () => {
       
      <a href="/">
      <img
-        src={`$/{svgexport-9.png}`}
+        src="./svgexportl.png"
         className="w-8 h-8  border border-white rounded-2xl hover:border-[#f72d74]"
         alt="Facebook"
       />

@@ -6,6 +6,7 @@ import Marquee from "react-fast-marquee";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
+import { useState } from 'react';
 
 
 const Laravel = () => {
@@ -19,6 +20,20 @@ const Laravel = () => {
     "/img-6.png",
   ];
 
+  
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 100,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true, // Enables autoplay
+    autoplaySpeed: 3000, // Speed in milliseconds between slides
+    swipe: true, // Enables swipe on touch devices
+    touchMove: true,
+  };
+
   const slides = [
     { img: "/domain.png", text: "Front-end Technologies" },
     { img: "/versatile.png", text: "Backend Technologies" },
@@ -26,6 +41,56 @@ const Laravel = () => {
     { img: "/transport.png", text: "Robust MVC Support" },
     { img: "/competitive.png", text: "Best Agency Award&Achievement" },
   ];
+
+
+  const settingsTwo = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1, // Show 3 items at once (adjust as per your requirement)
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Time interval between slides
+  
+  
+ responsive: [
+
+  {
+    breakpoint: 375, // Small screens (sm)
+    settings: {
+      slidesToShow: 1, // Show 2 slides
+    },
+  },
+      {
+        breakpoint: 576, // Small screens (sm)
+        settings: {
+          slidesToShow: 2, // Show 2 slides
+        },
+      },
+      {
+        breakpoint: 992, // Medium screens (md)
+        settings: {
+          slidesToShow: 3, // Show 3 slides
+        },
+      },
+      {
+        breakpoint: 1200, // Large screens (lg)
+        settings: {
+          slidesToShow: 3, // Show 4 slides
+        },
+      },
+      {
+        breakpoint: 1440, // Extra large screens
+        settings: {
+          slidesToShow: 3, // Show 5 slides
+        },
+      },
+    ], 
+  
+  
+  
+  };
 
 
   const sliderSettings = {
@@ -65,9 +130,36 @@ const Laravel = () => {
   };
 
 
+  const faqData = [
+    {
+      question: "Do you provide Laravel consulting services?",
+      answer:
+        "Yes - To help clients in finding the right technology and forecasting expectations, we provide Laravel consulting services. To book your consultation, please email us as https://wodwes.com/wodwes/.",
+    },
+    {
+      question:
+        "How do you ensure the quality of the project?",
+      answer:
+        "We have a strong quality assurance process to ensure all quality standards are met during the development phase. We run multiple tests and analyze the product for cross browsers to make sure we have achieved your goals.",
+    },
+    {
+      question: "How do you ensure privacy and security?",
+      answer:
+        "We sign NDA (Non-disclosure Agreement) with clients as well as with our team members to ensure privacy and security during and after the project development process.",
+    },
+    {
+      question: "How do u handle communication during a project?",
+      answer:
+        "We handle communication using project management tools like Basecamp, Slack, and Asana. Additionally, we can choose your preferred tool as well.",
+    },
+    
+  ];
 
+  const [activeIndex, setActiveIndex] = useState(null);
 
-
+  const toggleAnswer = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
   return (
    <>
      <div className="relative w-full py-12 lg:py-20">
@@ -472,9 +564,184 @@ const Laravel = () => {
               Get Started
             </Link>
   </button>
+  <div className="mt-20 mx-auto max-w-6xl">
+      <Slider {...settings}>
+        {/* Slide 1 */}
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                  <img src="/laravel.png" alt="Laravel" className="w-8 h-8" />
+                  <img src="/statimic.png" alt="Statamic" className="w-8 h-8" />
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="https://vodlix.com" className="w-full lg:w-[50%]">
+              <img
+                src="/vodlix.png"
+                alt="Vodlix"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* Slide 2 */}
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+8.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                  <img src="/laravel.png" alt="Laravel" className="w-8 h-8" />
+                  <img src="/hubspot.png" alt="Hubspot" className="w-8 h-8" />
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="https://ecomdevelopment.us" className="w-full lg:w-[50%]">
+              <img
+                src="/ecom-development.png"
+                alt="Ecom Development"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+      </Slider>
+    </div>
+    <div className="mt-20 mx-auto w-[90%]">
+      <Slider {...settingsTwo}>
+        {/* Slide 1 */}
+        <div className="coxs:px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2 ">
+          <img src="/ecom.png" alt="Ecom" className="h-20 w-12" />
+        </div>
+
+        {/* Slide 2 */}
+        <div className=" coxs:px-2 lg:px-12 py-8 border-t-2 border-gray-400 border-r-2">
+          <img src="/vodlix.webp" alt="Vodlix" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 3 */}
+        <div className="coxs:px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2">
+          <img src="/ecom.png" alt="Ecom" className="h-20 w-12" />
+        </div>
+
+        {/* Slide 4 */}
+        <div className="  coxs:px-2 lg:px-12 py-8 border-t-2 border-gray-400 border-r-2  ">
+          <img src="/vodlix.webp" alt="Vodlix" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 5 */}
+        <div className="coxs:px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2 ">
+          <img src="/ecom.png" alt="Ecom" className="coxs:h-20 coxs:w-12 lg" />
+        </div>
+
+        {/* Slide 6 */}
+        <div className="coxs:px-2 lg:px-12 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/vodlix.webp" alt="Vodlix" className="h-20 w-44" />
+        </div>
+      </Slider>
+    </div>
+
+
 
   
-</div>
+  
+
+  </div>
+  
+
+
+  <div className="relative w-full py-12 lg:py-24">
+        <img
+          src="/section-img.png"
+          className="absolute top-0 left-0 w-full h-full "
+          alt=""
+        />
+        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto font-Inter">
+          {/* Content Container */}
+          <div className=" w-full max-w-[1020px] ">
+            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+              <span className='text-[#f72d74]'>Hire Remote & Project</span> Based Developers for Wodwes
+              
+            </h1>
+            <p className="text-white text-lg font-Inter">
+            Power up your projects with WODWES remote developers. Boost productivity and 
+            achieve exceptional results. Get started today to unlock your project's full potential!
+            </p>
+          </div>
+          {/* Button */}
+          <Link
+            to={"/contact"}
+            className="text-white border-2 border-[#f72d74] hover:bg-[#f72d74]  px-5 py-3 max-w-xs w-44 font-bold text-center "
+          >
+            Let's Talk
+          </Link>
+        </div>
+      </div>
+
+
+      <div className="my-12 lg:my-16 mx-auto w-[90%] max-x-[1440px]">
+        <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
+          Frequently Asked <span className="text-[#f72d74]">Questions!</span>
+        </h2>
+        <p className="mb-7 mt-4 text-left text-base font-normal text-[#272821]">
+          We love hearing about how our work has helped businesses succeed and
+          how WODWES became their go-to development team.
+        </p>
+        <div className="mx-auto md:max-w-[1000px]">
+          {faqData.map((item, index) => (
+            <div
+              key={index}
+              className="border-t border-gray-200 first:!border-t-0"
+            >
+              <button
+                onClick={() => toggleAnswer(index)}
+                className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
+              >
+                <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
+                  {item.question}
+                </span>
+                <span
+                  className={`h-6 w-6 flex items-center justify-center text-[#f72d74] font-bold border-2 p-2 border-[#f72d74] rounded-full`}
+                >
+                  {activeIndex === index ? "-" : "+"}
+                </span>
+              </button>
+              {activeIndex === index && (
+                <p className="py-4 text-base text-[#272821]">{item.answer}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+ 
    </>
   )
 }
