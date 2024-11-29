@@ -370,234 +370,6 @@ const ContactUs = () => {
   <option value="Yemen">Yemen</option>
   <option value="Zambia">Zambia</option>
   <option value="Zimbabwe">Zimbabwe</option>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </select>
 <textarea className='col-span-2 rounded-[10px] bg-white p-5 text-sm text-gray-500 outline-none' rows={10} placeholder='Message' required>
 
@@ -629,6 +401,53 @@ const ContactUs = () => {
 
 </div>
 
+</div>
+
+
+<div className='py-12 w-[90%] max-w-[1440px] mx-auto xl:py-20 '>
+<h2 className='text-3xl font-bold'>Locations</h2>
+<p className='mt-4 max-w-[3xl] text-base md:text-xl '>To contact us, simply fill out the form at the bottom of this page. To send us an RFP, 
+RFI or other project specifications, email us at <span className='text-[#f72d74]'> info@wodwes.com </span></p>
+<div className='grid mt-14 mx-auto  md:grid-cols-2 gap-10'>
+<div className='rounded-[10px] bg-[#f9f9f9] overflow-hidden'>
+<img src="/us.png" alt="" className='h-60 object-cover' />
+<div className='p-7'>
+<h3 className='text-3xl font-bold'>United States</h3>
+<address className='my-5 text-lg not-italic '>30N Gold St, Sheridan, US</address>
+
+    <p className='text-lg'><a href="mailto:info@wodwes.com">info@wodwes.com</a></p>
+    <br />
+    <p><a href="tel:+1 917 000 3956">+1 917 000 3956</a></p>
+
+
+</div>
+
+</div>
+
+   
+
+
+
+
+
+
+
+
+<div className='rounded-[10px]  bg-[#f9f9f9] overflow-hidden'>
+<img src="/pk.png" alt="" className='h-60 object-cover' />
+<div className='p-7'>
+<h3 className='text-3xl font-bold'>Pakistan</h3>
+<address className='my-5 text-lg not-italic '>Basement Askari bank, Main Samanabad Rd, Faisalabad, Pakistan</address>
+
+    <p className='text-lg'><a href="mailto:info@wodwes.com">info@wodwes.com</a></p>
+    <br />
+    <p><a href="tel:+1 917 000 3956">+1 917 000 3956</a></p>
+
+
+</div>
+
+</div>
+</div>
 </div>
    </>
 

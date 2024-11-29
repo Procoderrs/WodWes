@@ -30,8 +30,8 @@ const Nav = () => {
           logo: "./e-commerce.png",
           title: "E-commerce Development",
           items: [
-            { label: "Laravel E-commerce development", to: "services/laravel" },
-            { label: "PHP E-commerce development", to: "/PHP" },
+            { label: "Laravel E-commerce development", to: "services/laravel-ecommerce-development-services" },
+            { label: "PHP E-commerce development", to: "services/php-ecommerce-development-services" },
             { label: "WordPress E-commerce Development", to: "/WordPress" },
             { label: "Shopify Development", to: "/Shopify" },
           ],
@@ -309,7 +309,9 @@ const Nav = () => {
           </div>
           <div className="flex items-center space-x-4">
             <button className="px-4 py-2 bg-[#f72d74] text-white  hover:bg-[#f74d74]">
-              Contact Us
+              <Link to={'/contact'}>
+                Contact Us
+              </Link>
             </button>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

@@ -15,6 +15,7 @@ import ContactUs from "./componenets/ContactUs.jsx";
 import Services from "./componenets/Services.jsx";
 import Laravel from "./componenets/Laravel.jsx";
 import Healthcare from "./componenets/Healthcare.jsx";
+import Php from "./componenets/PHP.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,7 +23,9 @@ const router = createBrowserRouter(
   <Route path="/" element={<HomeSection />} />
 
   
-  <Route path="services/laravel" element={<Laravel />} />
+  <Route path="services/laravel-ecommerce-development-services" element={<Laravel />} />
+  <Route path="services/php-ecommerce-development-services" element={<Php/>} />
+
   <Route path="industries/healthcare" element={<Healthcare/>}/>
   
 

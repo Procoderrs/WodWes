@@ -19,6 +19,39 @@ const Laravel = () => {
     "/img-5.png",
     "/img-6.png",
   ];
+  
+
+
+  const settingsThree = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2, // Adjust based on design
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024, // Screens smaller than 1024px
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 576, // Screens smaller than 600px
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 990, // Screens smaller than 600px
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+    ]
+  };
 
   
   const settings = {
@@ -507,49 +540,68 @@ const Laravel = () => {
 
   </div>
          
-  {/* <div className=" mx-auto w-[90%] rounded-lg flex flex-col  m-4">
-      <Slider {...sliderSettings} className="flex gap-4">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 flex flex-col items-center justify-center px-6 py-4 xl:px-0  bg-[#282922] rounded-lg mx-2"
-          >
-            <img
-              src={slide.img}
-              alt={`Slide ${index + 1}`}
-              className="w-8 h-8 object-cover rounded-full"
-            />
-            <p className="mt-4 text-sm text-white">{slide.text}</p>
-          </div>
-        ))}
-      </Slider>
-    </div>
- */}
+  
+
+ 
 
 
- {/* <div className='grid coxs:grid-cols-2  w-[90%] mx-auto gap-3'>
-<div className='bg-black text-white'>hello</div>
-<div className='bg-black text-white'>hello</div>
-<div className='bg-black text-white'>hello</div>
-<div className='bg-black text-white'>hello</div>
-<div className='bg-black text-white'>hello</div>
-
- </div> */}
-
- <div className="w-[90%] mx-auto grid grid-cols-1 gap-3 ">
-      <div className=''>
-      <Slider {...sliderSettings}>
-        {slides.map((slide) => (
-          <div
-            key={slide.id}
-            className="bg-black text-white flex items-center justify-center coxs:px-4 coxs:py-6 mx-2 xl: rounded-md"
-          >
-            <p className='text-sm'>{slide.text}</p>
-          </div>
-        ))}
-      </Slider>
+  <div className="w-[90%] mx-auto mt-20">
+  <Slider {...settingsThree}>
+    <div className="flex gap-6 flex-row flex-wrap justify-center">
+      <div className="px-2">
+        <div className="px-4 py-4 bg-black flex flex-col gap-4 text-white rounded-xl min-h-[180px]">
+          <img src="/domain.png" alt="domain" className="h-9 w-9 mx-auto" />
+          <p className="text-sm pb-4 text-center">Frontend Technologies</p>
+        </div>
       </div>
     </div>
+    <div className="flex gap-6 flex-row flex-wrap justify-center">
+      <div className="px-2">
+        <div className="px-4 py-4 bg-black flex flex-col gap-4 text-white rounded-xl min-h-[180px]">
+          <img src="/versatile.png" alt="backend" className="h-9 w-9 mx-auto" />
+          <p className="text-sm pb-4 text-center">Backend Technologies</p>
+        </div>
+      </div>
+    </div>
+    <div className="flex gap-6 flex-row flex-wrap justify-center">
+      <div className="px-2">
+        <div className="px-4 py-4 bg-black flex flex-col gap-4 text-white rounded-xl min-h-[180px]">
+          <img src="/secure.png" alt="laravel" className="h-9 w-9 mx-auto" />
+          <p className="text-sm pb-4 text-center">
+            Laravel Development Capabilities
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="flex gap-6 flex-row flex-wrap justify-center">
+      <div className="px-2">
+        <div className="px-4 py-4 bg-black flex flex-col gap-4 text-white rounded-xl min-h-[180px]">
+          <img src="/transport.png" alt="mvc" className="h-9 w-9 mx-auto" />
+          <p className="text-sm pb-4 text-center">Robust MVC Support</p>
+        </div>
+      </div>
+    </div>
+    <div className="flex gap-6 flex-row flex-wrap justify-center">
+      <div className="px-2">
+        <div className="px-4 py-4 bg-black flex flex-col gap-4 text-white rounded-xl min-h-[180px]">
+          <img
+            src="/competitive.png"
+            alt="awards"
+            className="h-9 w-9 mx-auto"
+          />
+          <p className="text-sm pb-4 text-center">
+            Best Agency Awards & Achievements
+          </p>
+        </div>
+      </div>
+    </div>
+    {/* Add more slides as needed */}
+  </Slider>
+</div>
+
+
+
+
  </div>
 
 <div className='pt-20 pb-10 w-[90%] mx-auto max-w-[1440px]'>
