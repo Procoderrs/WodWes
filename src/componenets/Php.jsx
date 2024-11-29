@@ -66,6 +66,8 @@ const Php = () => {
       },
     ]
   };
+
+  
   const settingsTwo = {
     dots: false,
     infinite: true,
