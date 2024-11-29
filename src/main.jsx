@@ -14,8 +14,8 @@ import HomeSection from "./componenets/HomeSection.jsx";
 import ContactUs from "./componenets/ContactUs.jsx";
 import Laravel from "./componenets/Laravel.jsx";
 import Healthcare from "./componenets/Healthcare.jsx";
-import Php from "./componenets/Php.jsx";
 import Wordpress from "./componenets/Wordpress.jsx";
+import Php from './componenets/Php.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
