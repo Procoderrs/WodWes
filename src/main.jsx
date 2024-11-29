@@ -15,7 +15,7 @@ import ContactUs from "./componenets/ContactUs.jsx";
 import Services from "./componenets/Services.jsx";
 import Laravel from "./componenets/Laravel.jsx";
 import Healthcare from "./componenets/Healthcare.jsx";
-import Php from "./componenets/PHP.jsx";
+import Php from "./componenets/Php.jsx";
 import Wordpress from "./componenets/Wordpress.jsx";
 
 const router = createBrowserRouter(
