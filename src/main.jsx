@@ -12,7 +12,6 @@ import {
 import Layout from "./Layout.jsx";
 import HomeSection from "./componenets/HomeSection.jsx";
 import ContactUs from "./componenets/ContactUs.jsx";
-import Services from "./componenets/Services.jsx";
 import Laravel from "./componenets/Laravel.jsx";
 import Healthcare from "./componenets/Healthcare.jsx";
 import Php from "./componenets/Php.jsx";
