@@ -532,9 +532,9 @@ const Laravel = () => {
    <h2 className='text-3xl max-w-[633px] leading-10 font-extrabold mb-7'>The Wodwes Laravel Service Team Is Your Digital Innovation Partner,Helping Business To Transform their Business With Laravel.</h2>
    <Link
             to={"/contact"}
-            className="black border-2 border-[#f72d74] hover:text-white hover:bg-[#f72d74]  px-12 py-3 max-w-xs w-44 font-bold text-center "
+            className="black border-2 border-[#f72d74] hover:text-white hover:bg-[#f72d74]  px-8 py-3 max-w-xs w-44 font-bold text-center "
           >
-            Let's Talk
+            Get Started
           </Link>
    </div>
 
