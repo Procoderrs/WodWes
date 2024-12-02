@@ -14,7 +14,7 @@ const Wordpress = () => {
   const settingsTwo = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1, // Show 3 items at once (adjust as per your requirement)
     slidesToScroll: 1,
     arrows: true,
@@ -118,6 +118,40 @@ const Wordpress = () => {
       },
     ]
   };
+
+
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAnswer = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+
+
+  const faqData = [
+    {
+      question: "How much does it cost to hire a WordPress developer?",
+      answer:
+        "The cost of hiring a WordPress developer always depends on your project requirements. Additionally, we have a fixed and hourly pricing model that you can opt for according to your budge             ",
+    },
+    {
+      question:
+        "How does the WordPress development process work?",
+      answer:
+        "When you choose WODWES for WordPress development services, we will share the complete project timeline and plan with you and assign a dedicated project manager, account manager, and developer for smooth execution and deliveries.           ",
+    },
+    {
+      question: "Do you sign an NDA?",
+      answer:
+        "Yes, we do sign NDA (Non-Disclosure Agreement) to protect and secure your information. We also sign NDA with our developers and team, who are involved in projects.         ",
+    },
+    {
+      question: "Can you help me  migrate my existing website to WordPress?",
+      answer:
+        "Yes, we provide WordPress migration services to help clients in smooth and hassle-free migration from any platform to WordPress. To get started, please email us at https://wodwes.com/.        ",
+    },
+    
+  ];
   return (
     <>
       <div className="relative w-full py-12 lg:py-20">
@@ -545,11 +579,11 @@ const Wordpress = () => {
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
               <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
-                <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
+                <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
               <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
-                <h2 className="ml-3 text-lg font-extrabold">+7</h2>
+                <h2 className="ml-3 text-lg font-extrabold">+7.5</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
               <div className="ml-3 border-l-2 border-[#f72d74]">
@@ -557,18 +591,18 @@ const Wordpress = () => {
                   Technology Used
                 </h2>
                 <div className="flex gap-3 ml-6 mt-3">
-                  <img src="/php.png" alt="php" className="w-8 h-8" />
                   <img src="/wordpress.png" alt="php" className="w-8 h-8" />
-                  <img src="/hubspot.png" alt="php" className="w-8 h-8" />
+                  <img src="/elementor.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
 
 
                 </div>
               </div>
             </div>
             {/* Right Image */}
-            <a href="https://www.base.ai/" className="w-full lg:w-[50%]">
+            <a href="https://www.eslscadigitaldataschool.com/" className="w-full lg:w-[50%]">
               <img
-                src="/base.jpg"
+                src="/eslsca.png"
                 alt="base"
                 className="rounded-lg w-full object-cover"
               />
@@ -576,17 +610,22 @@ const Wordpress = () => {
           </div>
         </div>
 
+
+
+
+
+
         {/* Slide 2 */}
         <div>
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
               <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
-                <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
               <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
-                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
               <div className="ml-3 border-l-2 border-[#f72d74]">
@@ -594,15 +633,17 @@ const Wordpress = () => {
                   Technology Used
                 </h2>
                 <div className="flex gap-3 ml-6 mt-3">
-                  <img src="/php.png" alt="Laravel" className="w-8 h-8" />
-                </div>
+
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/elementor.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />                </div>
               </div>
             </div>
             {/* Right Image */}
-            <a href="https://ecomdevelopment.us" className="w-full lg:w-[50%]">
+            <a href="https://farrisdesigngroup.com/" className="w-full lg:w-[50%]">
               <img
-                src="/kapalya.jpg"
-                alt="kapalya"
+                src="/farrisdesign.png"
+                alt="farisdesign"
                 className="rounded-lg w-full object-cover"
               />
             </a>
@@ -628,17 +669,723 @@ const Wordpress = () => {
                   Technology Used
                 </h2>
                 <div className="flex gap-3 ml-6 mt-3">
-                  <img src="/php.png" alt="Laravel" className="w-8 h-8" />
-                  <img src="/reactjs.png" alt="Laravel" className="w-8 h-8" />
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/elementor.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
 
                 </div>
               </div>
             </div>
             {/* Right Image */}
-            <a href="https://ecomdevelopment.us" className="w-full lg:w-[50%]">
+            <a href="https://de-ella.com/" className="w-full lg:w-[50%]">
               <img
-                src="/leadpro.png"
+                src="/deella.png"
                 alt="kapalya"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/elementor.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="https://treklaw.pk/" className="w-full lg:w-[50%]">
+              <img
+                src="/treklaw.png"
+                alt="kapalya"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                <img src="/woocommerce.png" alt="php" className="w-8 h-8" />
+                  <img src="/elementor.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="/" className="w-full lg:w-[50%]">
+              <img
+                src="/sheaffer.png"
+                alt="sheafer"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="https://3-a-media.com/" className="w-full lg:w-[50%]">
+              <img
+                src="/3media.png"
+                alt="sheafer"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                <img src="/wpbbakery.png" alt="" className='w-8 h-8' />
+                <img src="/elementor.png" alt="" className='w-8 h-8' />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/cjs.png"
+                alt="sheafer"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/zenationonline.png"
+                alt="znation"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                <img src="/wpbbakery.png" alt="wbppbakey" className='w-8 h-8' />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/centereanvie.png"
+                alt="centereanvie"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/canari.png"
+                alt="canari"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/rochester.png"
+                alt="rochester"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/nrs-market.png"
+                alt="nrs-market"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                <img src="/wpbbakery.png" alt="" className='w-8 h-8' />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/hydrowheater.png"
+                alt="hydro"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/virtual.png"
+                alt="virtual"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/virtual.png"
+                alt="virtual"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                <img src="/elementor.png" alt="elementor" className='w-8 h-8' />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/mediumpizza.png"
+                alt="pizza"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+6.6%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                <img src="/woocommerce.png" alt="elementor" className='w-8 h-8' />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/belightful.png"
+                alt="pizza"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/revtrax.png"
+                alt="revtrax"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/thesmartpooch.png"
+                alt="smartpooch"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                <img src="/woocommerce.png" alt="" className='w-8 h-8' />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/zoo-guide.png"
+                alt="zoo-guide"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/soflo.png"
+                alt="soflo"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/mnmanti-age.png"
+                alt="soflo"
+                className="rounded-lg w-full object-cover"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
+            {/* Left Content */}
+            <div className="w-full lg:w-[50%] flex flex-col gap-10">
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
+                <p className="text-sm ml-2">Empowering Growth</p>
+              </div>
+              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
+                <p className="text-sm ml-2">User Satisfaction</p>
+              </div>
+              <div className="ml-3 border-l-2 border-[#f72d74]">
+                <h2 className="ml-3 font-extrabold text-lg ">
+                  Technology Used
+                </h2>
+                <div className="flex gap-3 ml-6 mt-3">
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/php.png" alt="php" className="w-8 h-8" />
+
+                </div>
+              </div>
+            </div>
+            {/* Right Image */}
+            <a href="" className="w-full lg:w-[50%]">
+              <img
+                src="/altec.png"
+                alt="altec"
                 className="rounded-lg w-full object-cover"
               />
             </a>
@@ -648,50 +1395,210 @@ const Wordpress = () => {
 
       </Slider>
     </div>
+
+
+
+
+
+
+
     <div className="mt-20 mx-auto w-[90%]">
-
-
-
-
-      <Slider {...settingsTwo}>
+<Slider {...settingsTwo}>
         {/* Slide 1 */}
-        <div className="coxs:px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2 ">
-          <img src="/kapalyaLogo.png" alt="logo" className="h-20 w-36" />
+        <div className="coxs:px-12 lg:px-20 py-8 border-t-2 border-gray-400 border-r-2 ">
+          <img src="/elsa.webp" alt="logo" className="h-20 w-36" />
         </div>
 
         {/* Slide 2 */}
-        <div className=" coxs:px-2 lg:px-12 py-8 border-t-2 border-gray-400 border-r-2">
-          <img src="/baseai.webp" alt="Vodlix" className="h-20 w-44" />
+        <div className=" coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400 border-r-2">
+          <img src="/fairs.jpg" alt="logo" className="h-20 w-44" />
         </div>
 
         {/* Slide 3 */}
-        <div className="coxs:px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2">
-          <img src="/servicelead.png" alt="Ecom" className="h-20 w-44" />
+        <div className="coxs:px-12 lg:px-20 py-8 border-t-2 border-gray-400 border-r-2">
+          <img src="/de-ella.png" alt="logo" className="h-20 w-44" />
         </div>
 
         {/* Slide 4 */}
-        <div className="  coxs:px-2 lg:px-12 py-8 border-t-2 border-gray-400 border-r-2  ">
-          <img src="/baseai.webp" alt="Vodlix" className="h-20 w-44" />
+        <div className="  coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400 border-r-2  ">
+          <img src="/treklawlogo.png" alt="logo" className="h-20 w-44" />
         </div>
 
         {/* Slide 5 */}
-        <div className="coxs:px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2 ">
-          <img src="/kapalyaLogo.png" alt="Ecom" className="h-20 w-36" />
+        <div className="coxs:px-12 lg:px-20 py-8 border-t-2 border-gray-400 border-r-2 ">
+          <img src="/shaffermakup.png" alt="shaffer" className="h-20 w-36" />
         </div>
 
         {/* Slide 6 */}
-        <div className="coxs:px-2 lg:px-12 py-8 border-t-2 border-gray-400  border-r-2">
-          <img src="/servicelead.png" alt="Vodlix" className="h-20 w-44" />
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/3d-media.png" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 7 */}
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/cjssales.png" alt="logo" className="h-20 w-44" />
+        </div>
+{/* Slide 8 */}
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/zenationonlinelogo.png" alt="logo" className="h-20 w-44" />
+        </div>
+
+
+        {/* Slide 9 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/Centre-EauVie.png" alt="logo" className="h-20 w-44" />
+        </div>
+        {/* Slide 10 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/canarilogo.png" alt="logo" className="h-20 w-44" />
+        </div>
+
+
+        {/* Slide 11 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/reochester.webp" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 12 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/reochester.webp" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 13 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/nrs.webp" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 14 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/MeteoLogo.png" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 15 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/virtuallogo.png" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 16 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/aleezapizza.png" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 17 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/beloghful.png" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 18 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/revtraxlogo.png" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 19 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/zoo-guide.webp" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 20 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/thesmartpoochlogo.png" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 21 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/soflo.jpg" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 22 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/mnm.png" alt="logo" className="h-20 w-44" />
+        </div>
+
+        {/* Slide 23 */}
+
+        <div className="coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400  border-r-2">
+          <img src="/altec.webp" alt="logo" className="h-20 w-44" />
         </div>
       </Slider>
     </div>
+    </div>
+    <div className="relative w-full py-12 lg:py-24">
+        <img
+          src="/section-img.png"
+          className="absolute top-0 left-0 w-full h-full "
+          alt=""
+        />
+        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto font-Inter">
+          {/* Content Container */}
+          <div className=" w-full max-w-[1020px] ">
+            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+              <span className='text-[#f72d74]'>Hire Remote & Project</span> Based Developers for Wodwes
+              
+            </h1>
+            <p className="text-white text-lg font-Inter">
+            Power up your projects with WODWES remote developers. Boost productivity and 
+            achieve exceptional results. Get started today to unlock your project's full potential!
+            </p>
+          </div>
+          {/* Button */}
+          <Link
+            to={"/contact"}
+            className="text-white border-2 border-[#f72d74] hover:bg-[#f72d74]  px-5 py-3 max-w-xs w-44 font-bold text-center "
+          >
+            Let's Talk
+          </Link>
+        </div>
+      </div>
 
+      <div className="my-12 lg:my-16 mx-auto w-[90%] max-x-[1440px]">
+        <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
+          Frequently Asked <span className="text-[#f72d74]">Questions!</span>
+        </h2>
+        <p className="mb-7 mt-4 text-left text-base font-normal text-[#272821]">
+          We love hearing about how our work has helped businesses succeed and
+          how WODWES became their go-to development team.
+        </p>
+        <div className="mx-auto md:max-w-[1000px]">
+          {faqData.map((item, index) => (
+            <div
+              key={index}
+              className="border-t border-gray-200 first:!border-t-0"
+            >
+              <button
+                onClick={() => toggleAnswer(index)}
+                className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
+              >
+                <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
+                  {item.question}
+                </span>
+                <span
+                  className={`h-6 w-6 flex items-center justify-center text-[#f72d74] font-bold border-2 p-2 border-[#f72d74] rounded-full`}
+                >
+                  {activeIndex === index ? "-" : "+"}
+                </span>
+              </button>
+              {activeIndex === index && (
+                <p className="py-4 text-base text-[#272821]">{item.answer}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
 
-
-  
-  
-
-  </div>
     </>
   )
 }

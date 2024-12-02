@@ -33,7 +33,7 @@ const Nav = () => {
             { label: "Laravel E-commerce development", to: "services/laravel-ecommerce-development-services" },
             { label: "PHP E-commerce development", to: "services/php-ecommerce-development-services" },
             { label: "WordPress E-commerce Development", to: "services/wordpress-ecommerce-development-services" },
-            { label: "Shopify Development", to: "/Shopify" },
+            { label: "Shopify Development", to: "services/shopify-development-services" },
           ],
         },
 
