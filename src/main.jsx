@@ -15,7 +15,6 @@ import ContactUs from "./componenets/ContactUs.jsx";
 import Laravel from "./componenets/Laravel.jsx";
 import Healthcare from "./componenets/Healthcare.jsx";
 import Wordpress from "./componenets/Wordpress.jsx";
-import Php from './componenets/Php.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,7 +23,8 @@ const router = createBrowserRouter(
 
   
   <Route path="services/laravel-ecommerce-development-services" element={<Laravel />} />
-  <Route path="services/php-ecommerce-development-services" element={<Php/>} />
+
+
   <Route path="services/wordpress-ecommerce-development-services" element={<Wordpress/>} />
 
 
