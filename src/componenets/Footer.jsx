@@ -4,47 +4,47 @@ import { Link, NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-[#272821]">
-    <div className="w-[90%] mx-auto max-w-[1440px] grid py-12 xl:grid-cols-2">
+    <div className="w-[90%] mx-auto pb-12 max-w-[1440px] gap-6 grid py-12 xl:grid-cols-2">
       <div className="">
-      <h3 className="text-lg font-bold text-[#f72d74]">services</h3>
+      <h3 className="text-lg font-bold text-[#f72d74]">Services</h3>
       <ul className="mt-2 sm:columns-2">
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Laravel E-commerce Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">Laravel E-commerce Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">PHP E-commerce Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">PHP E-commerce Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">WordPress E-commerce Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">WordPress E-commerce Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Shopify Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">Shopify Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">React Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">React Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Vue.js Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">Vue.js Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Angular  Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">Angular  Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">PHP Software Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">PHP Software Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">CodeIgniter Software Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">CodeIgniter Software Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Laravel Software Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">Laravel Software Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">MERN  Software Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">MERN  Software Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">WordPress  Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">WordPress  Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Magento Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">Magento Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Drupal Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">Drupal Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">BigCommerce Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">BigCommerce Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Joomla Software Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">Joomla Software Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Social Media Creatives </Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">Social Media Creatives </Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Website UI/UX Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">Website UI/UX Development</Link></li>
 
-<li><Link to={"/"} className="text-base font-normal leading-8 text-white hover:text-[#f72d74]">Mobile App UI/UX Development</Link></li>
+<li><Link to={"/"} className="text-lg font-normal leading-8 text-white hover:text-[#f72d74]">Mobile App UI/UX Development</Link></li>
  </ul>
 
       </div>
@@ -74,12 +74,14 @@ const Footer = () => {
 
 </div>
 <div className="ml-auto mt-6 sm:pt-14 2xl:col-span-4">
-  <div className="mt-4 flex flex-row gap-x-4">
+  <div className="mt-4 flex flex-col gap-4">
+  <h2 className='text-[#f72d74] font-bold text-lg'>Follow us</h2>
+
     <div className="flex items-center space-x-4">
       <a href='/'> 
     {/* Facebook Icon */}
        <img
-        src="/svgexportf.png"
+        src="/svgexportl.png"
         className="w-8 h-8  border border-white rounded-2xl hover:border-[#f72d74]"
         alt="Facebook"
       />
@@ -87,7 +89,7 @@ const Footer = () => {
       
      <a href="/">
      <img
-        src="/svgexportl.png"
+        src="/svgexportf.png"
         className="w-8 h-8  border border-white rounded-2xl hover:border-[#f72d74]"
         alt="Facebook"
       />

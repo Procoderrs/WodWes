@@ -170,10 +170,10 @@ const Php = () => {
         
           <div className="flex   coxs:flex-col  mb-5  md:items-center justify-between gap-10 text-white">
             <div className="max-w-[540px] 3xl:max-w-[700px]">
-              <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+              <h1 className="md:text-6xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               <span className='text-[#f72d74]'>PHP</span> Website Development Services
               </h1>
-              <p className="text-[#e8e6e6] mt-5 mb-5 text-lg leading-8 font-Inter max-w-[637px]">
+              <p className="text-[#e8e6e6] mt-7 mb-7 text-lg leading-8 font-Inter max-w-[637px]">
               We deliver full-cycle, high-performing, and database-driven PHP development solutions.
                With extended knowledge of PHP and its framework, we have a proven track record of 
                completing numerous projects rendering 100% client satisfaction. Our specialized
@@ -184,7 +184,7 @@ const Php = () => {
 
               <Link
               to={"/"}
-              className="text-white border-2 border-[#f72d74] w-44 px-7 py-3 hover:bg-[#f72d74] font-bold "
+              className="text-white border-2 border-[#f72d74] w-44 px-9 py-3 hover:bg-[#f72d74] font-bold "
             >
               Get Started
             </Link>
@@ -240,9 +240,9 @@ const Php = () => {
       </div>
 
       <div className='pb-12 w-[90%] max-w-[1440px] mx-auto '>
-      <div className='flex  justify-between md:flex-row gap-10 3xl:gap-40 maxmd:flex-col'>
+      <div className='flex  justify-between md:flex-row gap-10 3xl:gap-40 maxmd:flex-col px-4'>
       <div className='lg:w-[50%] '>
-        <h2 className='text-3xl mb-5 font-black'>Why Choose <span className='text-[#f72d74]'>WODWES</span> For PHP Development?</h2>
+        <h2 className='text-3xl mb-5 text-[#282922] font-black'>Why Choose <span className='text-[#f72d74]'>WODWES</span> For PHP Development?</h2>
         
         <div className='pb-8'>
         <Link
@@ -254,7 +254,7 @@ const Php = () => {
         </div>
       </div>
       <div className=' lg:w-[50%]'>
-      <p className='mb-7 leading-9 lg:text-lg'>We have nurtured expertise in providing web-based solutions to multiple clients 
+      <p className='mb-7 text-[#282922] w-full text-lg'>We have nurtured expertise in providing web-based solutions to multiple clients 
         who now flaunt renowned business domains. WODWES is an industry-leading
          provider of full-cycle PHP solutions that are designed to take your business 
          forward and reap consistent growth for many years to come.</p>
@@ -262,18 +262,18 @@ const Php = () => {
 
       </div>
 
-      <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74] bg-gray-200 box md:grid-cols-2 lg:grid-cols-3'>
+      <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74]  box-shadow md:grid-cols-2 lg:grid-cols-3'>
     <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
-    <h3 className='text-xl font-bold'>Qualified PHP Specialists</h3>
+    <h3 className='text-2xl text-[#282922] font-extrabold'>Qualified PHP Specialists</h3>
 
     </div>
-    <p className='coxs:my-5  sm:my-7 text-sm leading-9'>We house a team of seasoned experts 
+    <p className='coxs:my-5 text-[#282922]  sm:my-7 text-sm leading-9'>We house a team of seasoned experts 
     having specialized in multi-directional areas of PHP to deliver high-performing PHP services. 
     We have served numerous businesses including startups, growing, and developing businesses to launch their PHP web apps,
      CMS’s, etc with our customized PHP development services.</p>
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 '>
+<ul className='flex coxs:flex-col gap-5 list-disc pl-5  text-[#282922]'>
   <li>Years of Successfull Service Experience</li>
   <li>Dedicated Team  For CMSs Development</li>
   <li>Certified PHP Web Development Experts</li>
@@ -288,14 +288,14 @@ const Php = () => {
     <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
-    <h3 className='text-xl font-bold'>Reliable PHP Partner</h3>
+    <h3 className='text-2xl text-[#282922] font-extrabold'>Reliable PHP Partner</h3>
 
     </div>
-    <p className='coxs:my-5  sm:my-7 text-sm leading-9'>We take pride in our full-cycle PHP web development 
+    <p className='coxs:my-5  text-[#282922] sm:my-7 text-sm leading-9'>We take pride in our full-cycle PHP web development 
     services to address all the relevant requirements of your business to achieve success. 
     We are a reliable service partner to multiple renowned companies giving them a competitive edge with our
      comprehensive industry knowledge and result-driven solutions.</p>
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 '>
+<ul className='flex text-[#282922] coxs:flex-col gap-5 list-disc pl-5 '>
   <li>PHP Consultation Services</li>
   <li>PHP Applications Upgradation</li>
   <li>Fool-proof Transparent Service</li>
@@ -310,14 +310,14 @@ const Php = () => {
     <div className='coxs:border-b-[6px]  border-[#f72d74] p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
-    <h3 className='text-xl font-bold'>Cost-effective PHP Solutions</h3>
+    <h3 className='text-2xl text-[#282922] font-extrabold'>Cost-effective PHP Solutions</h3>
 
     </div>
-    <p className='coxs:my-5  sm:my-7 text-sm leading-9'>We make hiring easy and help you hire us as you find suitable. 
+    <p className='coxs:my-5   text-[#282922] sm:my-7 text-sm leading-9'>We make hiring easy and help you hire us as you find suitable. 
     You can hire us on a project basis, hourly basis, or a full team for projects cost-effectively. 
     We closely discuss your estimated budget with you to provide lenient cost for PHP website development 
     services excluding extra expenses i.e. salary, training, office, etc.</p>
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 '>
+<ul className='flex coxs:flex-col gap-5 list-disc pl-5  text-[#282922]'>
   <li>Budget-tailored Cost</li>
   <li>Zero Extra Expenses</li>
   <li>Lenient hiring Models</li>
@@ -327,12 +327,12 @@ const Php = () => {
       </div>
       </div>
 
-      <div className='mx-auto w-[90%]  max-w-[1440px] pb-24 gap-10 lg:flex '>
-     <div className=' lg:sticky lg:top-16 h-full mb-12 lg:max-w-[500px]  2xl-w-[543px]'>
-     <h2 className='text-4xl font-extrabold'>
+      <div className='mx-auto w-[90%]  max-w-[1440px] py-12 gap-10 lg:flex '>
+     <div className=' lg:sticky lg:top-32 h-full mb-12 lg:max-w-[500px]  2xl-w-[543px]'>
+     <h2 className='text-4xl font-extrabold text-[#282922]'>
      OUR PHP Website Development Services
      </h2>
-     <p className='my-5 leading-8 text-sm'>Having successfully implemented thousands of projects, 
+     <p className='my-5 leading-8 text-[16px] text-[#282922]'>Having successfully implemented thousands of projects, 
      we confidently claim to provide rich-featured apps and web-based solutions
       that live up to ever-evolving development needs</p>
       <div className=''>
@@ -353,8 +353,8 @@ const Php = () => {
 <div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5   hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>PHP App Development</h2>
-       <p className='leading-7 text-sm'>Our experts of multidimensional expertise in 
+       <h2 className='text-xl mt-4 font-extrabold text-[#282922]'>PHP App Development</h2>
+       <p className='leading-7 text-sm text-[#282922]'>Our experts of multidimensional expertise in 
        PHP frameworks including CakePHP, Symphony, Laravel, etc collaborate with you to 
        develop high-performing, and dynamic apps tailored to yourbusiness size and needs. 
        We build integrated PHP web apps, 
@@ -366,8 +366,8 @@ const Php = () => {
        <div className='  rounded-lg bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>Seamless PHP Migration</h2>
-       <p className='leading-7 text-sm'>WODWES strives to keep your data safe and secured, 
+       <h2 className='text-xl mt-4 text-[#282922] font-extrabold'>Seamless PHP Migration</h2>
+       <p className='leading-7 text-[#282922] text-sm'>WODWES strives to keep your data safe and secured, 
        and thus offers expert assistance to ensure seamless migration to PHP. Being an industry-leading PHP
         developmentservices provider, we transfer your existing tech data to PHP with a higher sense of responsibility, 
        efficiency, and transparency.</p>
@@ -378,8 +378,8 @@ const Php = () => {
        <div className='  rounded-lg bg-[#f7f7f7] px-3 py-5  hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl  mt-4 font-extrabold'>Social App Development</h2>
-       <p className='leading-7 text-sm'>We develop social networking portals expertly leveraging the 
+       <h2 className='text-xl text-[#282922]  mt-4 font-extrabold'>Social App Development</h2>
+       <p className='leading-7 text-[#282922] text-sm'>We develop social networking portals expertly leveraging the 
        latest PHP trends to build user-friendly, and highly engaging social websites that live up to our 
        client’ssatisfaction, and requirements. We ensure highly-functional, high-performing apps that are 
        integrated with rich user-engaging features.</p>
@@ -401,8 +401,8 @@ const Php = () => {
 <div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>Web Portals Development</h2>
-       <p className='leading-7 text-sm'>WODWES is an industry-leading web development 
+       <h2 className='text-xl text-[#282922] mt-4 font-extrabold'>Web Portals Development</h2>
+       <p className='leading-7 text-[#282922] text-sm'>WODWES is an industry-leading web development 
        company that delivers cutting-edge results exactly up to your business's unique needs and requirements. 
        We provide expert PHP developmentservices to build PHP-based web portals for your business 
        i.e. B2B, B2C, Corporate, and Enterprise portals.</p>
@@ -413,8 +413,8 @@ const Php = () => {
        <div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>Expert API Integration</h2>
-       <p className='leading-7 text-sm'>We understand the importance of API for your apps and sites. 
+       <h2 className='text-xl text-[#282922] mt-4 font-extrabold'>Expert API Integration</h2>
+       <p className='leading-7 text-[#282922] text-sm'>We understand the importance of API for your apps and sites. 
        Thus, we provide professional services to integrate your internal, private, or public API intoyour PHP system. 
        We also provide custom solutions to integrate third-party API into your PHP websites 
        leveraging multiple API-provided interfaces.</p>
@@ -425,8 +425,8 @@ const Php = () => {
        <div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>PHP E-commerce Development</h2>
-       <p className='leading-7 text-sm'>We know the competitiveness of eCommerce and 
+       <h2 className='text-xl text-[#282922] mt-4 font-extrabold'>PHP E-commerce Development</h2>
+       <p className='leading-7 text-[#282922] text-sm'>We know the competitiveness of eCommerce and 
        how seemingly small details like load speed, navigation, etc affect the customer experience. 
        Thus, we leverage cutting-edge e-commercesolutions creating highly-functional, custom-designed e-commerce 
        portals ensuring better user engagement and retention.</p>
@@ -574,7 +574,7 @@ const Php = () => {
 
  <div className='pt-20 pb-10 w-[90%] mx-auto max-w-[1440px]'>
   <h2 className='text-3xl font-bold'>Our Happy <span className='text-[#f72d74]'>Clients</span></h2>
-  <p className='mt-5 leading-8 text-lg mb-5'>We love hearing about how our work has helped businesses succeed and how WODWES became their go-to
+  <p className='mt-5 leading-8 text-lg mb-5 text-left max-w-[880px]'>We love hearing about how our work has helped businesses succeed and how WODWES became their go-to
   development team. Don't just take our word for it - read what our satisfied clients have to say!</p>
   <button>
   <Link
@@ -591,15 +591,15 @@ const Php = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -628,15 +628,15 @@ const Php = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -662,15 +662,15 @@ const Php = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -791,9 +791,9 @@ const Php = () => {
                   {item.question}
                 </span>
                 <span
-                  className={`h-6 w-6 flex items-center justify-center text-[#f72d74] font-bold border-2 p-2 border-[#f72d74] rounded-full`}
+                  className={`h-9 w-9 flex items-center justify-center text-[#f72d74] font-bold  p-2 border-[#f72d74] rounded-full`}
                 >
-                  {activeIndex === index ? "-" : "+"}
+                  <img src=  {activeIndex === index ? "/minusicon.png" : "/plusicon.png"} alt="" />
                 </span>
               </button>
               {activeIndex === index && (

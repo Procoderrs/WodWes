@@ -41,7 +41,7 @@ const Nav = () => {
           logo: "./front-end.png",
           title: "Front-end Development",
           items: [
-            { label: "React Development", to: "/React" },
+            { label: "React Development", to: "/services/react-development" },
             { label: "Vue.js Development", to: "/Vue" },
             { label: "Angular Development", to: "/Angular" },
           ],
@@ -204,11 +204,11 @@ const Nav = () => {
 
       <nav className="bg-white sticky  top-0 z-50 mx-auto ">
         {/* Desktop View */}
-        <div className="hidden lg:flex px-8  justify-between items-center relative">
-          <div className="w-56 p-4">
+        <div className="hidden lg:flex px-8   justify-between items-center relative">
+          <div className="w-52 p-4">
             <img src="/wodweslogo.png" alt="" />
           </div>
-          <ul className="flex lg:flex-row items-center space-x-4  pr-8 gap-4">
+          <ul className="flex lg:flex-row items-center py-2  space-x-4   pr-8 gap-4">
             {navItems.map((item, index) => (
               <li key={index} className="p-3">
                 {item.dropdown ? (
@@ -291,10 +291,10 @@ const Nav = () => {
               </li>
             ))}
             {/* Contact Us Button */}
-            <li>
+            <li className="flex items-center justify-center">
               <Link
                 to={"/contact"}
-                className="ml-4 px-5 py-3 bg-[#f72d74] text-white  font-bold hover:bg-[#f74d74]"
+                className="ml-4 px-3 py-2  bg-[#f72d74] text-white  font-bold hover:bg-[#f74d74]"
               >
                 Contact Us
               </Link>

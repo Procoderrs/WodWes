@@ -181,7 +181,7 @@ const Wordpress = () => {
 
               <Link
               to={"/"}
-              className="text-white border-2 border-[#f72d74] w-44 px-7 py-3 hover:bg-[#f72d74] font-bold "
+              className="text-white border-2 border-[#f72d74] w-44 px-9 py-3 hover:bg-[#f72d74] font-bold "
             >
               Get Started
             </Link>
@@ -236,10 +236,10 @@ const Wordpress = () => {
         </Marquee>
       </div>
 
-      <div className='pb-12 w-[90%] max-w-[1440px] mx-auto '>
+      <div className='py-12 w-[90%] max-w-[1440px] mx-auto '>
       <div className='flex  justify-between md:flex-row gap-10 3xl:gap-40 maxmd:flex-col'>
       <div className='lg:w-[50%] max-w-[422px] '>
-        <h2 className='text-3xl mb-5 font-black'>Why Choose <span className='text-[#f72d74]'>WODWES</span> For WordPress Development Services ?</h2>
+        <h2 className='text-3xl mb-7 font-black'>Why Choose <span className='text-[#f72d74]'>WODWES</span> For WordPress Development Services ?</h2>
         
         <div className='pb-8'>
         <Link
@@ -251,7 +251,7 @@ const Wordpress = () => {
         </div>
       </div>
       <div className=' lg:w-[50%]'>
-      <p className='mb-7 leading-9 lg:text-lg'>WODWES is a dependable digital agency that specializes
+      <p className='mb-7  leading-9 text-lg'>WODWES is a dependable digital agency that specializes
        in WordPress services such as web design, development, and maintenance.
         They have a skilled team committed to providing top-quality solutions, 
       emphasizing customer satisfaction, attention to detail, and timely delivery.</p>
@@ -259,17 +259,18 @@ const Wordpress = () => {
 
       </div>
 
-      <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74] bg-gray-200 box md:grid-cols-2 lg:grid-cols-3'>
+      <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74] box-shadow md:grid-cols-2 lg:grid-cols-3'>
     <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
-    <div className='flex items-center gap-5'>
+    <div className='flex items-center  gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
-    <h3 className='text-xl font-bold'>WordPress Website Maintenance</h3>
+    <h3 className='text-2xl font-extrabold'>WordPress Website Maintenance</h3>
 
     </div>
    
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 '>
+<ul className='flex coxs:flex-col  mt-7 gap-5 list-disc pl-5 '>
   <li>Store Configuration Services</li>
   <li>Custom WordPress Development</li>
+  <li>WordPress Theme Customization</li>
   <li>WordPress Plugin Integration</li>
   <li>Custom Checkout Pages Services</li>
   
@@ -283,11 +284,11 @@ const Wordpress = () => {
     <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
-    <h3 className='text-xl font-bold'>RWordPress Website Design</h3>
+    <h3 className='text-2xl font-extrabold'>RWordPress Website Design</h3>
 
     </div>
    
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 '>
+<ul className='flex coxs:flex-col gap-5 mt-7 list-disc pl-5 '>
   <li>Custom WordPress Web Design</li>
   <li>Responsive WordPress Site</li>
   <li>WordPress Theme Customization</li>
@@ -304,11 +305,11 @@ const Wordpress = () => {
     <div className='coxs:border-b-[6px]  border-[#f72d74] p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
-    <h3 className='text-xl font-bold'>WordPress Customized Development</h3>
+    <h3 className='text-2xl font-extrabold'>WordPress Customized Development</h3>
 
     </div>
    
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 '>
+<ul className='flex coxs:flex-col gap-5 mt-7 list-disc pl-5 '>
   <li>WordPress Storefront Designs</li>
   <li>WordPress Template Development</li>
   <li>WordPress Web Development</li>
@@ -320,7 +321,7 @@ const Wordpress = () => {
       </div>
       </div>
 
-      <div className='mx-auto w-[90%]  max-w-[1440px] justify-between pb-24 gap-10 lg:flex '>
+      <div className='mx-auto w-[90%]  max-w-[1440px] justify-between py-8 gap-10 lg:flex '>
      <div className=' lg:sticky lg:top-32 h-full mb-12 lg:max-w-[500px]  2xl-w-[543px]'>
      <h2 className='text-4xl font-extrabold'>
      OUR Services
@@ -561,7 +562,7 @@ const Wordpress = () => {
 
  <div className='pt-20 pb-10 w-[90%] mx-auto max-w-[1440px]'>
   <h2 className='text-3xl font-bold'>Our Happy <span className='text-[#f72d74]'>Clients</span></h2>
-  <p className='mt-5 leading-8 text-lg mb-5'>We love hearing about how our work has helped businesses succeed and how WODWES became their go-to
+  <p className='mt-5 leading-8 text-lg mb-5 max-w-[880px]'>We love hearing about how our work has helped businesses succeed and how WODWES became their go-to
   development team. Don't just take our word for it - read what our satisfied clients have to say!</p>
   <button>
   <Link
@@ -578,15 +579,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -620,15 +621,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -656,15 +657,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -692,15 +693,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -728,15 +729,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -766,15 +767,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -802,15 +803,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -838,15 +839,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -874,15 +875,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -910,15 +911,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -944,15 +945,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -979,15 +980,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1013,15 +1014,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1048,15 +1049,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1083,15 +1084,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1116,15 +1117,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1151,15 +1152,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6.6%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1187,15 +1188,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1223,15 +1224,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1257,15 +1258,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1293,15 +1294,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1328,15 +1329,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1362,15 +1363,15 @@ const Wordpress = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -1586,9 +1587,9 @@ const Wordpress = () => {
                   {item.question}
                 </span>
                 <span
-                  className={`h-6 w-6 flex items-center justify-center text-[#f72d74] font-bold border-2 p-2 border-[#f72d74] rounded-full`}
+                  className={`h-9 w-9 flex items-center justify-center text-[#f72d74] font-bold  p-2`}
                 >
-                  {activeIndex === index ? "-" : "+"}
+                  <img src={activeIndex === index ? "/minusicon.png" : "/plusicon.png"} alt="" />
                 </span>
               </button>
               {activeIndex === index && (

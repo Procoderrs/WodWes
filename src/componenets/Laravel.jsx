@@ -57,7 +57,7 @@ const Laravel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 100,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -208,10 +208,10 @@ const Laravel = () => {
         
           <div className="flex   coxs:flex-col  mb-5  md:items-center justify-between gap-10 text-white">
             <div className="max-w-[540px] 3xl:max-w-[700px]">
-              <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+              <h1 className="md:text-6xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               <span className='text-[#f72d74]'>Laravel</span> E-commerce Development
               </h1>
-              <p className="text-[#e8e6e6] mt-5 mb-5 text-lg leading-8 font-Inter max-w-[637px]">
+              <p className="text-[#e8e6e6] mt-5 mb-5 text-[20px] leading-8 font-Inter max-w-[637px]">
               As a top-rated Laravel development services company, WODWES has extended expertise 
               in building robust, scalable, and high performance development solutions.
                We house a proficient team who are well-versed in developing 
@@ -224,7 +224,7 @@ const Laravel = () => {
 
               <Link
               to={"/"}
-              className="text-white border-2 border-[#f72d74] w-44 px-7 py-3 hover:bg-[#f72d74] font-bold "
+              className="text-white border-2 border-[#f72d74] w-44 px-9 py-3 hover:bg-[#f72d74] font-bold "
             >
               Get Started
             </Link>
@@ -295,7 +295,7 @@ const Laravel = () => {
 
       </div>
 
-      <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74] bg-gray-200 box md:grid-cols-2 lg:grid-cols-3'>
+      <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74]  box-shadow md:grid-cols-2 lg:grid-cols-3'>
     <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
@@ -363,12 +363,12 @@ const Laravel = () => {
       </div>
       </div>
 
-     <div className='mx-auto w-[90%]  max-w-[1440px] pb-24 gap-10 lg:flex '>
-     <div className=' lg:sticky lg:top-16 h-full mb-12 lg:max-w-[500px]  2xl-w-[543px]'>
-     <h2 className='text-4xl font-extrabold'>
+     <div className='mx-auto w-[90%]  max-w-[1440px] py-12 gap-10 lg:flex '>
+     <div className=' lg:sticky lg:top-32 h-full mb-12 lg:max-w-[500px]  2xl-w-[543px]'>
+     <h2 className='text-4xl text-[#282922] font-extrabold'>
      OUR LARAVEL DEVELOPMENT SERVICES
      </h2>
-     <p className='my-5 leading-8 text-sm'>We offer a comprehensive solution to meet your Laravel design and development needs.
+     <p className='my-5 leading-8 text-sm text-[#282922]'>We offer a comprehensive solution to meet your Laravel design and development needs.
       Get our services to buil powerful and
       scalable websites and web applications that are easy-to-navigate and scale up.</p>
       <div className=''>
@@ -386,11 +386,11 @@ const Laravel = () => {
 <div className=' grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
 
 <div className='coxs:space-y-4 2xl:space-y-5 '>
-<div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5   hover:bg-[#2b2a2a] hover:text-white'>
+<div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5  text-[#282922]  hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>Laravel CRM & ERP Development</h2>
-       <p className='leading-7 text-sm'>Our team of Laravel developers has extensive expertise in building
+       <h2 className='text-xl mt-4   font-extrabold'>Laravel CRM & ERP Development</h2>
+       <p className='leading-7 text-sm '>Our team of Laravel developers has extensive expertise in building
         complex business solutions on the Laravel framework. We provide fully 
         functional and high-performance CRM & ERP solutions customized to your 
         specific needs. Our services include inventory management, accounting,
@@ -400,11 +400,11 @@ const Laravel = () => {
 
        </div>
 
-       <div className='  rounded-lg bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
+       <div className='  rounded-lg bg-[#f7f7f7] text-[#282922] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>Laravel-Based Website Development</h2>
-       <p className='leading-7 text-sm'>At WODWES, we offer Laravel website 
+       <h2 className='text-xl mt-4 font-extrabold '>Laravel-Based Website Development</h2>
+       <p className='leading-7  text-sm'>At WODWES, we offer Laravel website 
        development services to develop highly functional and intuitive
         websites on the Laravel framework. Our proficient team of developers
          has years of experience in building robust and reliable solutions to 
@@ -415,11 +415,11 @@ const Laravel = () => {
 
        </div>
 
-       <div className='  rounded-lg bg-[#f7f7f7] px-3 py-5  hover:bg-[#2b2a2a] hover:text-white'>
+       <div className='  rounded-lg bg-[#f7f7f7] px-3 py-5  text-[#282922] hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl  mt-4 font-extrabold'>Laravel RESTFul API Development</h2>
-       <p className='leading-7 text-sm'>Our vetted team of developers has a 
+       <h2 className='text-xl   mt-4 font-extrabold'>Laravel RESTFul API Development</h2>
+       <p className='leading-7  text-sm'>Our vetted team of developers has a 
        wide range of expertise in developing RESTFul solutions. 
        We utilize Laravel API generator packages to build high-performance applications 
        and cloud-based backends to help you reach your targeted audience from any device.
@@ -440,7 +440,7 @@ const Laravel = () => {
 
 
 
-<div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
+<div className='  rounded-lg mt-5  text-[#282922] bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
        <h2 className='text-xl mt-4 font-extrabold'>Laravel Enterprise Application Development</h2>
@@ -455,7 +455,7 @@ const Laravel = () => {
 
        </div>
 
-       <div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
+       <div className='  rounded-lg mt-5   text-[#282922]  bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
        <h2 className='text-xl mt-4 font-extrabold'>On-Going Support & Maintenance</h2>
@@ -469,7 +469,7 @@ const Laravel = () => {
 
        </div>
 
-       <div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
+       <div className='  rounded-lg mt-5 bg-[#f7f7f7] text-[#282922]  px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
        <h2 className='text-xl mt-4 font-extrabold'>Laravel Web Application Development</h2>
@@ -623,15 +623,15 @@ const Laravel = () => {
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -656,16 +656,16 @@ const Laravel = () => {
         <div>
           <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-6">
             {/* Left Content */}
-            <div className="w-full lg:w-[50%] flex flex-col gap-10">
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+            <div className="w-full lg:w-[50%] flex flex-col gap-12">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
-              <div className="ml-3 p-2  border-l-2 border-[#f72d74]">
+              <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 text-lg font-extrabold">+8.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
-              <div className="ml-3 border-l-2 border-[#f72d74]">
+              <div className="ml-12 border-l-2 border-[#f72d74]">
                 <h2 className="ml-3 font-extrabold text-lg ">
                   Technology Used
                 </h2>
@@ -781,9 +781,9 @@ const Laravel = () => {
                   {item.question}
                 </span>
                 <span
-                  className={`h-6 w-6 flex items-center justify-center text-[#f72d74] font-bold border-2 p-2 border-[#f72d74] rounded-full`}
+                  className={`h-9 w-9 flex items-center justify-center text-[#f72d74] font-bold  p-2 border-[#f72d74] rounded-full`}
                 >
-                  {activeIndex === index ? "-" : "+"}
+                  <img src={activeIndex === index ? "/minusicon.png" : "/plusicon.png"} alt="" />
                 </span>
               </button>
               {activeIndex === index && (

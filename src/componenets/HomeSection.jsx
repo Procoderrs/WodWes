@@ -28,6 +28,7 @@ const HomeSection = () => {
     autoplaySpeed: 1000,
     vertical: true,
     arrows: false,
+    
   };
   const [activeDropdown, setActiveDropdown] = useState("frontend");
 
@@ -96,7 +97,7 @@ const HomeSection = () => {
         "Yes, we offer website hosting and maintenance services to ensure that our client's websites are secure, up-to-date, and performing optimally. Our hosting services include server maintenance, security updates, and backups. Our maintenance services include content updates, bug fixes, and feature enhancements.",
     },
     {
-      question: "What is your wen development process?",
+      question: "What is your web development process?",
       answer:
         "Our web development process typically involves the following steps: discovery, design, development, testing, and launch. During the discovery phase, we gather requirements, define the project scope, and create a project plan. The design phase involves creating wireframes, mockups, and visual designs. The development phase involves coding, integrating with third-party services, and setting up databases. The testing phase involves conducting functional testing, usability testing, and performance testing. Finally, we launch the website or application and provide ongoing support. To get started with our web development services, please email us at sales@wodwes.com.",
     },
@@ -107,15 +108,16 @@ const HomeSection = () => {
       <section className="z-0 bg-banner-image bg-cover py-24">
         <div className="flex items-center justify-center ">
           <div className="mx-auto text-center w-full">
-            <h1 className="text-3xl font-bold text-white md:text-4xl 	 lg:text-5xl xl:text-6xl lg:grid lg:grid-cols-2 items-center lg:mr-36 lg:my-4">
+            <h1 className="coxs:text-3xl font-bold text-white md:text-4xl 	 lg:text-5xl xl:text-6xl lg:grid lg:grid-cols-2 items-center lg:mr-36 lg:my-4">
               <p className="lg:text-end mx-2">We re a Full</p>
               <div className=" grid grid-cols-[42%_58%]   3xl:grid-cols-[22%_78%] items-center justify-center w-full">
                 <p className="text-end xl:text-center"> Service</p>
-                <Slider {...settings} className=" relative w-52 lg:w-96 px-1">
+                
+                <Slider {...settings} className=" relative w-52   py-3  lg:w-96 px-3">
                   {slides.map((text, index) => (
                     <div
                       key={index}
-                      className="text-start text-3xl lg:text-6xl text-[#f72d74] font-black md:text-4xl whitespace-nowrap"
+                      className="text-start text-3xl lg:text-[50px] text-[#f72d74] font-black md:text-4xl whitespace-wrap"
                     >
                       {text}
                     </div>
@@ -123,7 +125,7 @@ const HomeSection = () => {
                 </Slider>
               </div>
             </h1>
-            <h1 className="text-3xl font-bold text-white md:text-4xl md:leading-[60px] lg:text-5xl xl:text-6xl mx-auto">
+            <h1 className="text-3xl font-bold text-white md:text-xl md:leading-[60px] lg:text-5xl xl:text-6xl mx-auto">
               Development Agency
             </h1>
             <h2 className="py-6 text-xl font-medium text-[#f72d74] md:my-8">
@@ -259,7 +261,7 @@ const HomeSection = () => {
 
           {/* 3 columns grid */}
           <div className="grid coxs:grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mx-auto mt-14 md-w-[90%]">
-            <div className="w-full border-b sm:border-r border-[#d6d6d6] bottom-top hover:rounded-md">
+            <div className="w-full border-b sm:border-r border-[#d6d6d6] shadow hover:rounded-md">
               <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
                 <img
                   src="./img.png"
@@ -276,7 +278,7 @@ const HomeSection = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full border-b  xl:border-r   border-[#d6d6d6] bottom-top hover:rounded-md">
+            <div className="w-full border-b  xl:border-r   border-[#d6d6d6] shadow  hover:rounded-md">
               <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
                 <img
                   src="./img.png"
@@ -293,7 +295,7 @@ const HomeSection = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full border-b sm:border-r border-[#d6d6d6]  xl:border-r-0  bottom-top hover:rounded-md">
+            <div className="w-full border-b sm:border-r border-[#d6d6d6]  xl:border-r-0  shadow  hover:rounded-md">
               <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
                 <img
                   src="./img.png"
@@ -310,7 +312,7 @@ const HomeSection = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full border-b  xl:border-r border-[#d6d6d6] bottom-top hover:rounded-md">
+            <div className="w-full border-b  xl:border-r border-[#d6d6d6] shadow  hover:rounded-md">
               <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
                 <img
                   src="./img.png"
@@ -327,7 +329,7 @@ const HomeSection = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full border-b sm:border-r border-[#d6d6d6] bottom-top hover:rounded-md">
+            <div className="w-full border-b sm:border-r border-[#d6d6d6] shadow  hover:rounded-md">
               <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
                 <img
                   src="./img.png"
@@ -344,7 +346,7 @@ const HomeSection = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full border-b border-[#d6d6d6] bottom-top hover:rounded-md">
+            <div className="w-full border-b border-[#d6d6d6] shadow  hover:rounded-md">
               <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
                 <img
                   src="./img.png"
@@ -362,7 +364,7 @@ const HomeSection = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full border-b sm:border-b-0  sm:border-r border-[#d6d6d6] bottom-top hover:rounded-md">
+            <div className="w-full border-b sm:border-b-0  sm:border-r border-[#d6d6d6] shadow  hover:rounded-md">
               <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
                 <img
                   src="./img.png"
@@ -380,7 +382,7 @@ const HomeSection = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full border-b sm:border-b-0 border-[#d6d6d6] bottom-top hover:rounded-md">
+            <div className="w-full border-b sm:border-b-0 border-[#d6d6d6] shadow  hover:rounded-md">
               <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
                 <img
                   src="./img.png"
@@ -404,7 +406,7 @@ const HomeSection = () => {
       <div className="relative w-full py-12 lg:py-20">
         <img
           src="./section-img.png"
-          className="absolute top-0 left-0 w-full h-full "
+          className="absolute top-0 left-0 w-full h-full  "
           alt=""
         />
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto font-Inter">
@@ -423,7 +425,7 @@ const HomeSection = () => {
           {/* Button */}
           <Link
             to={"/contact"}
-            className="text-white border-2 border-[#f72d74] hover:bg-[#f72d74]  px-5 py-3 max-w-xs w-44 font-bold text-center "
+            className="text-white border-2 border-[#f72d74] hover:bg-[#f72d74]  px-3 py-3 max-w-xs w-44 font-bold text-center "
           >
             Get Started
           </Link>
@@ -432,7 +434,7 @@ const HomeSection = () => {
 
       <div className="grid gap-5 w-[90%] max-w-[1440px] mx-auto pb-20 pt-12 lg:flex lg:flex-row">
         {/* Left Column: Sticky Content */}
-        <div className="h-full lg:sticky lg:top-10 lg:max-w-[500px] ">
+        <div className="h-full lg:sticky lg:top-32 lg:max-w-[500px] ">
           <h2 className="text-4xl font-bold text-[#282922]">
             What you get with <span className="text-[#f72d74]">WODWES</span>{" "}
             product and service design
@@ -523,8 +525,8 @@ const HomeSection = () => {
         <div className="relative w-[90%] mx-auto max-w-[1440px] text-white z-10">
           <div className="flex  coxs:flex-col md:flex-row  md:items-center justify-between gap-10 text-white">
             <div className="max-w-[540px] 3xl:max-w-[700px]">
-              <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
-                <span className="text-[#f72d74]">Product</span> We Develop
+              <h1 className="md:text-3xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+                <span className="text-[#f72d74] text-3xl font-bold" >Product</span> We Develop
               </h1>
               <p className="text-white mt-5 text-lg font-Inter max-w-[572px]">
                 Hire testers and QA experts to perform end-to-end testing of
@@ -609,15 +611,15 @@ const HomeSection = () => {
         </div>
       </div>
 
-      <div className="relative py-20">
+      <div className="relative py-28">
         <img
           src="./img-back.png"
-          className="absolute top-0 z-0  h-full w-full  object-cover"
+          className="absolute top-0 z-0  h-full w-full  object-contain"
           alt=""
         />
         <div className=" relative z-10 flex  coxs:flex-col  gap-20  w-[90%] max-w-[1440px] mx-auto  lg:flex lg:flex-row">
           {/* Left Column: Sticky Content */}
-          <div className="h-full flex-1  lg:sticky lg:top-32 lg:max-w-[505px] ">
+          <div className="h-full flex-1  gap-6 lg:sticky lg:top-32 lg:max-w-[505px] ">
             <h2 className="text-4xl font-black text-white">
               Why Choose <span className="text-[#f72d74]">WODWES</span> for
               Website Design and Development Services?
@@ -641,7 +643,7 @@ const HomeSection = () => {
                 <h3 className=" text-base my-2 font-bold  text-white lg:text-[28px]">
                   Pool of Experience and Expertise
                 </h3>
-                <p className="text-base text-white  font-normal   leading-9">
+                <p className="text-[18px] text-white  font-normal   leading-9">
                   With a diverse team of professionals with expertise in various
                   areas of web development, including front-end and back-end
                   development, database design, user interface design, and
@@ -662,7 +664,7 @@ const HomeSection = () => {
                 <h3 className=" text-base my-2 font-bold  text-white lg:text-[28px]">
                   Transparency and Quality
                 </h3>
-                <p className="text-base text-white  font-normal   leading-9">
+                <p className="text-[18px] text-white  font-normal   leading-9">
                   We have an in-house rigorous quality assurance process in
                   place to ensure that our development solutions are of the
                   highest quality. We conduct thorough testing and debugging to
@@ -683,7 +685,7 @@ const HomeSection = () => {
                 <h3 className=" text-base my-2 font-bold  text-white lg:text-[28px]">
                   Flexible Hiring Models
                 </h3>
-                <p className="text-base text-white  font-normal   leading-9">
+                <p className="text-[18px] text-white  font-normal   leading-9">
                   We have flexible hiring models for our partners. Whether you
                   need to hire on an hourly basis, a project basis, or a
                   dedicated team for a project, team WODWES got you covered with
@@ -697,16 +699,16 @@ const HomeSection = () => {
 
       <div className="flex coxs:flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto my-16  lg:flex lg:flex-row">
         {/* Left Column: Sticky Content */}
-        <div className="h-full flex-1 lg:sticky lg:top-10 lg:max-w-[500px] ">
+        <div className="h-full flex-1 w-[50%] lg:sticky lg:top-10  ">
           <img src="./team.png" className="rounded-lg" alt="" />
         </div>
 
         {/* Right Column: Grid Boxes */}
-        <div className="flex flex-1 coxs:flex-col  gap-10 lg:flex-col ">
+        <div className="flex flex-1 coxs:flex-col w-[50%]  gap-10 lg:flex-col ">
           <h2 className="text-3xl font-black">
             Your Development <span className="text-[#f72d74]">Partner!</span>
           </h2>
-          <p className="text-base font-Inter leading-9">
+          <p className="text-[18px] font-Inter leading-9">
             We love hearing about how our work has helped businesses succeed and
             how WODWES became their go-to development team. Don't just take our
             word for it - read what our satisfied clients have to say!
@@ -767,7 +769,7 @@ const HomeSection = () => {
       <div className="mx-auto">
         <div className="flex coxs:flex-col coxs:items-center gap-10  coxs:p-4 justify-end h-full w-full lg:flex-row lg:gap-10">
           {/* Left Div */}
-          <div className="h-full lg:w-[50%] lg:top-10 max-w-md lg:sticky lg:ml-[-10%] lg:pt-16">
+          <div className="h-full lg:w-[50%] lg:top-32 justify-center  max-w-md lg:sticky lg:ml-[-10%] lg:mt-[-15%]">
             <h2 className="mb-5 text-3xl  font-bold md:text-4xl xl:text-5xl">
               Get in Touch
             </h2>
@@ -837,9 +839,10 @@ const HomeSection = () => {
                   {item.question}
                 </span>
                 <span
-                  className={`h-6 w-6 flex items-center justify-center text-[#f72d74] font-bold border-2 p-2 border-[#f72d74] rounded-full`}
+                  className={`h-10 w-10 flex items-center justify-center text-[#f72d74] font-bold  p-2  rounded-full`}
                 >
-                  {activeIndex === index ? "-" : "+"}
+               <img src=  {activeIndex === index ? "/minusicon.png" : "/plusicon.png"}
+                alt={activeIndex === index ? "Collapse" : "Expand"} />
                 </span>
               </button>
               {activeIndex === index && (

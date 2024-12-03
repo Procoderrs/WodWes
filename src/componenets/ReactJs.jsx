@@ -1,47 +1,22 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
- import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
- import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
- import Marquee from 'react-fast-marquee'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
+import Marquee from 'react-fast-marquee'
 
- import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import { useState } from 'react';
-const Shopify = () => {
-
-  const faqData = [
-    {
-      question: "what makes WODWES the best Shopify development agency?",
-      answer:
-        "At WODWES, we follow a customer-centric approach ensuring transparency to develop the Shopify store that caters to your project needs. Moreover, as a specialized Shopify development agency, we have extended experience in building stores for small to enterprise-level businesses and rendering cost-effective development solutions that are under your budget. We not only take requirements and deliver projects but keep you updated about the progress.                  ",
-    },
-    {
-      question:
-        "How long will it take to set up and launch my shopify store?",
-      answer:
-        "Setting up a Shopify store usually takes 3-4 weeks. Moreover, if you want to build a store/website from scratch then it completely varies according to the project scope and custom requirements. Reach out to us at https://wodwes.com/wodwes/ to book a free consultation and get a proposal that includes timelines.           ",
-    },
-    {
-      question: "What service will you offer me after launching the shopify website?",
-      answer:
-        "Our job is not done after launching your store or website. After it, we provide continuous maintenance and support services to keep it up to the performance. Additionally, we also offer marketing services to get your business more sales and conversions              ",
-    },
-    {
-      question: "Can you redesign my existing Shopify theme?",
-      answer:
-        "We at WODWES provide Shopify theme customization and development services that will allow us to redesign your existing theme to your new requirements.               ",
-    },
-    
+const ReactJS = () => {
+  const imageArray = [
+    "/img-1.png",
+    "/img-2.png",
+    "/img-3.png",
+    "/img-4.png",
+    "/img-5.png",
+    "/img-6.png",
   ];
-
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const toggleAnswer = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
   const settingsTwo = {
     dots: false,
     infinite: true,
@@ -90,7 +65,6 @@ const Shopify = () => {
   
   
   };
-
   const settings = {
     dots: false,
     infinite: true,
@@ -103,17 +77,6 @@ const Shopify = () => {
     swipe: true, // Enables swipe on touch devices
     touchMove: true,
   };
-
-  const imageArray = [
-    "/img-1.png",
-    "/img-2.png",
-    "/img-3.png",
-    "/img-4.png",
-    "/img-5.png",
-    "/img-6.png",
-  ];
-
-
   const settingsThree = {
     dots: false,
     infinite: true,
@@ -150,9 +113,43 @@ const Shopify = () => {
       },
     ]
   };
-  return (
-    <>
 
+
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAnswer = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+
+
+  const faqData = [
+    {
+      question: "What React Development Services Does WODWES Offers?",
+      answer:
+        "As an industry-leading React development company, WODWES offers end-to-end React development services. However, our few notable services include Custom web development, Cross-platform app development, UI/UX design & development, App migration, third-party integration, and single-page app development.",
+    },
+    {
+      question:
+        "How Much Does WODWES Charge for React Development Services?",
+      answer:
+        "WODWES offers custom hiring models which means we fully customize the cost for your project based on its requirements, scope, integrated features, number of developers required, and the estimated time required for its completion. However, we closely discuss your business needs and budget with you to offer relevant hiring solutions without compromising quality.         ",
+    },
+    {
+      question: "Will WODWES Sign Non-disclosure Agreement for My Project?",
+      answer:
+        "WODWES fully respects its client's privacy and safety. We not only sign an NDA to keep your business and project information safe but will also provide other confidential documents in development outsourcing.         ",
+    },
+    {
+      question: "Does WODWES Offer Mobile App Development With React Js?",
+      answer:
+        "While React Js more accurately is a web development framework, React Native is used for mobile app development. We do offer expert React Native development services as well to build mobile apps.           ",
+    },
+    
+  ];
+  return (
+
+<>
 <div className="relative w-full py-12 lg:py-20">
         <img
           src=" /product-img.png"
@@ -167,14 +164,19 @@ const Shopify = () => {
           <div className="flex   coxs:flex-col  mb-5  md:items-center justify-between gap-10 text-white">
             <div className="max-w-[540px] 3xl:max-w-[700px]">
               <h1 className="lg:text-6xl coxs:text-3xl font-black font-Inter  sm:text-4xl text-white mb-3">
-              <span className='text-[#f72d74]'>Why</span> Choose WODWES For Shopify Development Services? 
+              <span className='text-[#f72d74] font-black'>React</span>  Development Services 
               </h1>
               <p className="text-[#e8e6e6] mt-5 mb-7 text-lg leading-8 font-Inter max-w-[637px]">
-              Hire the most proficient team for Shopify Development Services. 
-              We at WODWES have a team of dedicated shopify experts building scalable, 
-              robust, and high-performing e-commerce solutions to help you stay competitive. 
-              With years of experience and expertise, we have made a distinctive mark as a leading shopify development
-               agency transforming businesses with high-quality solutions.
+              As a leading React development company, our specialized React 
+              developers build scalable and robust user interfaces, 
+              delivering an unparalleled user experience. 
+              We develop Dev solutions of robust functionality and 
+              phenomenal visual appeal, building a competitive
+               edge with our Front end and back-end development 
+               expertise, complemented by vetted awareness of critical businesses’ needs. 
+               Leveraging the advanced-featured programming language, we transform
+                businesses with intuitive, and dynamic React-built solutions 
+              to meet their tangible business objectives.
               </p>
 
               <Link
@@ -193,10 +195,10 @@ const Shopify = () => {
               <p className='text-black mb-5 mt-3 text-base'>Submit a request and we‘ll get in touch within a day</p>
               <form>
                 <div className='space-y-5'>
-                <input type="text" placeholder='Enter your name' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-5' required />
-                <input type="email" placeholder='Enter your email' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-5' required />
-                <input type="number" placeholder='Enter your phone number' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-5' required />
-                 <select className=' bg-[#a4a6a6] rounded-lg text-[#6d6e6e] w-full px-4 py-5'>
+                <input type="text" placeholder='Enter your name' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-3' required />
+                <input type="email" placeholder='Enter your email' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-3' required />
+                <input type="number" placeholder='Enter your phone number' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-3' required />
+                 <select className=' bg-[#a4a6a6] rounded-lg text-[#6d6e6e] w-full px-4 py-3'>
                   <option value="">About project</option>
                   <option value="Web Design">Web Design</option>
                   <option value="Web Design UI/UX">Web Design UI/UX</option>
@@ -234,11 +236,10 @@ const Shopify = () => {
         </Marquee>
       </div>
 
-
-      <div className='py-20 w-[90%] max-w-[1440px] mx-auto '>
+      <div className='py-12 w-[90%] max-w-[1440px] mx-auto '>
       <div className='flex  justify-between md:flex-row gap-10 3xl:gap-40 maxmd:flex-col'>
-      <div className='lg:w-[50%] max-w-[422px] '>
-        <h2 className='text-3xl mb-8 font-black'><span className='text-[#f72d74]'>undefined</span>  </h2>
+      <div className='lg:w-[50%] max-w-[480px] '>
+        <h2 className='text-3xl mb-7 font-black'>Why Choose <span className='text-[#f72d74]'>WODWES</span> For React Development Services ?</h2>
         
         <div className='pb-8'>
         <Link
@@ -250,30 +251,31 @@ const Shopify = () => {
         </div>
       </div>
       <div className=' lg:w-[50%]'>
-      <p className='mb-7 leading-9 text-lg '>WODWES is an experienced and professional 
-      Shopify development company that provides a wide range of services to help businesses of
-       all sizes to build and grow their online stores. There are several 
-       reasons why choosing WODWES for your Shopify development needs can be a great decision.WODWES offers exceptional
-       services that you would never find anywhere else.</p>
+      <p className='mb-7  leading-9 text-lg'>WODWES has established itself to be a 
+      cutting-edge provider of React development solutions. Leveraging our collaborative work 
+      approach, we partner up with you to fully understand and analyze your business goals 
+      and needs to devise the right React development solution to digitally 
+      take your business to the path of growth.</p>
       </div>
 
       </div>
 
-      <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74]  box-shadow md:grid-cols-2 lg:grid-cols-3'>
+      <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74] box-shadow md:grid-cols-2 lg:grid-cols-3'>
     <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
-    <div className='flex items-center gap-5 '>
+    <div className='flex items-center py-4  gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
-    <h3 className='text-[26px] font-extrabold'>Shopify Development Solutions</h3>
+    <h3 className='text-2xl font-extrabold'>Service-dedicated Development</h3>
 
     </div>
+    <p className='leading-7 text-sm'>We house developers who don’t just complete your development project but
+     fully immerse themselves in the project and go the extra mile to complete it to 
+     the maximum achievable perfection.</p>
    
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 mt-7 pb-7 '>
-  <li>Shopify Marketing Automation Solutions</li>
-  <li>Shopify B2B & B2C Marketplaces</li>
-  <li>Shopify Enterprise Solutions</li>
-  <li>Shopify Speed Optimization</li>
-  <li>Shopify POS Development</li>
-
+<ul className='flex coxs:flex-col  mt-7 gap-5 list-disc pl-5 '>
+  <li>Custom Hiring Models</li>
+  <li>24/7 Remote availability</li>
+  <li>Excellent Project Delivery</li>
+  
   
 </ul>
     </div>
@@ -283,18 +285,20 @@ const Shopify = () => {
 
 
     <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
-    <div className='flex items-center gap-5'>
+    <div className='flex  py-4  items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
-    <h3 className='text-[26px] font-extrabold'>Shopify Integration Solutions</h3>
+    <h3 className='text-2xl font-extrabold'>Supreme Work Management</h3>
 
     </div>
+    <p className='text-sm leading-7'>We carry out your React development having extreme work management, 
+    team collaboration, and tech skills at play in the background. 
+    This helps us excellently complete development at the front.</p>
    
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 mt-7 '>
-  <li>Shopify ERP Integration</li>
-  <li>Shopify CRM Integration</li>
-  <li>Shopify Migration Support</li>
-  <li>Loyalty Program Integration</li>
-  <li>Payment Gateway Integration</li>
+<ul className='flex coxs:flex-col gap-5 mt-7 list-disc pl-5 pb-12 '>
+  <li>Timely Project Delivery</li>
+  <li>Holistic Work Approach</li>
+  <li>Unmatched Managment</li>
+  
   
 </ul>
     </div>
@@ -304,30 +308,36 @@ const Shopify = () => {
 
 
     <div className='coxs:border-b-[6px]  border-[#f72d74] p-5'>
-    <div className='flex items-center gap-5'>
+    <div className='flex items-center gap-5 py-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
-    <h3 className='text-[26px] font-extrabold'>Shopify Migration Support</h3>
+    <h3 className='text-2xl font-extrabold'>Proven Business Transformation</h3>
 
     </div>
-   
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 mt-7 '>
-  <li>WooCommerce to Shopify</li>
-  <li>Magento to Shopify</li>
-  <li>Joomla to Shopify</li>
-  <li>Drupal to Shopify</li>
-  <li>OpenCart to Shopify</li>
+   <p className='text-sm leading-7'>WODWES has a proven track record of digitally transforming small businesses, startups, and large-scale enterprises. We deliver robust, high-performing apps, sites, and portals that yield unimaginable growth.</p>
+<ul className='flex coxs:flex-col gap-5 mt-7 list-disc pl-5 '>
+  <li>Increased Leads & ROI</li>
+  <li>Memorable User Experience</li>
+  <li>Dominance Over Competition</li>
+  
   
 </ul>
     </div>
       </div>
       </div>
 
-
-      <div className='mx-auto w-[90%]  max-w-[1440px] justify-between pb-24 gap-10 lg:flex '>
+      <div className='mx-auto w-[90%]  max-w-[1440px] justify-between py-8 gap-10 lg:flex '>
      <div className=' lg:sticky lg:top-32 h-full mb-12 lg:max-w-[500px]  2xl-w-[543px]'>
-     <h2 className='text-4xl font-extrabold'>
-     Premimum Shopify Development Services
+     <h2 className='text-4xl max-w-[400px] font-extrabold'>
+     React development Services
      </h2>
+     <p className='mt-7 leading-7 text-sm'>As a leading React development company, our specialized React developers build 
+     
+     scalable and robust user interfaces, delivering an unparalleled user experience. 
+     We develop Dev solutions of robust functionality and phenomenal visual appeal, building 
+     a competitive edge with our Front end and back-end development expertise, complemented 
+     by vetted awareness of critical businesses’ needs. Leveraging the advanced-featured
+      programming language, we transform businesses with intuitive, and dynamic React-built 
+       solutions to meet their tangible business objectives.</p>
      
       <div className='mt-7'>
       <Link
@@ -347,15 +357,12 @@ const Shopify = () => {
 <div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5   hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>Shopify Store Design Services</h2>
-       <p className='leading-7 mt-4 text-sm'>Get your store built by a team of experts - 
-       From revamping existing design to creating from scratch, we got you covered. 
-       With our Shopifystore design services, we can help you build mobile-ready,
-        highly intuitive, and usable stores for all types of eCommerce businesses. 
-        By understanding your brand, we can customize the design that resonates with 
-        your targeted audience and delivers an excellent customer experience. 
-        Moreover, our team of Shopify designers creates uncluttered, 
-       appealing, and high-converting designs that drive more sales.</p>
+       <h2 className='text-xl mt-4 font-extrabold'>React Custom Web Development</h2>
+       <p className='leading-7 mt-4 text-sm'>We offer full-length React 
+       Js development services to build your project from scratch to 
+       fully-polished working web products. We thoroughly discuss your 
+       project details withyou to dedicate our expert developers to creating an exact 
+       reflection of your business needs.</p>
        
 
        </div>
@@ -363,15 +370,11 @@ const Shopify = () => {
        <div className='  rounded-lg bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>Shopify App Development Services</h2>
-       <p className='leading-7 text-sm'>With years of experience and 
-       certified app developers, we provide Shopify app development 
-       services to develop custom apps and enhance the functionality 
-       of your storefront.As a specialized Shopify development agency, 
-       we build add-on features in existing apps customized to your 
-       specific requirements and needs. From marketing, custom pricing, 
-       and inventory to order management apps, WODWES is your stop.
-        Our proficiency in Shopify app enables us to deliver end-to-end solutions.</p>
+       <h2 className='text-xl mt-4 font-extrabold'>React UI/UX Design & Development</h2>
+       <p className='leading-7 text-sm'>We combine our react expertise with UI/UX design 
+       skills to deliver interactive, and user-friendly interfaces, complemented by a 
+       sight-for-the-sore-eyes appeal. Our dynamic and sleek designand development methodology 
+       has proven to enhance engagement and conversions.</p>
        
 
        </div>
@@ -379,13 +382,11 @@ const Shopify = () => {
        <div className='  rounded-lg bg-[#f7f7f7] px-3 py-5  hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl  mt-4 font-extrabold'>Shopify Migration Services</h2>
-       <p className='leading-7 text-sm'>Get the best of Shopify migration services
-        from WODWES to migrate your existing website to Shopify without any hassle. 
-        Migration from legacy systems to anyother platform comes with complexity - 
-        With extended proficiency and experience, our experts in seamless and risk-free
-         migration with no downtime and data loss. Our migration services include Magento to Shopify migration,
-        WooCommerce to Shopify migration, OpenCart to Shopify migration, and more</p>
+       <h2 className='text-xl  mt-4 font-extrabold'>React Third-Party Web Integration</h2>
+       <p className='leading-7 text-sm'>Being an industry-specialized React development company, 
+       we offer expert assistance to integrate any API or third-party software with the backend. 
+       Leverage our seamless integration capabilitiesto choose the extended-featured API, 
+       that is aligned with your business voice.</p>
        
 
        </div>
@@ -404,13 +405,12 @@ const Shopify = () => {
 <div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>Shopify Custom Theme Development Services</h2>
-       <p className='leading-7 text-sm'>Improve the outlook of your storefront with our Shopify custom theme 
-       development services. We develop pixel-perfect, responsive, and visually appealing themes 
-       that highlight the client’sbrand identity. With years of experience and proficiency, 
-       our Shopify web designers develop custom themes that are completely SEO-friendly and can
-        increase the conversion rate for your business. 
-       We can also help you in Shopify PWA theme development to attract prospective customers.</p>
+       <h2 className='text-xl mt-4 font-extrabold'>React Cross-platform App Development</h2>
+       <p className='leading-7 text-sm'>We develop rich-featured, adaptable apps,
+        ensuring optimal functionality across multiple platforms, and browsers. 
+        We fully leverage the supreme capabilities of React to create software 
+        solutionsutilizing seamless development modules, 
+       ensuring optimal user experience.</p>
        
 
        </div>
@@ -418,16 +418,12 @@ const Shopify = () => {
        <div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>Shopify Integration Services</h2>
-       <p className='leading-7 text-sm'>Integrate your Shopify store with third-party 
-       apps & extensions seamlessly and without any hassle - As a specialized Shopify
-        Integration services provider, we help clientsconnect their storefront to other 
-        applications, marketplaces, e-commerce platforms, and CRM & ERP systems. Our 
-        skilled Shopify developers proffer multiple integration solutions that include 
-        payment gateway integrations, Shipping & Marketing channel integration,
-         POS integration, Social Media Integration, Reporting, and Accounting integration. 
-         By streamlining your sales and marketing operations utilizing our services,
-        we help eCommerce businesses to scale and grow on the Shopify platform.</p>
+       <h2 className='text-xl mt-4 font-extrabold'>React Seamless App Migration</h2>
+       <p className='leading-7 text-sm'>We help you keep pace with modern technology, 
+       migrating your existing architecture’s code into React. Update your application by 
+       adopting the advanced React functionality securelyunder the strict supervision of 
+       experts who address and solve
+        any issue that occurs in the migration.</p>
        
 
        </div>
@@ -435,16 +431,12 @@ const Shopify = () => {
        <div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold'>Shopify Plus Development Services</h2>
-       <p className='leading-7 text-sm'>As a Shopify partner agency, 
-       we provide Shopify Plus Development Services to enterprise-level
-        businesses to drive high-volume sales and revenue.
-         We have an in-house teamof Shopify Plus developers with 
-         full-cycle Shopify Plus development solutions, including 
-         custom theme development, store setup, migration and maintenance 
-         support, custom app development, design, and optimization services. 
-         With Shopify Plus integration service, we help clients with all 
-       types of integrations to take their online business to the next level.</p>
+       <h2 className='text-xl mt-4 font-extrabold'>React Single-Page App Development</h2>
+       <p className='leading-7 text-sm'>From complex websites to single-page apps, 
+       WODWES is your go-to solution for each development need. Develop robust, and 
+       secure SPAs to ensure fast loading, seamlessdata transfer, and sync, 
+       delivering unparalleled user
+        interfaces with memorable user experience.</p>
        
 
        </div>
@@ -490,14 +482,12 @@ const Shopify = () => {
         </div>
       </div>
 
-
-
       <div className='mt-20 py-20 bg-[#f8f8f8]'>
   <div className='w-[90%] max-w-[1440px] mx-auto'>
    <div className='flex mb-14    md:items-center md:justify-between maxmd:flex-col'>
    <h2 className='text-3xl max-w-[633px] leading-10 font-extrabold mb-7'>
-   At Wodwes Shopify Services, We Are Recognized For Our Functional Expertise And Dedication To Client Satisfaction
-    Across All E-Commerce Store Digital Growth Domains. </h2>
+   Leverage Our React Development Services To Power Your Business With 
+   Conversion Driving User Interfaces  </h2>
    <Link
             to={"/contact"}
             className="black border-2 border-[#f72d74] hover:text-white hover:bg-[#f72d74]  px-8 py-3 max-w-xs w-44 font-bold text-center "
@@ -519,7 +509,7 @@ const Shopify = () => {
       <div className="px-2">
         <div className="px-4 py-4 bg-black flex flex-col gap-4 text-white rounded-xl min-h-[180px]">
           <img src="/domain.png" alt="domain" className="h-9 w-9 mx-auto" />
-          <p className="text-sm pb-4 text-center">House Of Shopify Experts</p>
+          <p className="text-sm pb-4 text-center">Verstile Domain Expertise</p>
         </div>
       </div>
     </div>
@@ -527,7 +517,7 @@ const Shopify = () => {
       <div className="px-2">
         <div className="px-4 py-4 bg-black flex flex-col gap-4 text-white rounded-xl min-h-[180px]">
           <img src="/versatile.png" alt="backend" className="h-9 w-9 mx-auto" />
-          <p className="text-sm pb-4 text-center">Top-Notch Methologies</p>
+          <p className="text-sm pb-4 text-center">Vetted Team of Developers</p>
         </div>
       </div>
     </div>
@@ -536,7 +526,7 @@ const Shopify = () => {
         <div className="px-4 py-4 bg-black flex flex-col gap-4 text-white rounded-xl min-h-[180px]">
           <img src="/secure.png" alt="laravel" className="h-9 w-9 mx-auto" />
           <p className="text-sm pb-4 text-center">
-            Flexible Engagement Model
+            Secure & Fast Development
           </p>
         </div>
       </div>
@@ -545,7 +535,7 @@ const Shopify = () => {
       <div className="px-2">
         <div className="px-4 py-4 bg-black flex flex-col gap-4 text-white rounded-xl min-h-[180px]">
           <img src="/transport.png" alt="mvc" className="h-9 w-9 mx-auto" />
-          <p className="text-sm pb-4 text-center">24/7 Fast Support</p>
+          <p className="text-sm pb-4 text-center">Competitive Development Pricing</p>
         </div>
       </div>
     </div>
@@ -558,17 +548,36 @@ const Shopify = () => {
             className="h-9 w-9 mx-auto"
           />
           <p className="text-sm pb-4 text-center">
-            Strong Quality Assurance Process
+            Transparent Engagement Models
           </p>
         </div>
       </div>
     </div>
+
+    <div className="flex gap-6 flex-row flex-wrap justify-center">
+      <div className="px-2">
+        <div className="px-4 py-4 bg-black flex flex-col gap-4 text-white rounded-xl min-h-[180px]">
+          <img
+            src="/comprehensive.png"
+            alt="awards"
+            className="h-9 w-9 mx-auto"
+          />
+          <p className="text-sm pb-4 text-center">
+            Comprehensive React Development
+          </p>
+        </div>
+      </div>
+    </div>
+
+    
    
   </Slider>
 </div>
+
+
+
+
  </div>
-
-
  <div className='pt-20 pb-10 w-[90%] mx-auto max-w-[1440px]'>
   <h2 className='text-3xl font-bold'>Our Happy <span className='text-[#f72d74]'>Clients</span></h2>
   <p className='mt-5 leading-8 text-lg mb-5 max-w-[880px]'>We love hearing about how our work has helped businesses succeed and how WODWES became their go-to
@@ -593,7 +602,7 @@ const Shopify = () => {
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
               <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
-                <h2 className="ml-3 text-lg font-extrabold">+7.5</h2>
+                <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
               <div className="ml-12 border-l-2 border-[#f72d74]">
@@ -601,17 +610,18 @@ const Shopify = () => {
                   Technology Used
                 </h2>
                 <div className="flex gap-3 ml-6 mt-3">
-                  <img src="/shopify.png" alt="php" className="w-8 h-8" />
-                  
+                  <img src="/react.png" alt="php" className="w-9 h-9" />
+                  <img src="/nextjs.png" alt="php" className="w-9 h-9" />
+                  <img src="/nodejs.png" alt="php" className="w-9 h-9" />
 
 
                 </div>
               </div>
             </div>
             {/* Right Image */}
-            <a href="https://www.eslscadigitaldataschool.com/" className="w-full lg:w-[50%]">
+            <a href="https://lumyri.com/" className="w-full lg:w-[50%]">
               <img
-                src="/cpap.png"
+                src="/lumyri.png"
                 alt="base"
                 className="rounded-lg w-full object-cover"
               />
@@ -630,11 +640,11 @@ const Shopify = () => {
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
               <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
-                <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
+                <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
               <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
-                <h2 className="ml-3 text-lg font-extrabold">+8.5%</h2>
+                <h2 className="ml-3 text-lg font-extrabold">+7%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
               <div className="ml-12 border-l-2 border-[#f72d74]">
@@ -643,15 +653,17 @@ const Shopify = () => {
                 </h2>
                 <div className="flex gap-3 ml-6 mt-3">
 
-                
-                  <img src="/shopify.png" alt="php" className="w-8 h-8" />                </div>
+                <img src="/wordpress.png" alt="php" className="w-8 h-8" />
+                  <img src="/react.png" alt="php" className="w-8 h-8" />
+
+                 </div>
               </div>
             </div>
             {/* Right Image */}
-            <a href="https://leoshine.com/" className="w-full lg:w-[50%]">
+            <a href="https://farrisdesigngroup.com/" className="w-full lg:w-[50%]">
               <img
-                src="/leoshine.png"
-                alt="leoshine"
+                src="/serviceleadpro.png"
+                alt="serviceleadpro"
                 className="rounded-lg w-full object-cover"
               />
             </a>
@@ -665,11 +677,11 @@ const Shopify = () => {
             {/* Left Content */}
             <div className="w-full lg:w-[50%] flex flex-col gap-10">
               <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
-                <h2 className="ml-3 text-lg font-extrabold">+7.5%</h2>
+                <h2 className="ml-3 text-lg font-extrabold">+6%</h2>
                 <p className="text-sm ml-2">Empowering Growth</p>
               </div>
               <div className="ml-12 p-2  border-l-2 border-[#f72d74]">
-                <h2 className="ml-3 text-lg font-extrabold">+8%</h2>
+                <h2 className="ml-3 text-lg font-extrabold">+6.5%</h2>
                 <p className="text-sm ml-2">User Satisfaction</p>
               </div>
               <div className="ml-12 border-l-2 border-[#f72d74]">
@@ -677,42 +689,22 @@ const Shopify = () => {
                   Technology Used
                 </h2>
                 <div className="flex gap-3 ml-6 mt-3">
-                <img src="/shopify.png" alt="php" className="w-8 h-8" />
-                  
+                <img src="/react.png" alt="php" className="w-8 h-8" />
+                
 
                 </div>
               </div>
             </div>
             {/* Right Image */}
-            <a href="" className="w-full lg:w-[50%]">
+            <a href="https://de-ella.com/" className="w-full lg:w-[50%]">
               <img
-                src="/vivitar.png"
-                alt="vivitar"
+                src="/hyt.png"
+                alt="hyt"
                 className="rounded-lg w-full object-cover"
               />
             </a>
           </div>
         </div>
-
-
-        
-
-
-
-       
-
-
-        
-
-        
-        
-
-
-       
-
-
-        
-
 
       </Slider>
     </div>
@@ -727,34 +719,22 @@ const Shopify = () => {
 <Slider {...settingsTwo}>
         {/* Slide 1 */}
         <div className="coxs:px-12 lg:px-20 py-8 border-t-2 border-gray-400 border-r-2 ">
-          <img src="/cpaplogo.png" alt="logo" className="h-28 w-32" />
+          <img src="/lumyri-logo.png" alt="logo" className="h-20 w-36" />
         </div>
 
         {/* Slide 2 */}
         <div className=" coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400 border-r-2">
-          <img src="/leoshinelogo.png" alt="logo" className="h-28 w-32" />
+          <img src="/servicelead.png" alt="logo" className="h-20 w-44" />
         </div>
 
         {/* Slide 3 */}
         <div className="coxs:px-12 lg:px-20 py-8 border-t-2 border-gray-400 border-r-2">
-          <img src="/vivatar.png" alt="logo" className="h-28 w-32" />
+          <img src="/hytlogo.png" alt="logo" className="h-20 w-44" />
         </div>
-
-
-        
-
-        
-
-        
-        
-
-        
-       
-
-        
       </Slider>
     </div>
     </div>
+
 
     <div className="relative w-full py-12 lg:py-24">
         <img
@@ -783,6 +763,7 @@ const Shopify = () => {
           </Link>
         </div>
       </div>
+
       <div className="my-12 lg:my-16 mx-auto w-[90%] max-x-[1440px]">
         <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
           Frequently Asked <span className="text-[#f72d74]">Questions!</span>
@@ -805,7 +786,7 @@ const Shopify = () => {
                   {item.question}
                 </span>
                 <span
-                  className={`h-9 w-9 flex items-center justify-center p-2 `}
+                  className={`h-9 w-9 flex items-center justify-center text-[#f72d74] font-bold  p-2`}
                 >
                   <img src={activeIndex === index ? "/minusicon.png" : "/plusicon.png"} alt="" />
                 </span>
@@ -817,9 +798,9 @@ const Shopify = () => {
           ))}
         </div>
       </div>
+</>
 
-    </>
   )
 }
 
-export default Shopify
+export default ReactJS
