@@ -42,7 +42,7 @@ const Nav = () => {
           title: "Front-end Development",
           items: [
             { label: "React Development", to: "/services/react-development" },
-            { label: "Vue.js Development", to: "/Vue" },
+            { label: "Vue.js Development", to: "/btn" },
             { label: "Angular Development", to: "/Angular" },
           ],
         },

@@ -1,9 +1,16 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+
 import '@splidejs/react-splide/css'; // Default theme CSS
 import { height } from '@fortawesome/free-brands-svg-icons/fa42Group';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+
+
 
 const Button = () => {
 
@@ -108,7 +115,7 @@ const Button = () => {
   </div>
 </div> */}
 
-<section className="z-0 bg-banner-image bg-cover py-24">
+{/* <section className="z-0 bg-banner-image bg-cover py-24">
   <div className="flex items-center justify-center">
     <div className="mx-auto text-center w-full">
       <h1 className="font-bold text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
@@ -174,7 +181,76 @@ const Button = () => {
       </div>
     </div>
   </div>
-</section>
+</section> */}
+
+<section className="z-0 bg-banner-image bg-cover py-24">
+      <div className="flex items-center justify-center">
+        <div className="mx-auto text-center w-full">
+          {/* Heading and Slider */}
+          <h1 className="font-bold text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <div className="flex flex-wrap items-center justify-center">
+              <p className="mx-2 text-2xl md:text-3xl lg:text-5xl xl:text-6xl">
+                We’re a Full Service
+              </p>
+              <div className="inline-block  coxs:mt-2  ">
+                <Swiper
+                  direction="vertical"
+                  autoplay={{
+                    delay: 3000, // 5-second delay
+                    disableOnInteraction: false,
+              
+                  }}
+                  
+                  modules={[Pagination, Autoplay]} // Ensure Autoplay is added here
+                  className="my-swiper coxs:h-[50px] md:h-[80px] w-[200px] md:w-[300px]"
+                >
+                  <SwiperSlide>
+                    <div className="font-bold text-[#f72d74] coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl">
+                      with ease
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="font-bold text-[#f72d74] coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl">
+                      efficiency
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="font-bold text-[#f72d74] coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl">
+                      design
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
+          </h1>
+
+          {/* Subheading */}
+          <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mx-auto">
+            Development Agency
+          </h1>
+
+          {/* Description */}
+          <h2 className="py-6 text-xl md:text-2xl font-medium text-[#f72d74] md:my-8">
+            Empowering Businesses with Cutting-Edge Web Technologies
+          </h2>
+
+          <p className="mb-12 text-white text-sm md:text-base lg:text-lg">
+            A web design and development agency crafting seamless web and
+            software apps for startups, <br className="max-lg:hidden" />
+            businesses, and large enterprises to help them build a strong online
+            presence <br className="max-lg:hidden" />
+            and thrive in the digital age.
+          </p>
+
+          {/* Call-to-Action Button */}
+          <div className="flex justify-center">
+            <button className="bg-[#f72d74] border-2 border-transparent text-white px-8 md:px-14 font-bold py-3 hover:bg-[#282922] hover:border-2 hover:border-[#f72d74] transition-colors duration-300">
+              <a href="/contact">Let's Talk</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 

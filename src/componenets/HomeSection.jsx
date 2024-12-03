@@ -6,6 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
 
 import { Link, NavLink } from "react-router-dom";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const HomeSection = () => {
@@ -105,49 +110,74 @@ const HomeSection = () => {
 
   return (
     <>
-      <section className="z-0 bg-banner-image bg-cover py-24">
-        <div className="flex items-center justify-center ">
-          <div className="mx-auto text-center w-full">
-            <h1 className="coxs:text-3xl font-bold text-white md:text-4xl 	 lg:text-5xl xl:text-6xl lg:grid lg:grid-cols-2 items-center lg:mr-36 lg:my-4">
-              <p className="lg:text-end mx-2">We re a Full</p>
-              <div className=" grid grid-cols-[42%_58%]   3xl:grid-cols-[22%_78%] items-center justify-center w-full">
-                <p className="text-end xl:text-center"> Service</p>
-                
-                <Slider {...settings} className=" relative w-52   py-3  lg:w-96 px-3">
-                  {slides.map((text, index) => (
-                    <div
-                      key={index}
-                      className="text-start text-3xl lg:text-[50px] text-[#f72d74] font-black md:text-4xl whitespace-wrap"
-                    >
-                      {text}
+     <section className="z-0 bg-banner-image bg-cover py-24">
+      <div className="flex items-center justify-center">
+        <div className="mx-auto text-center w-full">
+          {/* Heading and Slider */}
+          <h1 className="font-bold text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <div className="flex flex-wrap items-center justify-center">
+              <p className="mx-2 text-2xl md:text-3xl lg:text-5xl xl:text-6xl">
+                We’re a Full Service
+              </p>
+              <div className="inline-block  coxs:mt-2  ">
+                <Swiper
+                  direction="vertical"
+                  autoplay={{
+                    delay: 3000, // 5-second delay
+                    disableOnInteraction: false,
+              
+                  }}
+                  
+                  modules={[Pagination, Autoplay]} // Ensure Autoplay is added here
+                  className="my-swiper coxs:h-[50px] md:h-[80px] w-[200px] md:w-[300px]"
+                >
+                  <SwiperSlide>
+                    <div className="font-bold text-[#f72d74] coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl">
+                      with ease
                     </div>
-                  ))}
-                </Slider>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="font-bold text-[#f72d74] coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl">
+                      efficiency
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="font-bold text-[#f72d74] coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl">
+                      design
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
               </div>
-            </h1>
-            <h1 className="text-3xl font-bold text-white md:text-xl md:leading-[60px] lg:text-5xl xl:text-6xl mx-auto">
-              Development Agency
-            </h1>
-            <h2 className="py-6 text-xl font-medium text-[#f72d74] md:my-8">
-              Empowering Businesses with Cutting-Edge Web Technologies
-            </h2>
-            <p className="mb-12 text-white">
-              A web design and development agency crafting seamless web and
-              software apps for startups,
-              <br className="max-lg:hidden" />
-              businesses, and large enterprises to help them in building a
-              strong online presence
-              <br className="max-lg:hidden" />
-              and thrive in the digital age.
-            </p>
-            <div className="flex justify-center">
-              <button className="bg-[#f72d74] border-2 border-transparent text-white px-14 font-bold py-3 hover:bg-[#282922] hover:border-2 hover:border-[#f72d74] transition-colors duration-300">
-                <Link to={"/contact"}>Let's Talk</Link>
-              </button>
             </div>
+          </h1>
+
+          {/* Subheading */}
+          <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mx-auto">
+            Development Agency
+          </h1>
+
+          {/* Description */}
+          <h2 className="py-6 text-xl md:text-2xl font-medium text-[#f72d74] md:my-8">
+            Empowering Businesses with Cutting-Edge Web Technologies
+          </h2>
+
+          <p className="mb-12 text-white text-sm md:text-base lg:text-lg">
+            A web design and development agency crafting seamless web and
+            software apps for startups, <br className="max-lg:hidden" />
+            businesses, and large enterprises to help them build a strong online
+            presence <br className="max-lg:hidden" />
+            and thrive in the digital age.
+          </p>
+
+          {/* Call-to-Action Button */}
+          <div className="flex justify-center">
+            <button className="bg-[#f72d74] border-2 border-transparent text-white px-8 md:px-14 font-bold py-3 hover:bg-[#282922] hover:border-2 hover:border-[#f72d74] transition-colors duration-300">
+              <a href="/contact">Let's Talk</a>
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       <div className="lg:my-9 lg:mx-6 sm:my-0 sm:mx-0 lg:mx-18">
         <div className="grid lg:grid-cols-2 gap-6 p-4 lg:p-6">
@@ -614,7 +644,7 @@ const HomeSection = () => {
       <div className="relative py-28">
         <img
           src="./img-back.png"
-          className="absolute top-0 z-0  h-full w-full  object-contain"
+          className="absolute top-0 z-0  h-full w-full  "
           alt=""
         />
         <div className=" relative z-10 flex  coxs:flex-col  gap-20  w-[90%] max-w-[1440px] mx-auto  lg:flex lg:flex-row">

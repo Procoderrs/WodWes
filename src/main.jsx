@@ -30,10 +30,11 @@ const router = createBrowserRouter(
   <Route path="services/php-ecommerce-development-services" element={<Php/>}/>
   <Route path="services/wordpress-ecommerce-development-services" element={<Wordpress/>} />
 <Route path="services/shopify-development-services" element={<Shopify/>}/>
-{/* <Route path="btn" element={<Button/>}/>
- */}  <Route path="industries/healthcare" element={<Healthcare/>}/>
+ <Route path="btn" element={<Button/>}/>
+   <Route path="industries/healthcare" element={<Healthcare/>}/>
 
  <Route path="services/react-development" element={<ReactJs/>}/>
+ <Route path="/btn" element={<Button/>}/>
   
 
 
