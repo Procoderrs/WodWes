@@ -273,7 +273,7 @@ const Php = () => {
     having specialized in multi-directional areas of PHP to deliver high-performing PHP services. 
     We have served numerous businesses including startups, growing, and developing businesses to launch their PHP web apps,
      CMS’s, etc with our customized PHP development services.</p>
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5  text-[#282922]'>
+<ul className='flex coxs:flex-col gap-5 text-sm list-disc pl-5  text-[#282922]'>
   <li>Years of Successfull Service Experience</li>
   <li>Dedicated Team  For CMSs Development</li>
   <li>Certified PHP Web Development Experts</li>
@@ -295,7 +295,7 @@ const Php = () => {
     services to address all the relevant requirements of your business to achieve success. 
     We are a reliable service partner to multiple renowned companies giving them a competitive edge with our
      comprehensive industry knowledge and result-driven solutions.</p>
-<ul className='flex text-[#282922] coxs:flex-col gap-5 list-disc pl-5 '>
+<ul className='flex text-sm text-[#282922] coxs:flex-col gap-5 list-disc pl-5 '>
   <li>PHP Consultation Services</li>
   <li>PHP Applications Upgradation</li>
   <li>Fool-proof Transparent Service</li>
@@ -317,7 +317,7 @@ const Php = () => {
     You can hire us on a project basis, hourly basis, or a full team for projects cost-effectively. 
     We closely discuss your estimated budget with you to provide lenient cost for PHP website development 
     services excluding extra expenses i.e. salary, training, office, etc.</p>
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5  text-[#282922]'>
+<ul className='flex text-sm coxs:flex-col gap-5 list-disc pl-5  text-[#282922]'>
   <li>Budget-tailored Cost</li>
   <li>Zero Extra Expenses</li>
   <li>Lenient hiring Models</li>
@@ -350,11 +350,11 @@ const Php = () => {
 <div className=' grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
 
 <div className='coxs:space-y-4 2xl:space-y-5 '>
-<div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5   hover:bg-[#2b2a2a] hover:text-white'>
+<div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5 hover:bg-black hover:text-white   '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 font-extrabold text-[#282922]'>PHP App Development</h2>
-       <p className='leading-7 text-sm text-[#282922]'>Our experts of multidimensional expertise in 
+       <h2 className='text-xl mt-4 font-extrabold '>PHP App Development</h2>
+       <p className='leading-7 text-sm'>Our experts of multidimensional expertise in 
        PHP frameworks including CakePHP, Symphony, Laravel, etc collaborate with you to 
        develop high-performing, and dynamic apps tailored to yourbusiness size and needs. 
        We build integrated PHP web apps, 
@@ -366,8 +366,8 @@ const Php = () => {
        <div className='  rounded-lg bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl mt-4 text-[#282922] font-extrabold'>Seamless PHP Migration</h2>
-       <p className='leading-7 text-[#282922] text-sm'>WODWES strives to keep your data safe and secured, 
+       <h2 className='text-xl mt-4  font-extrabold'>Seamless PHP Migration</h2>
+       <p className='leading-7  text-sm'>WODWES strives to keep your data safe and secured, 
        and thus offers expert assistance to ensure seamless migration to PHP. Being an industry-leading PHP
         developmentservices provider, we transfer your existing tech data to PHP with a higher sense of responsibility, 
        efficiency, and transparency.</p>
@@ -378,8 +378,8 @@ const Php = () => {
        <div className='  rounded-lg bg-[#f7f7f7] px-3 py-5  hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl text-[#282922]  mt-4 font-extrabold'>Social App Development</h2>
-       <p className='leading-7 text-[#282922] text-sm'>We develop social networking portals expertly leveraging the 
+       <h2 className='text-xl   mt-4 font-extrabold'>Social App Development</h2>
+       <p className='leading-7  text-sm'>We develop social networking portals expertly leveraging the 
        latest PHP trends to build user-friendly, and highly engaging social websites that live up to our 
        client’ssatisfaction, and requirements. We ensure highly-functional, high-performing apps that are 
        integrated with rich user-engaging features.</p>
@@ -401,8 +401,8 @@ const Php = () => {
 <div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl text-[#282922] mt-4 font-extrabold'>Web Portals Development</h2>
-       <p className='leading-7 text-[#282922] text-sm'>WODWES is an industry-leading web development 
+       <h2 className='text-xl  mt-4 font-extrabold'>Web Portals Development</h2>
+       <p className='leading-7  text-sm'>WODWES is an industry-leading web development 
        company that delivers cutting-edge results exactly up to your business's unique needs and requirements. 
        We provide expert PHP developmentservices to build PHP-based web portals for your business 
        i.e. B2B, B2C, Corporate, and Enterprise portals.</p>
@@ -413,8 +413,8 @@ const Php = () => {
        <div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl text-[#282922] mt-4 font-extrabold'>Expert API Integration</h2>
-       <p className='leading-7 text-[#282922] text-sm'>We understand the importance of API for your apps and sites. 
+       <h2 className='text-xl  mt-4 font-extrabold'>Expert API Integration</h2>
+       <p className='leading-7  text-sm'>We understand the importance of API for your apps and sites. 
        Thus, we provide professional services to integrate your internal, private, or public API intoyour PHP system. 
        We also provide custom solutions to integrate third-party API into your PHP websites 
        leveraging multiple API-provided interfaces.</p>
@@ -425,8 +425,8 @@ const Php = () => {
        <div className='  rounded-lg mt-5 bg-[#f7f7f7] px-3 py-5 hover:bg-[#2b2a2a] hover:text-white '>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
-       <h2 className='text-xl text-[#282922] mt-4 font-extrabold'>PHP E-commerce Development</h2>
-       <p className='leading-7 text-[#282922] text-sm'>We know the competitiveness of eCommerce and 
+       <h2 className='text-xl  mt-4 font-extrabold'>PHP E-commerce Development</h2>
+       <p className='leading-7  text-sm'>We know the competitiveness of eCommerce and 
        how seemingly small details like load speed, navigation, etc affect the customer experience. 
        Thus, we leverage cutting-edge e-commercesolutions creating highly-functional, custom-designed e-commerce 
        portals ensuring better user engagement and retention.</p>

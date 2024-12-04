@@ -41,9 +41,9 @@ const Nav = () => {
           logo: "./front-end.png",
           title: "Front-end Development",
           items: [
-            { label: "React Development", to: "/services/react-development" },
-            { label: "Vue.js Development", to: "/btn" },
-            { label: "Angular Development", to: "/Angular" },
+            { label: "React Development", to: "services/react-development" },
+            { label: "Vue.js Development", to: "services/vuejs-development-services" },
+            { label: "Angular Development", to: "services/angular-development-services" },
           ],
         },
 
@@ -51,10 +51,10 @@ const Nav = () => {
           logo: "./software.png",
           title: "Software Development",
           items: [
-            { label: "PHP Software Development", to: "/PHP-Software" },
-            { label: "CodeIgniter Development", to: "/CodeIgniter" },
-            { label: "Laravel Software Development", to: "/Laravel-Software" },
-            { label: "MERN Software Development", to: "/MERN" },
+            { label: "PHP Software Development", to: "services/php-software-development-services" },
+            { label: "CodeIgniter Development", to: "services/codeIgniter-software-development-services" },
+            { label: "Laravel Software Development", to: "services/laravel-software-development-services" },
+            { label: "MERN Software Development", to: "services/mern-software-development-services" },
           ],
         },
 
@@ -62,8 +62,8 @@ const Nav = () => {
           logo: "cms.png",
           title: "CMS Development",
           items: [
-            { label: "WordPress Development", to: "/" },
-            { label: "Magento Development", to: "/" },
+            { label: "WordPress Development", to: "services/wordpress-development-services" },
+            { label: "Magento Development", to: "services/magento-development-services" },
             { label: " Drupal  Software Development", to: "/" },
             { label: "BigCommerce Development", to: "/" },
             { label: "Joomla Development", to: "/" },
@@ -185,7 +185,7 @@ const Nav = () => {
         <div className="flex items-center justify-center gap-2">
           <p className="text-sm">
             <span>
-              <Link to="/" className="border-b-[1px] text-sm mr-2  ">
+              <Link to="/contact" className="border-b-[1px] text-sm mr-2  ">
                 Get a Quote
               </Link>
             </span>
@@ -193,8 +193,8 @@ const Nav = () => {
           </p>
         </div>
         <div className="flex items-center justify-center gap-2">
-          <FontAwesomeIcon icon={faPhone} className="text-lg" />
-          <span>+ 92 306 1070 768</span>
+          <FontAwesomeIcon icon={faPhone} className="text-sm" />
+          <span className="text-sm">+ 92 306 1070 768</span>
         </div>
         <div className="flex items-center justify-center gap-2">
           <FontAwesomeIcon icon={faEnvelope} className="text-xl" />
@@ -202,7 +202,7 @@ const Nav = () => {
         </div>
       </div>
 
-      <nav className="bg-white sticky  top-0 z-50 mx-auto ">
+      <nav className="bg-white sticky  top-0 z-[100]  shadow-xl mx-auto ">
         {/* Desktop View */}
         <div className="hidden lg:flex px-8   justify-between items-center relative">
           <div className="w-52 p-4">
@@ -233,9 +233,9 @@ const Nav = () => {
                       />
                     </div>
                     {openDropdown === item.label && (
-                      <div className="absolute top-full left-6 right-6 px-10 ml-10 mr-10 pb-10  rounded-b-lg shadow-lg grid grid-cols-4 gap-4 z-20 bg-white">
+                      <div className="absolute top-20 bg-white left-6 right-6 px-10 ml-10 mr-10 pb-16    rounded-b-lg shadow-lg grid grid-cols-4 gap-6 z-[90] ">
                         {item.dropdownItems.map((category, idx) => (
-                          <div key={idx} className="pt-20 mx-auto">
+                          <div key={idx} className="pt-16 mx-auto">
                             <div className="flex gap-2 items-center">
                               {category.logo && (
                                 <img
@@ -303,7 +303,7 @@ const Nav = () => {
         </div>
 
         {/* Mobile View */}
-        <div className="flex lg:hidden justify-between items-center px-8 py-4  h-full">
+        <div className="flex lg:hidden justify-between items-center px-8 py-4 ">
           <div className=" coxs:w-24 sm:w-32    w-36">
             <img src="/wodweslogo.png" alt="" />
           </div>
@@ -324,7 +324,7 @@ const Nav = () => {
 
         {/* Mobile Menu Items */}
         {isMobileMenuOpen && (
-          <ul className="lg:hidden flex flex-col space-y-2 mt-4  p-4 rounded text-xl h-screen">
+          <ul className="lg:hidden flex flex-col space-y-2 mt-4  text-sm  p-4 rounded  h-screen overflow-y-auto bg-green-400 ">
             {navItems.map((item, index) => (
               <li key={index} className="p-3 relative">
                 {item.dropdown ? (
@@ -343,7 +343,7 @@ const Nav = () => {
                       </Link>
                       <FontAwesomeIcon
                         icon={faChevronDown}
-                        className={`ml-2 transition-transform ${
+                        className={` text-xs ml-2 transition-transform ${
                           openDropdown === item.label ? "rotate-180" : ""
                         }`}
                       />
