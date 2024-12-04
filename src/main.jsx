@@ -21,11 +21,10 @@ import Button from "./componenets/Button.jsx";
 import ReactJs from "./componenets/ReactJs.jsx";
 import Vue from "./componenets/Vue.jsx";
 import Angular from "./componenets/Angular.jsx";
-import Codeigniter from "./componenets/codeigniter.jsx";
 import Mern from "./componenets/Mern.jsx";
 import WordpressDev from "./componenets/WordpressDev.jsx";
 import Magento from "./componenets/Magento.jsx";
-
+import Codeigniter from './componenets/Codeigniter.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
