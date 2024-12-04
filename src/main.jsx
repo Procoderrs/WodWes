@@ -24,6 +24,7 @@ import Angular from "./componenets/Angular.jsx";
 import Mern from "./componenets/Mern.jsx";
 import WordpressDev from "./componenets/WordpressDev.jsx";
 import Magento from "./componenets/Magento.jsx";
+import Codeigniter from "./componenets/Codeigniter.jsx";
 
 
 
@@ -45,6 +46,7 @@ const router = createBrowserRouter(
   <Route path="services/laravel-software-development-services" element={<Laravel/>}/>
   <Route path="services/mern-software-development-services" element={<Mern/>}/>
   <Route path="services/wordpress-development-services" element={<WordpressDev/>}/>
+  <Route path="services/codeIgniter-software-development-services" element={<Codeigniter/>} />
  
 
 <Route path="services/magento-development-services" element={<Magento/>}/>
