@@ -25,6 +25,9 @@ import Mern from "./componenets/Mern.jsx";
 import WordpressDev from "./componenets/WordpressDev.jsx";
 import Magento from "./componenets/Magento.jsx";
 import Codeigniter from "./componenets/Codeigniter.jsx";
+import Drupal from "./componenets/Drupal.jsx";
+import BigCommerce from "./componenets/BigCommerce.jsx";
+import Joomla from "./componenets/Joomla.jsx";
 
 
 
@@ -47,9 +50,11 @@ const router = createBrowserRouter(
   <Route path="services/mern-software-development-services" element={<Mern/>}/>
   <Route path="services/wordpress-development-services" element={<WordpressDev/>}/>
   <Route path="services/codeIgniter-software-development-services" element={<Codeigniter/>} />
- 
-
 <Route path="services/magento-development-services" element={<Magento/>}/>
+<Route path="services/drupal-development-services" element={<Drupal/>} />
+<Route path="services/big-commerce-development-services" element={<BigCommerce/>}/>
+<Route path="services/joomla-development-services" element={<Joomla/>}/>
+
 
 
   

@@ -64,9 +64,9 @@ const Nav = () => {
           items: [
             { label: "WordPress Development", to: "services/wordpress-development-services" },
             { label: "Magento Development", to: "services/magento-development-services" },
-            { label: " Drupal  Software Development", to: "/" },
-            { label: "BigCommerce Development", to: "/" },
-            { label: "Joomla Development", to: "/" },
+            { label: " Drupal  Software Development", to: "services/drupal-development-services" },
+            { label: "BigCommerce Development", to: "services/big-commerce-development-services" },
+            { label: "Joomla Development", to: "services/joomla-development-services" },
           ],
         },
 
@@ -233,7 +233,7 @@ const Nav = () => {
                       />
                     </div>
                     {openDropdown === item.label && (
-                      <div className="absolute top-20 bg-white left-6 right-6 px-10 ml-10 mr-10 pb-16    rounded-b-lg shadow-lg grid grid-cols-4 gap-6 z-[90] ">
+                      <div className="absolute top-20 bg-white left-6 right-6 px-10 ml-10 mr-10 pb-16    rounded-b-lg shadow-lg grid grid-cols-4 gap-6 z-[10] ">
                         {item.dropdownItems.map((category, idx) => (
                           <div key={idx} className="pt-16 mx-auto">
                             <div className="flex gap-2 items-center">
@@ -258,6 +258,7 @@ const Nav = () => {
                                 className={({ isActive }) =>
                                   `${isActive ? "text-[#f72d74]" : ""} block`
                                 }
+                                onClick={()=>setOpenDropdown(null)}
                               >
                                 <div className="flex gap-2 items-center cursor-pointer">
                                   {dropdownItem.logo && (
