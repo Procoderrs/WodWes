@@ -28,6 +28,7 @@ import Codeigniter from "./componenets/Codeigniter.jsx";
 import Drupal from "./componenets/Drupal.jsx";
 import BigCommerce from "./componenets/BigCommerce.jsx";
 import Joomla from "./componenets/Joomla.jsx";
+import Technologies from "./componenets/Technologies.jsx";
 
 
 
@@ -41,7 +42,8 @@ const router = createBrowserRouter(
   <Route path="services/php-ecommerce-development-services" element={<Php/>}/>
   <Route path="services/wordpress-ecommerce-development-services" element={<Wordpress/>} />
   <Route path="services/shopify-development-services" element={<Shopify/>}/>
-  <Route path="industries/healthcare" element={<Healthcare/>}/>
+  <Route path="industries/" element={<Healthcare/>}/>
+  <Route path="technologies/" element={<Technologies/>}/>
   <Route path="services/react-development" element={<ReactJs/>}/>
   <Route path="services/vuejs-development-services" element={<Vue/>}/>
   <Route path="services/angular-development-services" element={<Angular/>}/>

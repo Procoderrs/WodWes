@@ -17,6 +17,10 @@
 .shadow:hover{
   box-shadow: 4px 4px 15px #f62c7326
 }
+.shadow-2:hover{
+  box-shadow: 4px 4px 15px #6e203b26
+
+}
 .bottom-top:hover{
   box-shadow: 2px 0px 51px -22px #f72d74;}
 

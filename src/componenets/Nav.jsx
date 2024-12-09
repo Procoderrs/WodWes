@@ -80,27 +80,27 @@ const Nav = () => {
       dropdownItems: [
         {
           items: [
-            { logo: "./healthlogo.png", label: "Healthcare", to: "industries/healthcare" },
+            { logo: "./healthlogo.png", label: "Healthcare", to: "industries/" },
 
-            { logo: "./healthlogo.png", label: "Travel", to: "/" },
+            { logo: "./healthlogo.png", label: "Travel", to: "industries/" },
 
-            { logo: "healthlogo.png", label: "Insurance", to: "/" },
+            { logo: "healthlogo.png", label: "Insurance", to: "industries/" },
           ],
         },
         {
           items: [
-            { logo: "./healthlogo.png", label: "Manufacturing", to: "/" },
+            { logo: "./healthlogo.png", label: "Manufacturing", to: "industries/" },
             {
               logo: "./healthlogo.png",
               label: "Transportation and Logistics",
-              to: "/",
+              to: "industries/",
             },
           ],
         },
         {
           items: [
-            { logo: "healthlogo.png", label: "EdTech", to: "/" },
-            { logo: "healthlogo.png", label: "Enterprise", to: "/" },
+            { logo: "healthlogo.png", label: "EdTech", to: "industries/" },
+            { logo: "healthlogo.png", label: "Enterprise", to: "industries/" },
           ],
         },
         {
@@ -108,9 +108,9 @@ const Nav = () => {
             {
               logo: "./healthlogo.png",
               label: "Media and Entertainment",
-              to: "/",
+              to: "industries/",
             },
-            { logo: "./healthlogo.png", label: "Telecom", to: "/" },
+            { logo: "./healthlogo.png", label: "Telecom", to: "industries/" },
           ],
         },
       ],
@@ -128,42 +128,42 @@ const Nav = () => {
             {
               logo: "healthlogo.png",
               label: "IOS Developers",
-              to: "/ios-developers",
+              to: "technologies/",
             },
-            { logo: "healthlogo.png", label: "Android Developers", to: "/" },
-            { logo: "healthlogo.png", label: "Node Js Developers", to: "/" },
+            { logo: "healthlogo.png", label: "Android Developers", to: "technologies/" },
+            { logo: "healthlogo.png", label: "Node Js Developers", to: "technologies/" },
           ],
         },
 
         {
           items: [
-            { logo: "healthlogo.png", label: "Blockchain Developers", to: "/" },
+            { logo: "healthlogo.png", label: "Blockchain Developers", to: "technologies/" },
             {
               logo: "healthlogo.png",
               label: "TypeScript  Developers",
-              to: "/",
+              to: "technologies/",
             },
-            { logo: "healthlogo.png", label: "MEAN Stack Developers", to: "/" },
+            { logo: "healthlogo.png", label: "MEAN Stack Developers", to: "technologies/" },
           ],
         },
 
         {
           items: [
-            { logo: "healthlogo.png", label: "MERN Stack Developers", to: "/" },
-            { logo: "healthlogo.png", label: "Python Developers", to: "/" },
+            { logo: "healthlogo.png", label: "MERN Stack Developers", to: "technologies/" },
+            { logo: "healthlogo.png", label: "Python Developers", to: "technologies/" },
             {
               logo: "healthlogo.png",
               label: "Mobile Application Developers",
-              to: "/",
+              to: "technologies/",
             },
           ],
         },
 
         {
           items: [
-            { logo: "healthlogo.png", label: "WordPress Developers", to: "/" },
-            { logo: "healthlogo.png", label: "React Js Developers", to: "/" },
-            { logo: "healthlogo.png", label: "Node Js Developers", to: "/" },
+            { logo: "healthlogo.png", label: "WordPress Developers", to: "technologies/" },
+            { logo: "healthlogo.png", label: "React Js Developers", to: "technologies/" },
+            { logo: "healthlogo.png", label: "Node Js Developers", to: "technologies/" },
           ],
         },
       ],

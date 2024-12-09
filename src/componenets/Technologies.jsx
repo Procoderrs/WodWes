@@ -1,10 +1,9 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import Marquee from 'react-fast-marquee'
 import { useState } from 'react'
-const Healthcare = () => {
+const Technologies = () => {
 
   const technologies = {
     frontend: [
@@ -36,14 +35,11 @@ const Healthcare = () => {
     ],
   };
 
-
-
   const [activeDropdown, setActiveDropdown] = useState("frontend");
 
   const handleButtonClick = (category) => {
     setActiveDropdown(category);
   };
-
 
   const imageArray = [
     "/img-1.png",
@@ -87,9 +83,10 @@ const Healthcare = () => {
     },
   ];
 
+
   return (
     <>
-      <div className="relative w-full py-12 lg:py-24">
+    <div className="relative w-full py-12 lg:py-24">
         <img
           src=" /product-img.png"
           className="absolute top-0 left-0 w-full h-full  z-0"
@@ -163,6 +160,7 @@ const Healthcare = () => {
           
         </div>
       </div>
+
       <div className="my-16 mx-16  z-10  overflow-hidden">
         <Marquee speed={150} gradient={false}>
           {imageArray.map((src, index) => (
@@ -179,8 +177,6 @@ const Healthcare = () => {
           ))}
         </Marquee>
       </div>
-
-
 
       <div className='py-12 w-[90%] max-w-[1440px] mx-auto '>
       <div className='flex  justify-between md:flex-row gap-10 3xl:gap-40 maxmd:flex-col'>
@@ -222,9 +218,6 @@ const Healthcare = () => {
     </div>
 
 
-
-
-
     <div className=' border-[#d6d6d6] shadow-2  lg:border-r p-5'>
     <div className='flex  py-4  items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
@@ -257,6 +250,7 @@ const Healthcare = () => {
       </div>
       </div>
 
+
       <div className="relative w-full py-12 lg:py-24">
         <img
           src="/section-img.png"
@@ -287,10 +281,6 @@ const Healthcare = () => {
           </Link>
         </div>
       </div>
-
-
-
-
 
       <div className="py-12 lg:py-20">
         <div className="w-[90%] max-w-[1440px] mx-auto">
@@ -592,7 +582,7 @@ const Healthcare = () => {
         </div>
       </div>
 
-<div className=' coxs:py-14 lg:py-20 bg-[#272821]'>
+      <div className=' coxs:py-14 lg:py-20 bg-[#272821]'>
 <div className='w-[90%] mx-auto max-w-[1440px]'>
 <div className='flex coxs:flex-col md:flex-row md:justify-between gap-9'>
 <div className='max-w-[700px] w-full text-white'>
@@ -649,7 +639,6 @@ const Healthcare = () => {
 
 </div>
 
-
 <div className="my-12 lg:my-16 mx-auto w-[90%] max-x-[1440px]">
         <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
           Frequently Asked <span className="text-[#f72d74]">Questions!</span>
@@ -689,4 +678,4 @@ const Healthcare = () => {
   )
 }
 
-export default Healthcare
+export default Technologies
