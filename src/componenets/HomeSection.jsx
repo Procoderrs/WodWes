@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 
 import { Link, NavLink } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,6 +14,10 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const HomeSection = () => {
+useEffect(()=>{
+  window.scrollTo(0,0)
+},[])
+
   // Array of image paths
   const imageArray = [
     "./img-1.png",
@@ -179,7 +183,7 @@ const HomeSection = () => {
       </div>
     </section>
 
-      <div className="lg:my-9 lg:mx-6 sm:my-0 sm:mx-0 lg:mx-18">
+      <div className=" w-[90%] max-w-[1440px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-6 p-4 lg:p-6">
           <div className="px-3 lg:pr-8 flex items-start justify-center lg:pb-10 xl:max-w-[690px] flex-col">
             <h2 className=" sm:text-4xl  coxs:text-[22px] font-extrabold">
@@ -227,7 +231,7 @@ const HomeSection = () => {
         </div>
       </div>
 
-      <div className="my-16 mx-16  z-10  overflow-hidden">
+      <div className="py-16  z-10  overflow-hidden w-[90%] mx-auto max-w-[1440px]">
         <Marquee speed={150} gradient={false}>
           {imageArray.map((src, index) => (
             <div
@@ -250,7 +254,7 @@ const HomeSection = () => {
           className="absolute top-0 left-0 w-full h-full "
           alt=""
         />
-        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto font-Inter">
+        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10 max-w-[1440px]  w-[90%] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
             <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
@@ -439,7 +443,7 @@ const HomeSection = () => {
           className="absolute top-0 left-0 w-full h-full  "
           alt=""
         />
-        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto font-Inter">
+        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10 max-w-[1440px]  w-[90%] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
             <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
@@ -462,9 +466,9 @@ const HomeSection = () => {
         </div>
       </div>
 
-      <div className="grid gap-5 w-[90%] max-w-[1440px] mx-auto pb-20 pt-12 lg:flex lg:flex-row">
+      <div className="grid  gap-56  w-[90%] max-w-[1440px] mx-auto pb-20 pt-12 lg:flex lg:flex-row">
         {/* Left Column: Sticky Content */}
-        <div className="h-full lg:sticky lg:top-32 lg:max-w-[500px] ">
+        <div className="h-full lg:sticky lg:top-32 lg:max-w-[500px] w-[50%] ">
           <h2 className="text-4xl font-bold text-[#282922]">
             What you get with <span className="text-[#f72d74]">WODWES</span>{" "}
             product and service design
@@ -484,7 +488,7 @@ const HomeSection = () => {
         </div>
 
         {/* Right Column: Grid Boxes */}
-        <div className="grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+        <div className="grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 w-[50%]">
           {/* Box 1 */}
           <div className="space-y-4 sm:order-1">
             <div className="coxs:p-5 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
@@ -647,9 +651,9 @@ const HomeSection = () => {
           className="absolute top-0 z-0  h-full w-full  "
           alt=""
         />
-        <div className=" relative z-10 flex  coxs:flex-col  gap-20  w-[90%] max-w-[1440px] mx-auto  lg:flex lg:flex-row">
+        <div className=" relative  flex  coxs:flex-col  gap-56  w-[90%] max-w-[1440px] mx-auto  lg:flex lg:flex-row">
           {/* Left Column: Sticky Content */}
-          <div className="h-full flex-1  gap-6 lg:sticky lg:top-32 lg:max-w-[505px] ">
+          <div className="h-full flex-1   lg:sticky lg:top-32 lg:max-w-[505px] ">
             <h2 className="text-4xl font-black text-white">
               Why Choose <span className="text-[#f72d74]">WODWES</span> for
               Website Design and Development Services?
@@ -727,14 +731,14 @@ const HomeSection = () => {
         </div>
       </div>
 
-      <div className="flex coxs:flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto my-16  lg:flex lg:flex-row">
+      <div className="flex coxs:flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto my-12  lg:flex lg:flex-row">
         {/* Left Column: Sticky Content */}
-        <div className="h-full flex-1 w-[50%] lg:sticky lg:top-10  ">
+        <div className="h-full flex-1  lg:sticky lg:top-10  ">
           <img src="./team.png" className="rounded-lg" alt="" />
         </div>
 
         {/* Right Column: Grid Boxes */}
-        <div className="flex flex-1 coxs:flex-col w-[50%]  gap-10 lg:flex-col ">
+        <div className="flex flex-1 coxs:flex-col   gap-10 lg:flex-col ">
           <h2 className="text-3xl font-black">
             Your Development <span className="text-[#f72d74]">Partner!</span>
           </h2>
@@ -796,11 +800,11 @@ const HomeSection = () => {
         </div>
       </div>
 
-      <div className="mx-auto">
-        <div className="flex coxs:flex-col coxs:items-center gap-10  coxs:p-4 justify-end h-full w-full lg:flex-row lg:gap-10">
+      <div className="  mx-auto max:w-[90%] max:max-w-[1690px] ">
+        <div className="flex coxs:flex-col coxs:items-center    h-full w-full lg:flex-row  gap-10">
           {/* Left Div */}
-          <div className="h-full lg:w-[50%] lg:top-32 justify-center  max-w-md lg:sticky lg:ml-[-10%] lg:mt-[-15%]">
-            <h2 className="mb-5 text-3xl  font-bold md:text-4xl xl:text-5xl">
+          <div className="h-full w-full lg:top-32    max-w-md lg:sticky  lg:mt-[-10%]  lg:ml-[10%]">
+            <h2 className="mb-5 text-3xl  font-extrabold md:text-4xl xl:text-5xl">
               Get in Touch
             </h2>
             <p className="text-lg font-normal">
@@ -810,7 +814,7 @@ const HomeSection = () => {
           </div>
 
           {/* Right Div */}
-          <div className="rounded-lg  coxs:w-full  lg:w-[50%] coxs:p-9 bg-[#272821] lg:p-20">
+          <div className="rounded-lg  coxs:w-full   coxs:p-9 bg-[#272821] 2xl:p-28">
             <form action="">
               <div className="grid max-w-2xl xs:grid-cols-2 gap-10">
                 <input
@@ -847,8 +851,8 @@ const HomeSection = () => {
         </div>
       </div>
 
-      <div className="my-12 lg:my-16 mx-auto w-[90%] max-x-[1440px]">
-        <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
+      <div className="my-12 lg:my-16 mx-auto w-[90%] max-w-[1440px]">
+        <h2 className="  text-left coxs:text-2xl font-bold lg:text-3xl">
           Frequently Asked <span className="text-[#f72d74]">Questions!</span>
         </h2>
         <p className="mb-7 mt-4 text-left text-base font-normal text-[#272821]">

@@ -2,8 +2,12 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import Marquee from 'react-fast-marquee'
-import { useState } from 'react'
+import { useState ,useEffect } from 'react'
 const Technologies = () => {
+
+useEffect(()=>{
+  window.scrollTo(0,0)
+},[])
 
   const technologies = {
     frontend: [
@@ -92,7 +96,7 @@ const Technologies = () => {
           className="absolute top-0 left-0 w-full h-full  z-0"
           alt=""
         />
-        <div className="relative w-[90%] mx-auto max-w-[1440px] text-white z-10">
+        <div className="relative w-[90%] mx-auto max-w-[1690px] text-white z-10">
 
         <div className='grid coxs:grid-cols-1 gap-6 lg:grid-cols-2 '>
 
@@ -161,7 +165,7 @@ const Technologies = () => {
         </div>
       </div>
 
-      <div className="my-16 mx-16  z-10  overflow-hidden">
+      <div className="my-16  max-w-[1440px] mx-autow-[90%] z-10  overflow-hidden">
         <Marquee speed={150} gradient={false}>
           {imageArray.map((src, index) => (
             <div
@@ -257,7 +261,7 @@ const Technologies = () => {
           className="absolute top-0 left-0 w-full h-full "
           alt=""
         />
-        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto font-Inter">
+        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] max-w-[1440px]  mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
             <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
@@ -639,7 +643,7 @@ const Technologies = () => {
 
 </div>
 
-<div className="my-12 lg:my-16 mx-auto w-[90%] max-x-[1440px]">
+<div className="my-12 lg:my-16 mx-auto w-[90%] max-w-[1440px]">
         <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
           Frequently Asked <span className="text-[#f72d74]">Questions!</span>
         </h2>

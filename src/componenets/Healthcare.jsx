@@ -1,11 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useFetcher } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import Marquee from 'react-fast-marquee'
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
 const Healthcare = () => {
-
+ useEffect(()=>{
+  window.scrollTo(0,0)
+ },[])
   const technologies = {
     frontend: [
       { name: "React.js", src: "/react.png" },
@@ -95,7 +97,7 @@ const Healthcare = () => {
           className="absolute top-0 left-0 w-full h-full  z-0"
           alt=""
         />
-        <div className="relative w-[90%] mx-auto max-w-[1440px] text-white z-10">
+        <div className="relative w-[90%] mx-auto max-w-[1690px] text-white z-10">
 
         <div className='grid coxs:grid-cols-1 gap-6 lg:grid-cols-2 '>
 
@@ -140,10 +142,10 @@ const Healthcare = () => {
               <p className='text-black mb-5 mt-3 text-base'>Submit a request and we‘ll get in touch within a day</p>
               <form>
                 <div className='space-y-5'>
-                <input type="text" placeholder='Enter your name' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-3' required />
-                <input type="email" placeholder='Enter your email' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-3' required />
-                <input type="number" placeholder='Enter your phone number' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-3' required />
-                 <select className=' bg-[#a4a6a6] rounded-lg text-[#6d6e6e] w-full px-4 py-3'>
+                <input type="text" placeholder='Enter your name' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-5 py-5' required />
+                <input type="email" placeholder='Enter your email' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-5 py-5' required />
+                <input type="number" placeholder='Enter your phone number' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-5 py-5' required />
+                 <select className=' bg-[#a4a6a6] rounded-lg text-[#6d6e6e] w-full px-5 py-5'>
                   <option value="">About project</option>
                   <option value="Web Design">Web Design</option>
                   <option value="Web Design UI/UX">Web Design UI/UX</option>
@@ -163,7 +165,7 @@ const Healthcare = () => {
           
         </div>
       </div>
-      <div className="my-16 mx-16  z-10  overflow-hidden">
+      <div className="my-16 mx-auto max-w-[1440px] w-[90%]  z-10  overflow-hidden">
         <Marquee speed={150} gradient={false}>
           {imageArray.map((src, index) => (
             <div
@@ -263,7 +265,7 @@ const Healthcare = () => {
           className="absolute top-0 left-0 w-full h-full "
           alt=""
         />
-        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto font-Inter">
+        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] max-w-[1440px]  mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
             <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
@@ -650,7 +652,7 @@ const Healthcare = () => {
 </div>
 
 
-<div className="my-12 lg:my-16 mx-auto w-[90%] max-x-[1440px]">
+<div className="my-12 lg:my-16 mx-auto w-[90%] max-w-[1440px]">
         <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
           Frequently Asked <span className="text-[#f72d74]">Questions!</span>
         </h2>

@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link, NavLink } from "react-router-dom";
+import { useEffect } from 'react';
 
 const Footer = () => {
+ useEffect(()=>{
+   window.scrollTo(0,0)
+ },[])
+
   return (
     <footer className="bg-[#272821]">
     <div className="w-[90%] mx-auto pb-12 max-w-[1440px] gap-6 grid py-12 xl:grid-cols-2">

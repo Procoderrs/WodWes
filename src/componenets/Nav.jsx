@@ -204,7 +204,7 @@ const Nav = () => {
 
       <nav className="bg-white sticky  top-0 z-[100]  shadow-xl mx-auto ">
         {/* Desktop View */}
-        <div className="hidden lg:flex px-8   justify-between items-center relative">
+        <div className="hidden lg:flex lg:px-8  4xl:px-96   justify-between items-center relative">
           <div className="w-52 p-4">
             <img src="/wodweslogo.png" alt="" />
           </div>

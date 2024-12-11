@@ -8,9 +8,11 @@ import Marquee from 'react-fast-marquee'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 const Mern = () => {
-
+useEffect(()=>{
+  window.scrollTo(0,0)
+},[])
 
   const imageArray = [
     "/img-1.png",
@@ -150,72 +152,83 @@ const Mern = () => {
   return (
    <>
 
-<div className="relative w-full py-12 lg:py-20">
-        <img
-          src=" /product-img.png"
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          alt=""
-        />
-        <div className="relative w-[90%] mx-auto max-w-[1440px] text-white z-10">
+<div className="relative py-16 md:pb-32 md:pt-20 ">
+  <img
+    src="/product-img.png"
+    className="absolute top-0 left-0 w-full h-full  z-0"
+    alt="Background"
+  />
+  <div className="relative w-[90%] mx-auto max-w-[1690px] text-white grid coxs:grid-cols-1 gap:10 lg:grid-cols-2   ">
+    {/* Grid Layout */}
+    
+      {/* Left Section */}
+      <div className=" ">
+        <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl md:leading-10 xl:text-6xl font-black">
+          <span className="text-[#f72d74]">MERN</span> Stack Development 
+        </h1>
+        <p className="text-[#e8e6e6] my-5 lg:my-11 text-lg leading-8 max-w-[500px] ">
+        At WODWES, we offer comprehensive MERN stack development services to 
+        help businesses build robust, scalable web applications that meet their
+         unique needs. Our team of experts uses the latest technologies and best 
+         practices to design, develop, and deliver high-quality web applications
+          that are fast, responsive, and intuitive. Contact us today to learn more
+           about how we can help you harness the 
+        power of the MERN stack and take your business to the next level
 
-        <div className='grid coxs:grid-cols-1 gap-6 lg:grid-cols-2 '>
-
-        
-          <div className="flex   coxs:flex-col  mb-5  md:items-center justify-between gap-10 text-white">
-            <div className="max-w-[540px] 3xl:max-w-[700px]">
-              <h1 className="lg:text-6xl coxs:text-3xl font-black font-Inter  sm:text-4xl text-white mb-3">
-              <span className='text-[#f72d74] font-black'>MERN </span> Stack   Development Services 
-              </h1>
-              <p className="text-[#e8e6e6] mt-5 mb-7 text-lg leading-8 font-Inter max-w-[637px]">
-              At WODWES, we offer comprehensive MERN stack development services to
-               help businesses build robust, scalable web applications that meet their unique needs.
-                Our team of experts uses the latest technologies and best practices to design, develop,
-                 and deliver high-quality web applications that are fast, responsive, and intuitive. 
-                 Contact us today to learn more about how we can help you harness 
-              the power of the MERN stack and take your business to the next level.
-              </p>
-
-              <Link
+        </p>
+        <Link
               to={"/"}
               className="text-white border-2 border-[#f72d74] w-44 px-9 py-3 hover:bg-[#f72d74] font-bold "
             >
               Get Started
             </Link>
-            </div>
-           
-          </div>
-
-          
-              <div className='relative ml-auto max-w-[687px] rounded-xl bg-[#53544e] px-4 py-12  sm:px-8 xl:py-[60px]'>
-              <h3 className='text-2xl font-semibold text-white xl:text-3xl'>Let's discuss your project</h3>
-              <p className='text-black mb-5 mt-3 text-base'>Submit a request and we‘ll get in touch within a day</p>
-              <form>
-                <div className='space-y-5'>
-                <input type="text" placeholder='Enter your name' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-3' required />
-                <input type="email" placeholder='Enter your email' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-3' required />
-                <input type="number" placeholder='Enter your phone number' className=' bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-3' required />
-                 <select className=' bg-[#a4a6a6] rounded-lg text-[#6d6e6e] w-full px-4 py-3'>
-                  <option value="">About project</option>
-                  <option value="Web Design">Web Design</option>
-                  <option value="Web Design UI/UX">Web Design UI/UX</option>
-                 </select>
-     <button type='submit' className='flex items-center justify-center gap-4 w-full p-4 text-sm font-semibold bg-[#f72d74]  text-white'>
-       <Link to='/'> Get a Quote</Link> <span><FontAwesomeIcon icon={faPaperPlane} className='h-6 w-6' /></span>
-     </button>
-
-                </div>
-              </form>
-
-              </div>
-          
-         </div>
-
-
-          
-        </div>
       </div>
 
-      <div className="my-16 mx-16  z-10  overflow-hidden">
+      {/* Right Section */}
+      <div className="relative  max-w-[687px] rounded-xl bg-[#53544e] px-4 py-16 sm:px-8 xl:py-[60px]">
+        <h3 className="text-2xl font-semibold xl:text-3xl">Let's discuss your project</h3>
+        <p className="text-black mt-3 mb-5 text-base">
+          Submit a request and we’ll get in touch within a day
+        </p>
+        <form>
+          <div className="space-y-5">
+            <input
+              type="text"
+              placeholder="Enter your name"
+              className="bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-6"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-6"
+              required
+            />
+            <input
+              type="number"
+              placeholder="Enter your phone number"
+              className="bg-[#a4a6a6] rounded-lg placeholder:text-[#6d6e6e] w-full px-4 py-6"
+              required
+            />
+            <select className="bg-[#a4a6a6] rounded-lg text-[#6d6e6e] w-full px-4 py-6">
+              <option value="">About project</option>
+              <option value="Web Design">Web Design</option>
+              <option value="Web Design UI/UX">Web Design UI/UX</option>
+            </select>
+            <button
+              type="submit"
+              className="flex items-center justify-center gap-4 w-full p-4 text-sm font-semibold bg-[#f72d74] text-white"
+            >
+              <Link to="/">Get a Quote</Link>
+              <FontAwesomeIcon icon={faPaperPlane} className="h-6 w-6" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+      <div className="my-16 max-w-[1440px] mx-auto w-[90%]  z-10  overflow-hidden">
         <Marquee speed={150} gradient={false}>
           {imageArray.map((src, index) => (
             <div
@@ -467,7 +480,7 @@ const Mern = () => {
           className="absolute top-0 left-0 w-full h-full "
           alt=""
         />
-        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto font-Inter">
+        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto max-w-[1440px] font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
             <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
@@ -513,7 +526,7 @@ const Mern = () => {
  
 
 
-  <div className="w-[90%] mx-auto mt-20">
+  <div className="w-[90%] mx-auto max-w-[1440px] mt-20">
   <Slider {...settingsThree}>
     <div className="flex gap-6 flex-row flex-wrap justify-center">
       <div className="px-2">
@@ -594,7 +607,7 @@ const Mern = () => {
           className="absolute top-0 left-0 w-full h-full "
           alt=""
         />
-        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto font-Inter">
+        <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto max-w-[1440px] font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
             <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
@@ -616,7 +629,7 @@ const Mern = () => {
         </div>
       </div>
 
-      <div className="my-12 lg:my-16 mx-auto w-[90%] max-x-[1440px]">
+      <div className="my-12 lg:my-16 mx-auto w-[90%] max-w-[1440px]">
         <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
           Frequently Asked <span className="text-[#f72d74]">Questions!</span>
         </h2>

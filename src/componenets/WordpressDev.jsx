@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link} from 'react-router-dom'
+import { Link, useFetcher} from 'react-router-dom'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
 
@@ -7,10 +7,12 @@ import Marquee from 'react-fast-marquee'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 const WordpressDev = () => {
 
-
+useEffect(()=>{
+window.scrollTo(0,0)
+},[])
   const settingsTwo = {
     dots: false,
     infinite: true,
@@ -162,7 +164,7 @@ const WordpressDev = () => {
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
           alt=""
         />
-        <div className="relative w-[90%] mx-auto max-w-[1440px] text-white z-10">
+        <div className="relative w-[90%] mx-auto max-w-[1690px] text-white z-10">
 
         <div className='grid coxs:grid-cols-1 gap-6 lg:grid-cols-2 '>
 
