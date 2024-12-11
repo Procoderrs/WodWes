@@ -164,12 +164,12 @@ window.scrollTo(0,0)
     className="absolute top-0 left-0 w-full h-full  z-0"
     alt="Background"
   />
-  <div className="relative w-[90%] mx-auto max-w-[1690px] text-white grid coxs:grid-cols-1 gap:10 lg:grid-cols-2   ">
+  <div className="relative w-[90%] mx-auto max-w-[1690px] gap-10 text-white grid coxs:grid-cols-1 gap:10 lg:grid-cols-2   ">
     {/* Grid Layout */}
     
       {/* Left Section */}
       <div className=" ">
-        <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl md:leading-10 xl:text-6xl font-black">
+        <h1 className="text-3xl sm:text-4xl max-w-[400px] md:text-4xl lg:text-5xl md:leading-10 xl:text-6xl font-black">
           <span className="text-[#f72d74]">Why</span> Choose WODWES For Shopify Development Services?
         </h1>
         <p className="text-[#e8e6e6] my-5 lg:my-11 text-lg leading-8 max-w-[500px] ">

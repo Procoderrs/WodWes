@@ -11,6 +11,7 @@ import { Link, NavLink, useLocation,useNavigate } from "react-router-dom";
 const Nav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [activeParent , setActiveParent]=useState(null)
 
   const navItems = [
     {
@@ -178,9 +179,10 @@ const Nav = () => {
     setOpenDropdown(openDropdown === label ? null : label);
   };
 
-  const handleDropdownItemClick=(to)=>{
+  const handleDropdownItemClick=(to,parentLabel)=>{
     navigate(to)
   setOpenDropdown(null)
+  setActiveParent(parentLabel)
   console.log('navigate to ',to)
   }
 
@@ -203,8 +205,10 @@ const Nav = () => {
                 {item.dropdown ? (
                   <>
                     <div
-                      className="flex items-center justify-between cursor-pointer hover:text-pink-700 font-medium"
-                      onClick={() => toggleDropdown(item.label)}
+                      className={`flex items-center justify-between cursor-pointer  hover:text-pink-700 font-medium ${
+                      activeParent === item.label ? 'text-[#f72d74]':''
+                      }`}
+                        onClick={() => toggleDropdown(item.label)}
                     >
                       
                         <span>{item.label}</span>
@@ -238,7 +242,7 @@ const Nav = () => {
                             {category.items.map((dropdownItem, itemIdx) => (
                               <div
                                 key={itemIdx}
-                                onClick={()=>handleDropdownItemClick(dropdownItem.to)}
+                                onClick={()=>handleDropdownItemClick(dropdownItem.to,item.label)}
                                 className={`cursor-pointer text-sm text-black mb-4 hover:text-[#f72d74]${
                                  location.pathname ===dropdownItem.to ? 'text-[#f72d74]': ""}`}
                               >
@@ -267,6 +271,9 @@ const Nav = () => {
                     className={({ isActive }) =>
                       `${isActive ? "text-[#f72d74] font-medium" : "font-medium"}`
                     }
+                    onClick={()=>{
+                      setActiveParent(item.label)
+                    }}
                   >
                     {item.label}
                   </NavLink>
@@ -320,7 +327,7 @@ const Nav = () => {
 
         {/* Mobile Menu Items */}
         {isMobileMenuOpen && (
-          <ul className="lg:hidden flex flex-col space-y-2 mt-4  text-sm  p-4 rounded  h-screen overflow-y-auto bg-green-400 ">
+          <ul className="lg:hidden flex flex-col space-y-2 mt-4  text-sm  p-4 rounded  h-screen overflow-y-auto  ">
             {navItems.map((item, index) => (
               <li key={index} className="p-3 relative">
                 {item.dropdown ? (
@@ -329,14 +336,7 @@ const Nav = () => {
                       className="flex items-center justify-between cursor-pointer hover:text-[#f74d74] "
                       onClick={() => toggleDropdown(item.label)}
                     >
-                      <Link
-                        to={item.to}
-                        className={`hover:text-[#f74d74] ${
-                          item.isPink ? "text-[#f74d74]" : ""
-                        }`}
-                      >
-                        {item.label}
-                      </Link>
+                      <span>{item.label}</span>
                       <FontAwesomeIcon
                         icon={faChevronDown}
                         className={` text-xs ml-2 transition-transform ${
@@ -351,7 +351,7 @@ const Nav = () => {
                             <div className="flex gap-2">
                               {category.logo && (
                                 <img
-                                  src={category.logo}
+                                  src={`/${category.logo}`}
                                   alt={category.title}
                                   className="w-5 h-5 mb-2"
                                 />
@@ -364,11 +364,16 @@ const Nav = () => {
                               )}
                             </div>
                             {category.items.map((dropdownItem, itemIdx) => (
-                              <Link
+                              <div
                                 key={itemIdx}
                                 to={dropdownItem.to}
-                                className="block hover:text-[#f72d74]"
-                              >
+                                onClick={()=>handleDropdownItemClick(dropdownItem.to)}
+                                className={`cursor-pointer text-sm text-black mb-4 hover:text-[#f72d74]${
+                                 location.pathname ===dropdownItem.to ? 'text-[#f72d74]': ""}`}
+                            >
+
+
+                            
                                 <div className="flex gap-2 items-center cursor-pointer">
                                   {dropdownItem.logo && (
                                     <img
@@ -381,7 +386,7 @@ const Nav = () => {
                                     {dropdownItem.label}
                                   </p>
                                 </div>
-                              </Link>
+                              </div>
                             ))}
                           </div>
                         ))}
