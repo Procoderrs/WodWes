@@ -29,6 +29,7 @@ import Drupal from "./componenets/Drupal.jsx";
 import BigCommerce from "./componenets/BigCommerce.jsx";
 import Joomla from "./componenets/Joomla.jsx";
 import Technologies from "./componenets/Technologies.jsx";
+import Portfolio from "./componenets/Portfolio.jsx";
 
 
 
@@ -56,6 +57,8 @@ const router = createBrowserRouter(
 <Route path="services/drupal-development-services" element={<Drupal/>} />
 <Route path="services/big-commerce-development-services" element={<BigCommerce/>}/>
 <Route path="services/joomla-development-services" element={<Joomla/>}/>
+
+<Route path="portfolio" element={<Portfolio/>}/>
 
 
 

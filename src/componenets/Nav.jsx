@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import UpperNav from "./UpperNav";
 import {
   faChevronDown,
   faBars,
-  faPhone,
-  faEnvelope,
+ 
 } from "@fortawesome/free-solid-svg-icons";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation,useNavigate } from "react-router-dom";
 
 const Nav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -170,7 +169,7 @@ const Nav = () => {
     },
     {
       label: "Portfolio",
-      to: "/Portfolio",
+      to: "portfolio",
       dropdown: false,
     },
   ];
@@ -179,29 +178,19 @@ const Nav = () => {
     setOpenDropdown(openDropdown === label ? null : label);
   };
 
+  const handleDropdownItemClick=(to)=>{
+    navigate(to)
+  setOpenDropdown(null)
+  console.log('navigate to ',to)
+  }
+
+
+  const location=useLocation()
+  const navigate=useNavigate()
   return (
     <>
-      <div className="lg:relative flex flex-wrap items-center justify-center gap-x-12 gap-y-2 bg-banner-image px-2 py-[8px] text-xl text-white sm:gap-y-3 sm:text-[13px] lg:z-[60] font-Inte">
-        <div className="flex items-center justify-center gap-2">
-          <p className="text-sm">
-            <span>
-              <Link to="/contact" className="border-b-[1px] text-sm mr-2  ">
-                Get a Quote
-              </Link>
-            </span>
-            <span>today to claim $200 free credit.</span>
-          </p>
-        </div>
-        <div className="flex items-center justify-center gap-2">
-          <FontAwesomeIcon icon={faPhone} className="text-sm" />
-          <span className="text-sm">+ 92 306 1070 768</span>
-        </div>
-        <div className="flex items-center justify-center gap-2">
-          <FontAwesomeIcon icon={faEnvelope} className="text-xl" />
-          <span className="text-sm">sales@wodwes.com</span>
-        </div>
-      </div>
-
+      
+<UpperNav/>
       <nav className="bg-white sticky  top-0 z-[100]  shadow-xl mx-auto ">
         {/* Desktop View */}
         <div className="hidden lg:flex lg:px-8  4xl:px-96   justify-between items-center relative">
@@ -217,14 +206,9 @@ const Nav = () => {
                       className="flex items-center justify-between cursor-pointer hover:text-pink-700 font-medium"
                       onClick={() => toggleDropdown(item.label)}
                     >
-                      <NavLink
-                        to={item.to}
-                        className={({ isActive }) =>
-                          `${isActive ? "text-[#f72d74]" : ""}`
-                        }
-                      >
-                        {item.label}
-                      </NavLink>
+                      
+                        <span>{item.label}</span>
+                     
                       <FontAwesomeIcon
                         icon={faChevronDown}
                         className={`ml-2 text-xs text-[#808080] transition-transform ${
@@ -252,15 +236,14 @@ const Nav = () => {
                               )}
                             </div>
                             {category.items.map((dropdownItem, itemIdx) => (
-                              <NavLink
+                              <div
                                 key={itemIdx}
-                                to={dropdownItem.to}
-                                className={({ isActive }) =>
-                                  `${isActive ? "text-[#f72d74]" : ""} block`
-                                }
-                                onClick={()=>setOpenDropdown(null)}
+                                onClick={()=>handleDropdownItemClick(dropdownItem.to)}
+                                className={`cursor-pointer text-sm text-black mb-4 hover:text-[#f72d74]${
+                                 location.pathname ===dropdownItem.to ? 'text-[#f72d74]': ""}`}
                               >
-                                <div className="flex gap-2 items-center cursor-pointer">
+                              
+                                <div className="flex gap-2 items-center  cursor-pointer">
                                   {dropdownItem.logo && (
                                     <img
                                       src={`/${dropdownItem.logo}`}
@@ -268,11 +251,10 @@ const Nav = () => {
                                       className="w-3 h-4 mb-2"
                                     />
                                   )}
-                                  <p className="text-sm text-black mb-4 hover:text-[#f74d74]">
-                                    {dropdownItem.label}
-                                  </p>
+                                  <p>{dropdownItem.label}</p>
+                                  
                                 </div>
-                              </NavLink>
+                              </div>
                             ))}
                           </div>
                         ))}
@@ -288,9 +270,22 @@ const Nav = () => {
                   >
                     {item.label}
                   </NavLink>
+
                 )}
+
+
+                
+
+
+
               </li>
+
+
+              
             ))}
+
+
+            
             {/* Contact Us Button */}
             <li className="flex items-center justify-center">
               <Link
