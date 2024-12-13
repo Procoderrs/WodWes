@@ -81,7 +81,7 @@ const Portfolio = () => {
       id: "joomla",
       label: "Joomla",
       images: [
-      { src: '/beauty-beans.png', links: 'https://www.beautybins.com/',text_1:'Beauty Bins',text_2:'Joomla',text_3:'Joomla' },
+      { src: '/beautybins.png', links: 'https://www.beautybins.com/',text_1:'Beauty Bins',text_2:'Joomla',text_3:'Joomla' },
       
     ], },
     {
@@ -306,21 +306,21 @@ const Portfolio = () => {
         </div>
 
         {/* Image Display Section */}
-        <div className="grid grid-cols-2  gap-10">
+        <div className="grid coxs:grid-cols-1 lg: grid-cols-2  gap-10">
           {displayedProjects.map((item) =>
             item.images.map((image, index) => (
-              <div key={`${item.id}-${index}`} className="relative">
+              <div key={`${item.id}-${index}`} className="relative py-4  max-h-[500px]">
                 <a href={image.links} target='_blank'>
                 <img src={image.src} alt={`Project ${item.label}- Image ${index+1}`}
-                className='w-full h- rounded-2xl object cover' />
+                className='w-full h-[400px] rounded-2xl object cover' />
                 </a>
                 {/* <span className="absolute bottom-0 left-0 bg-black text-white px-2 py-1 text-sm">
                   {item.label} - {index + 1}
                 </span> */}
          
-               <div className='flex justify-between mt-5  gap-6 items-center'>
-                 <p>{image.text_1}</p>
-                 <div className=' h-[1px] '></div>
+               <div className='flex justify-between  mt-4  gap-6 items-center'>
+                 <p className='font-bold text-lg'>{image.text_1}</p>
+                 <div className=' h-[1px] bg-[#f72d74] w-32  '></div>
                  <div className='flex items-center gap-3 '>
                  <p>{image.text_2}</p>
                  <p>{image.text_3}</p>
