@@ -225,7 +225,7 @@ const Portfolio = () => {
       </section>
 
       <div className="flex-col w-[90%] py-12 max-w-[1440px] mx-auto justify-between">
-        <div className="flex coxs:flex-col md:flex-row gap-6 justify-between mb-16 py-4 bg-green-200">
+        <div className="flex coxs:flex-col md:flex-row gap-6 justify-between mb-16 py-4">
           <div className="max-w-[600px]">
             <h2 className="text-3xl font-black">
               Why Choose <span className="text-[#f72d74]">WODWES</span> for Website Design and Development Services?
@@ -240,25 +240,25 @@ const Portfolio = () => {
         </div>
 
         <div className='grid coxs:grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4'>
-<div className='bg-pink-200 py-2 px-4'>
+<div className=' py-2 px-4'>
 <h2 className='text-3xl text-[#f72d74] font-bold'>1.67x</h2>
 <p>It is a long established fact that a reader will be
  distracted by the readable content of a page</p>
 </div>  
 
-<div className='bg-pink-200 py-2 px-4'>
+<div className='py-2 px-4'>
 <h2 className='text-3xl text-[#f72d74] font-bold'>1.67x</h2>
 <p>It is a long established fact that a reader will be
  distracted by the readable content of a page</p>
 </div>  
 
-<div className='bg-pink-200 py-2 px-4'>
+<div className=' py-2 px-4'>
 <h2 className='text-3xl text-[#f72d74] font-bold'>1.67x</h2>
 <p>It is a long established fact that a reader will be
  distracted by the readable content of a page</p>
 </div>  
 
-<div className='bg-pink-200 py-2 px-4'>
+<div className=' py-2 px-4'>
 <h2 className='text-3xl text-[#f72d74] font-bold'>1.67x</h2>
 <p>It is a long established fact that a reader will be
  distracted by the readable content of a page</p>
@@ -268,7 +268,7 @@ const Portfolio = () => {
       </div>
 
       <div className='w-[90%] max-w-[1440px] mx-auto'>
-      <div className="flex coxs:flex-col md:flex-row gap-6 justify-between mb-7 py-4 bg-green-200">
+      <div className="flex coxs:flex-col md:flex-row gap-6 justify-between mb-7 py-4 ">
           <div className="max-w-[600px]">
             <h2 className="text-3xl font-black">
               Featured<span className="text-[#f72d74]">Projects</span> 
