@@ -195,7 +195,7 @@ const Nav = () => {
 <UpperNav/>
       <nav className="bg-white sticky  top-0 z-[100]  shadow-xl mx-auto ">
         {/* Desktop View */}
-        <div className="hidden lg:flex lg:px-8  4xl:px-96   justify-between items-center relative">
+        <div className="hidden lg:flex lg:px-12  max-w-[1690px] mx-auto  justify-between items-center relative">
           <div className="w-52 p-4">
             <img src="/wodweslogo.png" alt="" />
           </div>
@@ -298,6 +298,7 @@ const Nav = () => {
               <Link
                 to={"/contact"}
                 className="ml-4 px-3 py-2  bg-[#f72d74] text-white  font-bold hover:bg-[#f74d74]"
+                onClick={()=>setActiveParent(null)}
               >
                 Contact Us
               </Link>
@@ -306,7 +307,7 @@ const Nav = () => {
         </div>
 
         {/* Mobile View */}
-        <div className="flex lg:hidden justify-between items-center px-8 py-4 ">
+        <div className="flex lg:hidden justify-between items-center  px-8 py-4 ">
           <div className=" coxs:w-24 sm:w-32    w-36">
             <img src="/wodweslogo.png" alt="" />
           </div>
