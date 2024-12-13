@@ -306,7 +306,7 @@ const Portfolio = () => {
         </div>
 
         {/* Image Display Section */}
-        <div className="grid coxs:grid-cols-1 lg: grid-cols-2  gap-10">
+        <div className="grid coxs:grid-cols-1 lg:grid-cols-2  gap-10">
           {displayedProjects.map((item) =>
             item.images.map((image, index) => (
               <div key={`${item.id}-${index}`} className="relative py-4  max-h-[500px]">
