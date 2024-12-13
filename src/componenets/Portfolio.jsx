@@ -194,10 +194,16 @@ const Portfolio = () => {
     });
   };
   
-  const displayedProjects = showAll
+ const displayedProjects = showAll
     ? items
     : items.filter((item) => selectedItems.includes(item.id));
-  
+   
+
+
+    const filteredItems = selectedItems.length > 0 ? 
+    items.filter(item => selectedItems.includes(item.id)) : 
+    items.filter(item => item.id === "wix1");
+
   return (
     <>
       <section className="z-0 bg-banner-image  py-24">
