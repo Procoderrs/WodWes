@@ -1,8 +1,14 @@
 import { div } from 'framer-motion/client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Portfolio = () => {
+
+useEffect(()=>{
+window.scrollTo(0,0)
+},[])
+
+
 
   const [activeIndex, setActiveIndex] = useState(null);
   const toggleAnswer = (index) => {
