@@ -193,7 +193,7 @@ const Nav = () => {
     <>
       
 <UpperNav/>
-      <nav className="bg-white sticky  top-0 z-[100]  shadow-xl mx-auto ">
+      <nav className="bg-white sticky w-full  top-0 z-[100]  shadow-xl mx-auto ">
         {/* Desktop View */}
         <div className="hidden lg:flex lg:px-12  max-w-[1690px] mx-auto  justify-between items-center relative">
           <div className="w-52 p-4">
@@ -307,11 +307,11 @@ const Nav = () => {
         </div>
 
         {/* Mobile View */}
-        <div className="flex lg:hidden justify-between items-center  px-8 py-4 ">
+        <div className="flex lg:hidden justify-between max-w-[1690px]  mx-auto items-center  px-8 py-4 ">
           <div className=" coxs:w-24 sm:w-32    w-36">
             <img src="/wodweslogo.png" alt="" />
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 ">
             <button className="px-4 py-2 bg-[#f72d74] text-white  hover:bg-[#f74d74]">
               <Link to={'/contact'}>
                 Contact Us

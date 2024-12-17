@@ -9,6 +9,7 @@ export default {
       Inter: ['Inter', 'sans-serif'],
     },
     screens: {
+      coxm:'325',
       coxs: '375px',
       xs: '425px',
       cosm: '500px',

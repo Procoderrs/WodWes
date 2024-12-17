@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const UpperNav = () => {
   return (
     <>
-      <div className="lg:relative flex flex-wrap items-center justify-center gap-x-12 gap-y-2 bg-banner-image px-2 py-[8px] text-xl text-white sm:gap-y-3 sm:text-[13px] lg:z-[60] font-Inte">
+      <div className="lg:relative flex flex-wrap  items-center  justify-center gap-x-12 gap-y-2 bg-banner-image px-2 py-[8px] text-xl text-white sm:gap-y-3 sm:text-[13px] lg:z-[60] font-Inte">
         <div className="flex items-center justify-center gap-2">
           <p className="text-sm">
             <span>

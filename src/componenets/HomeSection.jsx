@@ -4,6 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState , useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
+import { faCircleMinus } from "@fortawesome/free-solid-svg-icons";
 
 import { Link, NavLink } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,9 +17,9 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const HomeSection = () => {
-useEffect(()=>{
+/* useEffect(()=>{
   window.scrollTo(0,0)
-},[])
+},[]) */
 
   // Array of image paths
   const imageArray = [
@@ -114,16 +117,16 @@ useEffect(()=>{
 
   return (
     <>
-     <section className="z-0 bg-banner-image bg-cover py-24">
+    <section className="z-0 bg-banner-image bg-cover py-20">
       <div className="flex items-center justify-center">
         <div className="mx-auto text-center w-full">
           {/* Heading and Slider */}
-          <h1 className="font-bold text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+          <h1 className="font-black text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             <div className="flex flex-wrap items-center justify-center">
-              <p className="mx-2 text-2xl md:text-3xl lg:text-5xl xl:text-6xl">
+              <p className="mx-2 coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl">
                 We’re a Full Service
               </p>
-              <div className="inline-block  coxs:mt-2  ">
+              <div className="inline-block  md:mt-5    coxs:mt-3  ">
                 <Swiper
                   direction="vertical"
                   autoplay={{
@@ -133,20 +136,20 @@ useEffect(()=>{
                   }}
                   
                   modules={[Pagination, Autoplay]} // Ensure Autoplay is added here
-                  className="my-swiper coxs:h-[50px] md:h-[80px] w-[200px] md:w-[300px]"
+                  className="my-swiper coxs:h-[50px]    md:h-[50px]  md:w-[170px] lg:w-[290px] lg:mt-4 lg:h-[100px]    2xl:w-[350px] 2xl:h-[100px]"
                 >
                   <SwiperSlide>
-                    <div className="font-bold text-[#f72d74] coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl">
+                    <div className="font-black text-[#f72d74] coxs:text-4xl md:text-3xl lg:text-5xl xl:text-6xl">
                       with ease
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="font-bold text-[#f72d74] coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl">
+                    <div className="font-black text-[#f72d74] coxs:text-4xl md:text-3xl lg:text-5xl xl:text-6xl">
                       efficiency
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="font-bold text-[#f72d74] coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl">
+                    <div className="font-black sm:ml[-30px] md:ml-[-70px] text-[#f72d74] coxs:text-4xl md:text-3xl lg:text-5xl xl:text-6xl">
                       design
                     </div>
                   </SwiperSlide>
@@ -156,16 +159,16 @@ useEffect(()=>{
           </h1>
 
           {/* Subheading */}
-          <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mx-auto">
+          <h1 className="coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-black text-white mx-auto">
             Development Agency
           </h1>
 
           {/* Description */}
-          <h2 className="py-6 text-xl md:text-2xl font-medium text-[#f72d74] md:my-8">
+          <h2 className="py-6 coxs:text-xl md:text-xl px-5 font-medium text-[#f72d74] md:my-8">
             Empowering Businesses with Cutting-Edge Web Technologies
           </h2>
 
-          <p className="mb-12 text-white text-sm md:text-base lg:text-lg">
+          <p className="mb-12 text-white coxs:text-base leading-7 px-3  md:text-base lg:text-lg">
             A web design and development agency crafting seamless web and
             software apps for startups, <br className="max-lg:hidden" />
             businesses, and large enterprises to help them build a strong online
@@ -175,7 +178,7 @@ useEffect(()=>{
 
           {/* Call-to-Action Button */}
           <div className="flex justify-center">
-            <button className="bg-[#f72d74] border-2 border-transparent text-white px-8 md:px-14 font-bold py-3 hover:bg-[#282922] hover:border-2 hover:border-[#f72d74] transition-colors duration-300">
+            <button className="bg-[#f72d74] border-2 border-transparent text-white px-12 md:px-14 font-bold py-3 hover:bg-transparent hover:border-2 hover:border-[#f72d74] transition-colors duration-300">
               <a href="/contact">Let's Talk</a>
             </button>
           </div>
@@ -183,15 +186,16 @@ useEffect(()=>{
       </div>
     </section>
 
-      <div className=" w-[90%] max-w-[1440px] mx-auto">
-        <div className="grid lg:grid-cols-2 gap-6 p-4 lg:p-6">
+
+      <div className=" w-[90%] max-w-[1440px] mt-[90px] mb-[50px] mx-auto">
+        <div className="grid lg:grid-cols-2 gap-6 ">
           <div className="px-3 lg:pr-8 flex items-start justify-center lg:pb-10 xl:max-w-[690px] flex-col">
             <h2 className=" sm:text-4xl  coxs:text-[22px] font-extrabold">
               <span className="text-[#f72d74]">Empowering Digital Dreams:</span>{" "}
               Our Commitment to Crafting Exceptional Designs and Solutions for a
               Connected World.
             </h2>
-            <p className="pb-10 mt-6 leading-9 text-lg font-normal">
+            <p className="pb-10 mt-6 leading-9 text-[#282922] text-lg font-normal">
               At our design and development agency, we are dedicated to
               empowering your digital dreams. Our mission is to create
               exceptional designs and innovative solutions that resonate with
@@ -202,13 +206,13 @@ useEffect(()=>{
               partner committed to transforming your ideas into digital success
               stories and helping you thrive in today's interconnected world.
             </p>
-            <button className="bg-white font-Inter px-14 py-3 text-black hover:bg-[#f72d74] hover:text-white border-2 border-[#f72d74] font-medium">
+            <button className="bg-white font-Inter px-14 py-3 font-bold text-black hover:bg-[#f72d74] hover:text-white border-2 border-[#f72d74] ">
               <Link to={"/contact"}>Get Started</Link>
             </button>
           </div>
 
           {/* Lower Grid */}
-          <div className="grid comd:grid-cols-2  xs:grid-cols-1  sm:grid-cols-2 cosm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
+          <div className="grid comd:grid-cols-2 mt-5   xs:grid-cols-1  sm:grid-cols-2 cosm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
             {[
               { count: "60+", label: "Clients" },
               { count: "6", label: "Years Experience" },
@@ -217,12 +221,12 @@ useEffect(()=>{
             ].map((stat, index) => (
               <div
                 key={index}
-                className="flex items-center flex-col justify-center shadow font-Inter border rounded-md py-6 sm:py-8 xs:flex xs:flex-col "
+                className="flex items-center flex-col border hover:cursor-default border-[#ededed] justify-center shadow font-Inter py-8  rounded-md   xs:flex xs:flex-col "
               >
-                <h3 className="text-[#f72d74] text-4xl font-extrabold sm:text-3xl md:text-4xl">
+                <h3 className="text-[#f72d74]  text-5xl font-black sm:text-3xl md:text-4xl">
                   {stat.count}
                 </h3>
-                <p className="xl:text-lg font-medium text-[#282922] sm:text-base md:text-lg">
+                <p className="xl:text-lg font-semibold text-[#282922] sm:text-base md:text-lg">
                   {stat.label}
                 </p>
               </div>
@@ -257,10 +261,10 @@ useEffect(()=>{
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10 max-w-[1440px]  w-[90%] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h2 className="text-4xl coxs:text-3xl font-bold font-Inter sm:text-4xl text-white mb-3">
               Let's Build Your Dream Website{" "}
               <span className="text-[#f72d74]">Together!</span>
-            </h1>
+            </h2>
             <p className="text-white text-lg font-Inter">
               Whether you need a website redesign, development from scratch, or
               any other web-related services, team WODWES got you covered. Our
@@ -282,7 +286,7 @@ useEffect(()=>{
       <div className="py-12 lg:py-20">
         <div className="w-[90%] max-w-[1440px] mx-auto">
           <div className="max-w-[890px] ">
-            <h2 className="mb-3 text-3xl font-extrabold ">
+            <h2 className="mb-3 text-4xl font-bold ">
               Web Design and Development{" "}
               <span className="text-[#f72d74]">Outsourcing Company</span>
             </h2>
@@ -437,39 +441,43 @@ useEffect(()=>{
         </div>
       </div>
 
-      <div className="relative w-full py-12 lg:py-20">
+     
+        
+       <div className="relative w-full py-12 lg:py-20">
         <img
           src="./section-img.png"
-          className="absolute top-0 left-0 w-full h-full  "
+          className="absolute top-0 left-0 w-full h-full "
           alt=""
         />
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10 max-w-[1440px]  w-[90%] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
-              <span className="text-[#f72d74]">Hire Remote & Project</span>{" "}
+            <h2 className="text-4xl coxs:text-3xl font-bold font-Inter sm:text-4xl text-white mb-3">
+              
+              <span className="text-[#f72d74]">Hire Remote & Project</span>
               Based Developers for Wodwes
-            </h1>
+            </h2>
             <p className="text-white text-lg font-Inter">
-              Power up your projects with WODWES remote developers. Boost
-              productivity and achieve exceptional results. Get started today to
-              unlock your project's full potential!{" "}
+            Power up your projects with WODWES remote developers. Boost productivity and achieve 
+            exceptional results. Get started today to unlock your project's full potential!
             </p>
           </div>
           {/* Button */}
           <Link
             to={"/contact"}
-            className="text-white border-2 border-[#f72d74] hover:bg-[#f72d74]  px-3 py-3 max-w-xs w-44 font-bold text-center "
+            className="text-white border-2 border-[#f72d74] hover:bg-[#f72d74]  px-5 py-3 max-w-xs w-44 font-bold text-center "
           >
-            Get Started
+            Let's Talk
           </Link>
         </div>
       </div>
 
-      <div className="grid  gap-56  w-[90%] max-w-[1440px] mx-auto pb-20 pt-12 lg:flex lg:flex-row">
+      
+
+      <div className="  gap:10 justify-between  w-[90%] max-w-[1440px] mx-auto pb-20 pt-12 flex coxs:flex-col lg:flex-row">
         {/* Left Column: Sticky Content */}
-        <div className="h-full lg:sticky lg:top-32 lg:max-w-[500px] w-[50%] ">
-          <h2 className="text-4xl font-bold text-[#282922]">
+        <div className="h-full lg:sticky lg:top-32 lg:max-w-[500px] lg:w-[50%] ">
+          <h2 className="text-4xl font-black text-[#282922]">
             What you get with <span className="text-[#f72d74]">WODWES</span>{" "}
             product and service design
           </h2>
@@ -488,16 +496,16 @@ useEffect(()=>{
         </div>
 
         {/* Right Column: Grid Boxes */}
-        <div className="grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 w-[50%]">
+        <div className="grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-[50%]">
           {/* Box 1 */}
-          <div className="space-y-4 sm:order-1">
+          <div className="space-y-2 sm:order-1">
             <div className="coxs:p-5 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
               <img
                 src="./img.png"
                 alt="resource as a service"
                 className="w-8 h-8"
               />
-              <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-4">
+              <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-2">
                 Product Design
               </h3>
               <p className="text-sm leading-6">
@@ -516,7 +524,7 @@ useEffect(()=>{
                 alt="resource as a service"
                 className="w-8 h-8"
               />
-              <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-4">
+              <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-2">
                 Business Design
               </h3>
               <p className="text-sm leading-6">
@@ -536,7 +544,7 @@ useEffect(()=>{
                   alt="resource as a service"
                   className="w-8 h-8"
                 />
-                <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-4">
+                <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-2">
                   Service Design
                 </h3>
                 <p className="text-sm leading-6">
@@ -550,13 +558,15 @@ useEffect(()=>{
         </div>
       </div>
 
-      <div className="relative w-full py-12 lg:py-20">
+      <div className="relative w-full py-20 lg:py-20">
         <img
           src="./product-img.png"
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          className="absolute top-0 left-0 w-full h-full  z-0"
           alt=""
         />
         <div className="relative w-[90%] mx-auto max-w-[1440px] text-white z-10">
+
+
           <div className="flex  coxs:flex-col md:flex-row  md:items-center justify-between gap-10 text-white">
             <div className="max-w-[540px] 3xl:max-w-[700px]">
               <h1 className="md:text-3xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
@@ -569,7 +579,7 @@ useEffect(()=>{
             </div>
             <Link
               to={"/"}
-              className="text-white border-2 border-[#f72d74] w-44 px-7 py-3 hover:bg-[#f72d74] font-bold "
+              className="text-white border-2 border-[#f72d74] w-44 px-9 py-3 hover:bg-[#f72d74] font-bold "
             >
               Give it a Try?
             </Link>
@@ -585,7 +595,7 @@ useEffect(()=>{
         <h2 className="text-3xl font-bold">
           <span className="text-[#f72d74]">Technologies</span> We Use
         </h2>
-        <p className="mt-4 w-full max-w-[896px] text-lg  font-normal font-Inter text-[#272821]">
+        <p className="mt-4  max-w-[896px] text-[20px]  leading-8  text-[#272821]">
           We leverage cutting-edge technologies to create innovative solutions,
           ensuring your digital projects remain at the forefront of industry
           standards.
@@ -645,15 +655,15 @@ useEffect(()=>{
         </div>
       </div>
 
-      <div className="relative py-28">
+      <div className="relative py-20">
         <img
           src="./img-back.png"
           className="absolute top-0 z-0  h-full w-full  "
           alt=""
         />
-        <div className=" relative  flex  coxs:flex-col  gap-56  w-[90%] max-w-[1440px] mx-auto  lg:flex lg:flex-row">
+        <div className=" relative  flex  coxs:flex-col   lg:gap-56  w-[90%] max-w-[1440px] mx-auto  lg:flex lg:flex-row">
           {/* Left Column: Sticky Content */}
-          <div className="h-full flex-1   lg:sticky lg:top-32 lg:max-w-[505px] ">
+          <div className="h-full flex-1    lg:sticky lg:top-32 lg:max-w-[505px] ">
             <h2 className="text-4xl font-black text-white">
               Why Choose <span className="text-[#f72d74]">WODWES</span> for
               Website Design and Development Services?
@@ -665,7 +675,7 @@ useEffect(()=>{
           </div>
 
           {/* Right Column: Grid Boxes */}
-          <div className="grid coxs:grid-cols-1 gap-5 flex-1  lg:grid-cols-1 xl:grid-cols-1 space-y-10 lg:mt-24 lg:max-w-[699px] lg:space-y-20">
+          <div className="grid coxs:grid-cols-1 mt-4 gap-5 flex-1  lg:grid-cols-1 xl:grid-cols-1 space-y-10 lg:mt-24 lg:max-w-[699px] lg:space-y-20">
             {/* Box 1 */}
             <div className=" ">
               <div className=" ">
@@ -731,14 +741,14 @@ useEffect(()=>{
         </div>
       </div>
 
-      <div className="flex coxs:flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto my-12  lg:flex lg:flex-row">
+      <div className="flex coxs:flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto my-16  lg:flex lg:flex-row">
         {/* Left Column: Sticky Content */}
-        <div className="h-full flex-1  lg:sticky lg:top-10  ">
+        <div className="h-full flex-1  lg:sticky lg:top-32  ">
           <img src="./team.png" className="rounded-lg" alt="" />
         </div>
 
         {/* Right Column: Grid Boxes */}
-        <div className="flex flex-1 coxs:flex-col   gap-10 lg:flex-col ">
+        <div className="flex flex-1 coxs:flex-col   gap-4 lg:flex-col ">
           <h2 className="text-3xl font-black">
             Your Development <span className="text-[#f72d74]">Partner!</span>
           </h2>
@@ -755,7 +765,7 @@ useEffect(()=>{
                 alt="resource as a service"
                 className="w-9 h-9"
               />
-              <h3 className=" text-xl mt-3 flex items-center font-bold mb-4">
+              <h3 className=" text-[22px] mt-3 flex items-center font-bold mb-4">
                 Developing feature-enriched web and software solutions for
                 businesses
               </h3>
@@ -800,7 +810,7 @@ useEffect(()=>{
         </div>
       </div>
 
-      <div className="  mx-auto max:w-[90%] max:max-w-[1690px] ">
+      <div className="  mx-auto maxlg:max-w-[90%] max:w-[90%] max:max-w-[1690px] ">
         <div className="flex coxs:flex-col coxs:items-center    h-full w-full lg:flex-row  gap-10">
           {/* Left Div */}
           <div className="h-full w-full lg:top-32    max-w-md lg:sticky  lg:mt-[-10%]  lg:ml-[10%]">
@@ -852,40 +862,166 @@ useEffect(()=>{
       </div>
 
       <div className="my-12 lg:my-16 mx-auto w-[90%] max-w-[1440px]">
-        <h2 className="  text-left coxs:text-2xl font-bold lg:text-3xl">
-          Frequently Asked <span className="text-[#f72d74]">Questions!</span>
-        </h2>
-        <p className="mb-7 mt-4 text-left text-base font-normal text-[#272821]">
-          We love hearing about how our work has helped businesses succeed and
-          how WODWES became their go-to development team.
+  <h2 className="text-left coxs:text-2xl font-black lg:text-3xl">
+    Frequently Asked <span className="text-[#f72d74]">Questions!</span>
+  </h2>
+  <p className="mb-7 mt-4 text-left text-[17px] font-normal text-[#272821]">
+    We love hearing about how our work has helped businesses succeed and how WODWES became their go-to development team.
+  </p>
+  <div className="mx-auto md:max-w-[1000px]">
+    {/* FAQ Item 1 */}
+    <div className="border-t border-gray-200 first:!border-t-0">
+      <button
+        onClick={() => toggleAnswer(0)}
+        className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
+      >
+        <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
+          What is Wodwes?
+        </span>
+        <span
+          className={`h-5 w-5 flex items-center justify-center text-[#f72d74] font-bold rounded-full`}
+        >
+          <img
+            src={activeIndex === 0 ? "/minusicon.png" : "/plusiconpng.png"}
+            alt={activeIndex === 0 ? "Collapse" : "Expand"}
+          />
+        </span>
+      </button>
+      {activeIndex === 0 && (
+        <p className="py-4 text-base text-[#272821]">
+          WODWES (Women-Driven Web Solutions) is a well-recognized US-based
+          agency offering a wide range of services including website design and
+          development, CMS development, ERP development, custom Ecommerce
+          development, and UI/UX design. We house a professional team of
+          designers, developers, consultants, and engineers, who are dedicatedly
+          available to help businesses in achieving digital goals.
         </p>
-        <div className="mx-auto md:max-w-[1000px]">
-          {faqData.map((item, index) => (
-            <div
-              key={index}
-              className="border-t border-gray-200 first:!border-t-0"
-            >
-              <button
-                onClick={() => toggleAnswer(index)}
-                className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
-              >
-                <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
-                  {item.question}
-                </span>
-                <span
-                  className={`h-10 w-10 flex items-center justify-center text-[#f72d74] font-bold  p-2  rounded-full`}
-                >
-               <img src=  {activeIndex === index ? "/minusicon.png" : "/plusicon.png"}
-                alt={activeIndex === index ? "Collapse" : "Expand"} />
-                </span>
-              </button>
-              {activeIndex === index && (
-                <p className="py-4 text-base text-[#272821]">{item.answer}</p>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
+      )}
+    </div>
+
+    {/* FAQ Item 2 */}
+    <div className="border-t border-gray-200 ">
+      <button
+        onClick={() => toggleAnswer(1)}
+        className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
+      >
+        <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
+          How long does it keep to develop a website or web application?
+        </span>
+        <span
+          className={`h-8 w-8 flex items-center justify-center text-[#f72d74] font-bold rounded-full`}
+        >
+          <img
+            src={activeIndex === 1 ? "/minusicon.png" : "/plusiconpng.png"}
+            alt={activeIndex === 1 ? "Collapse" : "Expand"}
+          />
+        </span>
+      </button>
+      {activeIndex === 1 && (
+        <p className="py-4 text-base text-[#272821]">
+          The time it takes to develop a website or web application varies
+          depending on the complexity of the project, the number of features and
+          pages, and the level of customization required. We typically provide an
+          estimated timeline during the discovery phase based on our assessment
+          of the project requirements. To get a free quote, email us at
+          sales@wodwes.com.
+        </p>
+      )}
+    </div>
+
+    {/* FAQ Item 3 */}
+    <div className="border-t border-gray-200 ">
+      <button
+        onClick={() => toggleAnswer(2)}
+        className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
+      >
+        <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
+          What programming languages and frameworks do you use?
+        </span>
+        <span
+          className={`h-8 w-8 flex items-center justify-center text-[#f72d74] font-bold rounded-full`}
+        >
+          <img
+            src={activeIndex === 2 ? "/minusicon.png" : "/plusiconpng.png"}
+            alt={activeIndex === 2 ? "Collapse" : "Expand"}
+          />
+        </span>
+      </button>
+      {activeIndex === 2 && (
+        <p className="py-4 text-base text-[#272821]">
+          We use a variety of programming languages and frameworks depending on
+          the project requirements. Some of the languages and frameworks we
+          commonly use include PHP, JavaScript, React, Angular, Vue, Node.js,
+          Python, and Django.
+        </p>
+      )}
+    </div>
+
+    {/* FAQ Item 4 */}
+    <div className="border-t border-gray-200 ">
+      <button
+        onClick={() => toggleAnswer(3)}
+        className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
+      >
+        <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
+          Do you provide website hosting and maintenance services?
+        </span>
+        <span
+          className={`h-8 w-8 flex items-center justify-center text-[#f72d74] font-bold rounded-full`}
+        >
+          <img
+            src={activeIndex === 3 ? "/minusicon.png" : "/plusiconpng.png"}
+            alt={activeIndex === 3 ? "Collapse" : "Expand"}
+          />
+        </span>
+      </button>
+      {activeIndex === 3 && (
+        <p className="py-4 text-base text-[#272821]">
+          Yes, we offer website hosting and maintenance services to ensure that
+          our client's websites are secure, up-to-date, and performing optimally.
+          Our hosting services include server maintenance, security updates, and
+          backups. Our maintenance services include content updates, bug fixes,
+          and feature enhancements.
+        </p>
+      )}
+    </div>
+
+    {/* FAQ Item 5 */}
+    <div className="border-t border-gray-200">
+      <button
+        onClick={() => toggleAnswer(4)}
+        className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
+      >
+        <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
+          What is your web development process?
+        </span>
+        <span
+          className={`h-5 w-5 flex items-center justify-center text-[#f72d74] font-bold rounded-full`}
+        >
+          <img
+            src={activeIndex === 4 ? "/minusicon.png" : "/plusiconpng.png"}
+            alt={activeIndex === 4 ? "Collapse" : "Expand"}
+          />
+        </span>
+      </button>
+      {activeIndex === 4 && (
+        <p className="py-4 text-base text-[#272821]">
+          Our web development process typically involves the following steps:
+          discovery, design, development, testing, and launch. During the
+          discovery phase, we gather requirements, define the project scope, and
+          create a project plan. The design phase involves creating wireframes,
+          mockups, and visual designs. The development phase involves coding,
+          integrating with third-party services, and setting up databases. The
+          testing phase involves conducting functional testing, usability
+          testing, and performance testing. Finally, we launch the website or
+          application and provide ongoing support. To get started with our web
+          development services, please email us at sales@wodwes.com.
+        </p>
+      )}
+    </div>
+  </div>
+</div>
+
     </>
   );
 };

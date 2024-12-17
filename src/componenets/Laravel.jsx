@@ -202,11 +202,11 @@ useEffect(()=>{
    <>
     <div className="relative py-16 md:pb-32 md:pt-20 ">
   <img
-    src="/product-img.png"
+    src="/product-img.png" 
     className="absolute top-0 left-0 w-full h-full  z-0"
     alt="Background"
   />
-  <div className="relative w-[90%] mx-auto max-w-[1690px] text-white grid coxs:grid-cols-1 gap:10 lg:grid-cols-2  ">
+  <div className="relative  w-[90%] mx-auto max-w-[1690px] text-white grid coxs:grid-cols-1 gap:10 lg:grid-cols-2  ">
     {/* Grid Layout */}
     
       {/* Left Section */}
