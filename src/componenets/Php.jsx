@@ -167,14 +167,14 @@ const Php = () => {
     className="absolute top-0 left-0 w-full h-full  z-0"
     alt="Background"
   />
-  <div className="relative w-[90%] mx-auto max-w-[1690px] text-white grid coxs:grid-cols-1 gap:10 lg:grid-cols-2  ">
+  <div className="relative w-[90%] mx-auto max-w-[1690px] text-white grid grid-cols-1 gap:10 lg:grid-cols-2  ">
     {/* Grid Layout */}
     
       {/* Left Section */}
       <div className=" ">
-        <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl md:leading-10 xl:text-6xl font-black">
+        <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl md:leading-10 xl:text-6xl font-black">
           <span className="text-[#f72d74]">PHP</span> Website Development Services
-        </h1>
+        </h2>
         <p className="text-[#e8e6e6] my-5 lg:my-11 text-lg leading-8 max-w-[500px] ">
         We deliver full-cycle, high-performing, and database-driven PHP development solutions. 
         With extended knowledge of PHP and its framework, we have a proven track record of completing numerous
@@ -253,7 +253,7 @@ const Php = () => {
       </div>
 
       <div className='pb-12 w-[90%] max-w-[1440px] mx-auto '>
-      <div className='flex  justify-between md:flex-row gap-10 3xl:gap-40 maxmd:flex-col px-4'>
+      <div className='flex  justify-between md:flex-row gap-10 3xl:gap-40 maxmd:flex-col '>
       <div className='lg:w-[50%] '>
         <h2 className='text-3xl mb-5 text-[#282922] font-black'>Why Choose <span className='text-[#f72d74]'>WODWES</span> For PHP Development?</h2>
         
@@ -276,17 +276,17 @@ const Php = () => {
       </div>
 
       <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74]  box-shadow md:grid-cols-2 lg:grid-cols-3'>
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl text-[#282922] font-extrabold'>Qualified PHP Specialists</h3>
 
     </div>
-    <p className='coxs:my-5 text-[#282922]  sm:my-7 text-sm leading-9'>We house a team of seasoned experts 
+    <p className='my-5 text-[#282922]  sm:my-7 text-sm leading-9'>We house a team of seasoned experts 
     having specialized in multi-directional areas of PHP to deliver high-performing PHP services. 
     We have served numerous businesses including startups, growing, and developing businesses to launch their PHP web apps,
      CMS’s, etc with our customized PHP development services.</p>
-<ul className='flex coxs:flex-col gap-5 text-sm list-disc pl-5  text-[#282922]'>
+<ul className='flex flex-col gap-5 text-sm list-disc pl-5  text-[#282922]'>
   <li>Years of Successfull Service Experience</li>
   <li>Dedicated Team  For CMSs Development</li>
   <li>Certified PHP Web Development Experts</li>
@@ -304,11 +304,11 @@ const Php = () => {
     <h3 className='text-2xl text-[#282922] font-extrabold'>Reliable PHP Partner</h3>
 
     </div>
-    <p className='coxs:my-5  text-[#282922] sm:my-7 text-sm leading-9'>We take pride in our full-cycle PHP web development 
+    <p className='my-5  text-[#282922] sm:my-7 text-sm leading-9'>We take pride in our full-cycle PHP web development 
     services to address all the relevant requirements of your business to achieve success. 
     We are a reliable service partner to multiple renowned companies giving them a competitive edge with our
      comprehensive industry knowledge and result-driven solutions.</p>
-<ul className='flex text-sm text-[#282922] coxs:flex-col gap-5 list-disc pl-5 '>
+<ul className='flex text-sm text-[#282922] flex-col gap-5 list-disc pl-5 '>
   <li>PHP Consultation Services</li>
   <li>PHP Applications Upgradation</li>
   <li>Fool-proof Transparent Service</li>
@@ -326,11 +326,11 @@ const Php = () => {
     <h3 className='text-2xl text-[#282922] font-extrabold'>Cost-effective PHP Solutions</h3>
 
     </div>
-    <p className='coxs:my-5   text-[#282922] sm:my-7 text-sm leading-9'>We make hiring easy and help you hire us as you find suitable. 
+    <p className='my-5   text-[#282922] sm:my-7 text-sm leading-9'>We make hiring easy and help you hire us as you find suitable. 
     You can hire us on a project basis, hourly basis, or a full team for projects cost-effectively. 
     We closely discuss your estimated budget with you to provide lenient cost for PHP website development 
     services excluding extra expenses i.e. salary, training, office, etc.</p>
-<ul className='flex text-sm coxs:flex-col gap-5 list-disc pl-5  text-[#282922]'>
+<ul className='flex text-sm flex-col gap-5 list-disc pl-5  text-[#282922]'>
   <li>Budget-tailored Cost</li>
   <li>Zero Extra Expenses</li>
   <li>Lenient hiring Models</li>
@@ -360,7 +360,7 @@ const Php = () => {
      </div>
     
      
-<div className=' grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
+<div className=' grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
 
 <div className='coxs:space-y-4 2xl:space-y-5 '>
 <div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5 hover:bg-black hover:text-white   '>
@@ -407,7 +407,7 @@ const Php = () => {
 </div>
 
 
-<div className=' coxs:space-y-4 2xl:space-y-5 mt-5 '>
+<div className=' space-y-4 2xl:space-y-5 mt-5 '>
 
 
 
@@ -467,10 +467,10 @@ const Php = () => {
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] max-w-[1440px] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h2 className="text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               Let's Build Your Dream Website{" "}
               <span className="text-[#f72d74]">Together!</span>
-            </h1>
+            </h2>
             <p className="text-white text-lg font-Inter">
               Whether you need a website redesign, development from scratch, or
               any other web-related services, team WODWES got you covered. Our
@@ -762,10 +762,10 @@ const Php = () => {
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  max-w-[1440px] w-[90%] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h2 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               <span className='text-[#f72d74]'>Hire Remote & Project</span> Based Developers for Wodwes
               
-            </h1>
+            </h2>
             <p className="text-white text-lg font-Inter">
             Power up your projects with WODWES remote developers. Boost productivity and 
             achieve exceptional results. Get started today to unlock your project's full potential!

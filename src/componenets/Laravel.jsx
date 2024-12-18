@@ -10,10 +10,9 @@ import { useState , useEffect} from 'react';
 
 
 const Laravel = () => {
-
-useEffect(()=>{
+ useEffect(()=>{
   window.scrollTo(0,0)
-},[])
+},[]) 
 
   // Array of image paths
   const imageArray = [
@@ -206,14 +205,14 @@ useEffect(()=>{
     className="absolute top-0 left-0 w-full h-full  z-0"
     alt="Background"
   />
-  <div className="relative  w-[90%] mx-auto max-w-[1690px] text-white grid coxs:grid-cols-1 gap:10 lg:grid-cols-2  ">
+  <div className="relative  w-[90%] mx-auto max-w-[1690px] text-white grid grid-cols-1 gap:10 lg:grid-cols-2  ">
     {/* Grid Layout */}
     
       {/* Left Section */}
-      <div className=" ">
-        <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl md:leading-10 xl:text-6xl font-black">
+      <div className=" flex flex-col  gap-10 ">
+        <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl md:leading-10 xl:text-6xl font-black">
           <span className="text-[#f72d74]">Laravel</span> E-commerce Development
-        </h1>
+        </h2>
         <p className="text-[#e8e6e6] my-5 lg:my-11 text-lg leading-8 max-w-[500px] ">
         As a top-rated Laravel development services company, WODWES has extended expertise in building 
         robust, scalable, and high performance development solutions. We house a proficient team who 
@@ -309,14 +308,16 @@ useEffect(()=>{
       </div>
 
       <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74]  box-shadow md:grid-cols-2 lg:grid-cols-3'>
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r px-5 py-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r px-5 py-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-xl font-bold'>Advanced Front-End Technologies</h3>
 
     </div>
-    <p className='coxs:my-5  sm:my-5 text-sm leading-7   '>We specialize in using the latest front-end technologies to deliver top-notch solutions that exceed your expectations. Our team uses latest technologies to build responsive, intuitive, and user-friendly interfaces that enhance the user experience.</p>
-<ul className='flex coxs:flex-col gap-5 text-sm list-disc pl-5 '>
+    <p className='my-5  sm:my-5 text-sm leading-7   '>We specialize in using the latest front-end
+     technologies to deliver top-notch solutions that exceed your expectations. Our team uses 
+    latest technologies to build responsive, intuitive, and user-friendly interfaces that enhance the user experience.</p>
+<ul className='flex flex-col gap-5 text-sm list-disc pl-5 '>
   <li>HTML</li>
   <li>CSS3</li>
   <li>JavaScript</li>
@@ -330,17 +331,17 @@ useEffect(()=>{
 
 
 
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r px-5 py-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r px-5 py-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-xl font-bold'>Powerful Back-End Technologies</h3>
 
     </div>
-    <p className='coxs:my-5  sm:my-5 text-sm leading-7 '>We boost your web development
+    <p className='my-5  sm:my-5 text-sm leading-7 '>We boost your web development
      with these reliable and efficient technologies, allowing you to create dynamic 
      and scalable Laravel web applications that meet your business needs.
      Our team will make sure that your Laravel solutions are high-performing.</p>
-<ul className='flex coxs:flex-col gap-5  text-sm list-disc pl-5 '>
+<ul className='flex flex-col gap-5  text-sm list-disc pl-5 '>
   <li>PHP</li>
   <li>MySQL</li>
   <li>PostgreSQL</li>
@@ -354,7 +355,7 @@ useEffect(()=>{
 
 
 
-    <div className='coxs:border-b-[6px]  border-[#f72d74] p-5'>
+    <div className='border-b-[6px]  border-[#f72d74] p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-xl font-bold'>Laravel Development Capabilities</h3>
@@ -364,7 +365,7 @@ useEffect(()=>{
      with Laravel’s robust MVC support, built-in security features, and flexible
       and robust framework, it is the perfect choice for your next project. That’s why we help you leverage
      its advanced development capabilities in real-time.</p>
-<ul className='flex coxs:flex-col text-sm gap-5 list-disc pl-5 '>
+<ul className='flex flex-col text-sm gap-5 list-disc pl-5 '>
   <li>Robust MVC Support</li>
   <li>Built-in Security</li>
   <li>Flexible and Robust Framework</li>
@@ -396,10 +397,10 @@ useEffect(()=>{
      </div>
     
      
-<div className=' grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
+<div className=' grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
 
-<div className='coxs:space-y-4 2xl:space-y-5 '>
-<div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5  text-[#282922]  hover:bg-[#2b2a2a] hover:text-white'>
+<div className='space-y-4 2xl:space-y-5 '>
+<div className='  rounded-lg bg-[#f7f7f7] px-3 py-5  text-[#282922]  hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
        <h2 className='text-xl mt-4   font-extrabold'>Laravel CRM & ERP Development</h2>
@@ -449,7 +450,7 @@ useEffect(()=>{
 </div>
 
 
-<div className=' coxs:space-y-4 2xl:space-y-5 mt-5 '>
+<div className=' space-y-4 2xl:space-y-5 mt-5 '>
 
 
 
@@ -515,10 +516,10 @@ useEffect(()=>{
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto max-w-[1440px]  font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h2 className=" text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               Let's Build Your Dream Website{" "}
               <span className="text-[#f72d74]">Together!</span>
-            </h1>
+            </h2>
             <p className="text-white text-lg font-Inter">
               Whether you need a website redesign, development from scratch, or
               any other web-related services, team WODWES got you covered. Our
@@ -608,7 +609,6 @@ useEffect(()=>{
         </div>
       </div>
     </div>
-    {/* Add more slides as needed */}
   </Slider>
 </div>
 
@@ -703,32 +703,32 @@ useEffect(()=>{
     <div className="mt-20 mx-auto w-[90%]">
       <Slider {...settingsTwo}>
         {/* Slide 1 */}
-        <div className="coxs:px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2 ">
+        <div className="px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2 ">
           <img src="/ecom.png" alt="Ecom" className="h-20 w-12" />
         </div>
 
         {/* Slide 2 */}
-        <div className=" coxs:px-2 lg:px-12 py-8 border-t-2 border-gray-400 border-r-2">
+        <div className=" px-2 lg:px-12 py-8 border-t-2 border-gray-400 border-r-2">
           <img src="/vodlix.webp" alt="Vodlix" className="h-20 w-44" />
         </div>
 
         {/* Slide 3 */}
-        <div className="coxs:px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2">
+        <div className="px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2">
           <img src="/ecom.png" alt="Ecom" className="h-20 w-12" />
         </div>
 
         {/* Slide 4 */}
-        <div className="  coxs:px-2 lg:px-12 py-8 border-t-2 border-gray-400 border-r-2  ">
+        <div className="px-2 lg:px-12 py-8 border-t-2 border-gray-400 border-r-2  ">
           <img src="/vodlix.webp" alt="Vodlix" className="h-20 w-44" />
         </div>
 
         {/* Slide 5 */}
-        <div className="coxs:px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2 ">
+        <div className="px-12 lg:px-24 py-8 border-t-2 border-gray-400 border-r-2 ">
           <img src="/ecom.png" alt="Ecom" className="coxs:h-20 coxs:w-12 lg" />
         </div>
 
         {/* Slide 6 */}
-        <div className="coxs:px-2 lg:px-12 py-8 border-t-2 border-gray-400  border-r-2">
+        <div className="px-2 lg:px-12 py-8 border-t-2 border-gray-400  border-r-2">
           <img src="/vodlix.webp" alt="Vodlix" className="h-20 w-44" />
         </div>
       </Slider>
@@ -752,10 +752,10 @@ useEffect(()=>{
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] max-w-[1440px] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h2 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               <span className='text-[#f72d74]'>Hire Remote & Project</span> Based Developers for Wodwes
               
-            </h1>
+            </h2>
             <p className="text-white text-lg font-Inter">
             Power up your projects with WODWES remote developers. Boost productivity and 
             achieve exceptional results. Get started today to unlock your project's full potential!
@@ -773,7 +773,7 @@ useEffect(()=>{
 
 
       <div className="my-12 lg:my-16 mx-auto w-[90%] max-w-[1440px]">
-        <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
+        <h2 className="text-left text-2xl font-bold lg:text-3xl">
           Frequently Asked <span className="text-[#f72d74]">Questions!</span>
         </h2>
         <p className="mb-7 mt-4 text-left text-base font-normal text-[#272821]">

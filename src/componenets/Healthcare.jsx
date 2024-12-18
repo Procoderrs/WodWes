@@ -5,9 +5,9 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import Marquee from 'react-fast-marquee'
 import { useState , useEffect } from 'react'
 const Healthcare = () => {
- useEffect(()=>{
+ /* useEffect(()=>{
   window.scrollTo(0,0)
- },[])
+ },[]) */
   const technologies = {
     frontend: [
       { name: "React.js", src: "/react.png" },
@@ -99,12 +99,12 @@ const Healthcare = () => {
         />
         <div className="relative w-[90%] mx-auto max-w-[1690px] text-white z-10">
 
-        <div className='grid coxs:grid-cols-1 gap-6 lg:grid-cols-2 '>
+        <div className='grid grid-cols-1 gap-6 lg:grid-cols-2 '>
 
         
-          <div className="flex   coxs:flex-col  mb-5  md:items-center justify-between gap-10 text-white">
+          <div className="flex   flex-col  mb-5  md:items-center justify-between gap-10 text-white">
             <div className="max-w-[540px] 3xl:max-w-[700px]">
-              <h1 className="lg:text-6xl coxs:text-3xl font-black font-Inter  sm:text-4xl text-white mb-3">
+              <h1 className="lg:text-6xl text-3xl font-black font-Inter  sm:text-4xl text-white mb-3">
               <span className='text-[#f72d74] font-black'>Lorem </span>  Ipsum Dollar Sit Amet
               </h1>
               <p className="text-[#e8e6e6] mt-7 mb-7 text-lg leading-8 font-Inter max-w-[637px]">
@@ -268,7 +268,7 @@ const Healthcare = () => {
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] max-w-[1440px]  mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h1 className="text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               Let's Build Your Dream Website{" "}
               <span className="text-[#f72d74]">Together!</span>
             </h1>
@@ -309,12 +309,12 @@ const Healthcare = () => {
           </div>
 
           {/* 3 columns grid */}
-          <div className="grid coxs:grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mx-auto mt-14 w-[90%] bg-white">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mx-auto mt-14 w-[90%] bg-white">
             <div className="w-full border-b sm:border-r border-[#d6d6d6] shadow hover:rounded-md bg-white">
 
 
 
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="/img.png"
                   alt="resource as a service"
@@ -338,7 +338,7 @@ const Healthcare = () => {
 
 
             <div className="w-full border-b  xl:border-r   border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="/img.png"
                   alt="resource as a service"
@@ -359,7 +359,7 @@ const Healthcare = () => {
               </div>
             </div>
             <div className="w-full border-b sm:border-r border-[#d6d6d6]  xl:border-r-0  shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="/img.png"
                   alt="resource as a service"
@@ -386,7 +386,7 @@ const Healthcare = () => {
 
 
             <div className="w-full border-b  xl:border-r border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="/img.png"
                   alt="resource as a service"
@@ -408,7 +408,7 @@ const Healthcare = () => {
 
 
             <div className="w-full border-b sm:border-r border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="/img.png"
                   alt="resource as a service"
@@ -431,7 +431,7 @@ const Healthcare = () => {
 
 
             <div className="w-full border-b border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="/img.png"
                   alt="resource as a service"
@@ -455,7 +455,7 @@ const Healthcare = () => {
 
 
             <div className="w-full border-b sm:border-b-0  sm:border-r border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="/img.png"
                   alt="resource as a service"
@@ -477,7 +477,7 @@ const Healthcare = () => {
 
 
             <div className="w-full border-b sm:border-b-0 border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="/img.png"
                   alt="resource as a service"
@@ -501,7 +501,7 @@ const Healthcare = () => {
 
 
             <div className="w-full border-b sm:border-b-0 border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="/img.png"
                   alt="resource as a service"
@@ -576,7 +576,7 @@ const Healthcare = () => {
 
           {/* Dropdown content */}
           <div className="mt-6   rounded-lg">
-            <div className="mt-4 flex flex-wrap coxs:gap-10 md:gap-20 xl:gap-36  justify-center">
+            <div className="mt-4 flex flex-wrap gap-10 md:gap-20 xl:gap-36  justify-center">
               {technologies[activeDropdown].map((tech, index) => (
                 <div
                   key={index}
@@ -594,9 +594,9 @@ const Healthcare = () => {
         </div>
       </div>
 
-<div className=' coxs:py-14 lg:py-20 bg-[#272821]'>
+<div className=' py-14 lg:py-20 bg-[#272821]'>
 <div className='w-[90%] mx-auto max-w-[1440px]'>
-<div className='flex coxs:flex-col md:flex-row md:justify-between gap-9'>
+<div className='flex flex-col md:flex-row md:justify-between gap-9'>
 <div className='max-w-[700px] w-full text-white'>
 <h3 className=' text-4xl font-extrabold'>Why <span className='text-[#f72d74]'>Choose</span> Dollar Sit, Lorem Ipsum Dollar Sit</h3>
 <p className='mt-7 mb-7 text-lg'>Hire testers and QA experts to perform end-to-end testing of your existing product, website, or software solution Hire testers and QA experts to perform end-to-end testing of your existing product, website, or software solution</p>
@@ -611,7 +611,7 @@ const Healthcare = () => {
 </div>
 
 
-<div className='grid coxs:grid-cols-1 mt-7 md:grid-cols-2 w-[90%] mx-auto  lg:grid-cols-3 text-white gap-10'>
+<div className='grid grid-cols-1 mt-7 md:grid-cols-2 w-[90%] mx-auto  lg:grid-cols-3 text-white gap-10'>
 <div className='space-y-4  bg-[#585954] pl-5 pr-10 rounded-lg py-7'>
   <h3 className='font-black text-2xl '>Transparent and Quality</h3>
   <p className='text-lg leading-7'>We have an in-house rigorous quality assurance process in place to 
@@ -619,7 +619,7 @@ const Healthcare = () => {
 </div>
 
 
-<div className='space-y-4 bg-[#585954] pl-5 pr-10 rounded-lg py-7 row-start-1 row-end-3 col-start-2 col-end-auto'>
+<div className='space-y-4 bg-[#585954] pl-5 pr-10 rounded-lg py-7 lg:row-start-1 lg:row-end-3 lg:col-start-2 lg:col-end-auto'>
   <h3 className='font-black text-2xl'>Transparent and Quality</h3>
   <p className='text-lg leading-9'>We have an in-house rigorous quality assurance process in place to 
   ensure that our development solutions are of the highest quality.
@@ -640,7 +640,7 @@ const Healthcare = () => {
   ensure that our development solutions are of the highest quality.</p>
 </div>
 
-<div className='space-y-4  bg-[#585954] pl-5 pr-10 rounded-lg py-7'>
+<div className='space-y-4  flex  flex-col bg-[#585954] pl-5 pr-10 rounded-lg py-7'>
   <h3 className='font-black text-2xl'>Transparent and Quality</h3>
   <p className='text-lg leading-7'>We have an in-house rigorous quality assurance process in place to 
   ensure that our development solutions are of the highest quality.</p>

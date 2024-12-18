@@ -164,7 +164,7 @@ window.scrollTo(0,0)
     className="absolute top-0 left-0 w-full h-full  z-0"
     alt="Background"
   />
-  <div className="relative w-[90%] mx-auto max-w-[1690px] gap-10 text-white grid coxs:grid-cols-1 gap:10 lg:grid-cols-2   ">
+  <div className="relative w-[90%] mx-auto max-w-[1690px] gap-10 text-white grid grid-cols-1 gap:10 lg:grid-cols-2   ">
     {/* Grid Layout */}
     
       {/* Left Section */}
@@ -274,14 +274,14 @@ window.scrollTo(0,0)
       </div>
 
       <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74]  box-shadow md:grid-cols-2 lg:grid-cols-3'>
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
     <div className='flex items-center gap-5 '>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-[26px] font-extrabold'>Shopify Development Solutions</h3>
 
     </div>
    
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 mt-7 pb-7 '>
+<ul className='flex flex-col gap-5 list-disc pl-5 mt-7 pb-7 '>
   <li>Shopify Marketing Automation Solutions</li>
   <li>Shopify B2B & B2C Marketplaces</li>
   <li>Shopify Enterprise Solutions</li>
@@ -296,14 +296,14 @@ window.scrollTo(0,0)
 
 
 
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-[26px] font-extrabold'>Shopify Integration Solutions</h3>
 
     </div>
    
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 mt-7 '>
+<ul className='flex flex-col gap-5 list-disc pl-5 mt-7 '>
   <li>Shopify ERP Integration</li>
   <li>Shopify CRM Integration</li>
   <li>Shopify Migration Support</li>
@@ -317,14 +317,14 @@ window.scrollTo(0,0)
 
 
 
-    <div className='coxs:border-b-[6px]  border-[#f72d74] p-5'>
+    <div className='border-b-[6px]  border-[#f72d74] p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-[26px] font-extrabold'>Shopify Migration Support</h3>
 
     </div>
    
-<ul className='flex coxs:flex-col gap-5 list-disc pl-5 mt-7 '>
+<ul className='flex flex-col gap-5 list-disc pl-5 mt-7 '>
   <li>WooCommerce to Shopify</li>
   <li>Magento to Shopify</li>
   <li>Joomla to Shopify</li>
@@ -355,10 +355,10 @@ window.scrollTo(0,0)
      </div>
     
      
-<div className=' grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
+<div className=' grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
 
-<div className='coxs:space-y-4 2xl:space-y-5 '>
-<div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5   hover:bg-[#2b2a2a] hover:text-white'>
+<div className='space-y-4 2xl:space-y-5 '>
+<div className='  rounded-lg bg-[#f7f7f7] px-3 py-5   hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
        <h2 className='text-xl mt-4 font-extrabold'>Shopify Store Design Services</h2>
@@ -411,7 +411,7 @@ window.scrollTo(0,0)
 </div>
 
 
-<div className=' coxs:space-y-4 2xl:space-y-5 mt-5 '>
+<div className=' space-y-4 2xl:space-y-5 mt-5 '>
 
 
 
@@ -482,7 +482,7 @@ window.scrollTo(0,0)
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto max-w-[1440px] font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h1 className="text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               Let's Build Your Dream Website{" "}
               <span className="text-[#f72d74]">Together!</span>
             </h1>

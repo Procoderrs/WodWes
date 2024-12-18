@@ -161,12 +161,12 @@ useEffect(()=>{
     className="absolute top-0 left-0 w-full h-full  z-0"
     alt="Background"
   />
-  <div className="relative w-[90%] mx-auto max-w-[1690px] text-white grid coxs:grid-cols-1 gap:10 lg:grid-cols-2   ">
+  <div className="relative w-[90%] mx-auto max-w-[1690px] text-white grid  grid-cols-1 gap:10 lg:grid-cols-2   ">
     {/* Grid Layout */}
     
       {/* Left Section */}
       <div className=" ">
-        <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl mr-2 md:leading-10 xl:text-6xl font-black">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl mr-2 md:leading-10 xl:text-6xl font-black">
           <span className="text-[#f72d74]">React</span>  Development Services
         </h1>
         <p className="text-[#e8e6e6] my-5 lg:my-11 text-lg leading-8 max-w-[500px] ">
@@ -272,7 +272,7 @@ useEffect(()=>{
       </div>
 
       <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74] box-shadow md:grid-cols-2 lg:grid-cols-3'>
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
     <div className='flex items-center py-4  gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-extrabold'>Service-dedicated Development</h3>
@@ -282,7 +282,7 @@ useEffect(()=>{
      fully immerse themselves in the project and go the extra mile to complete it to 
      the maximum achievable perfection.</p>
    
-<ul className='flex coxs:flex-col  mt-7 gap-5 list-disc pl-5 '>
+<ul className='flex flex-col  mt-7 gap-5 list-disc pl-5 '>
   <li>Custom Hiring Models</li>
   <li>24/7 Remote availability</li>
   <li>Excellent Project Delivery</li>
@@ -295,7 +295,7 @@ useEffect(()=>{
 
 
 
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
     <div className='flex  py-4  items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-extrabold'>Supreme Work Management</h3>
@@ -305,7 +305,7 @@ useEffect(()=>{
     team collaboration, and tech skills at play in the background. 
     This helps us excellently complete development at the front.</p>
    
-<ul className='flex coxs:flex-col gap-5 mt-7 list-disc pl-5 pb-12 '>
+<ul className='flex flex-col gap-5 mt-7 list-disc pl-5 pb-12 '>
   <li>Timely Project Delivery</li>
   <li>Holistic Work Approach</li>
   <li>Unmatched Managment</li>
@@ -318,14 +318,14 @@ useEffect(()=>{
 
 
 
-    <div className='coxs:border-b-[6px]  border-[#f72d74] p-5'>
+    <div className='border-b-[6px]  border-[#f72d74] p-5'>
     <div className='flex items-center gap-5 py-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-extrabold'>Proven Business Transformation</h3>
 
     </div>
    <p className='text-sm leading-7'>WODWES has a proven track record of digitally transforming small businesses, startups, and large-scale enterprises. We deliver robust, high-performing apps, sites, and portals that yield unimaginable growth.</p>
-<ul className='flex coxs:flex-col gap-5 mt-7 list-disc pl-5 '>
+<ul className='flex flex-col gap-5 mt-7 list-disc pl-5 '>
   <li>Increased Leads & ROI</li>
   <li>Memorable User Experience</li>
   <li>Dominance Over Competition</li>
@@ -362,10 +362,10 @@ useEffect(()=>{
      </div>
     
      
-<div className=' grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
+<div className=' grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
 
-<div className='coxs:space-y-4 2xl:space-y-5 '>
-<div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5   hover:bg-[#2b2a2a] hover:text-white'>
+<div className='space-y-4 2xl:space-y-5 '>
+<div className='  rounded-lg bg-[#f7f7f7] px-3 py-5   hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
        <h2 className='text-xl mt-4 font-extrabold'>React Custom Web Development</h2>
@@ -409,7 +409,7 @@ useEffect(()=>{
 </div>
 
 
-<div className=' coxs:space-y-4 2xl:space-y-5 mt-5 '>
+<div className=' space-y-4 2xl:space-y-5 mt-5 '>
 
 
 
@@ -471,7 +471,7 @@ useEffect(()=>{
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] max-w-[1440px] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h1 className="text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               Let's Build Your Dream Website{" "}
               <span className="text-[#f72d74]">Together!</span>
             </h1>
@@ -732,17 +732,17 @@ useEffect(()=>{
     <div className="mt-20 mx-auto w-[90%]">
 <Slider {...settingsTwo}>
         {/* Slide 1 */}
-        <div className="coxs:px-12 lg:px-20 py-8 border-t-2 border-gray-400 border-r-2 ">
+        <div className="px-12 lg:px-20 py-8 border-t-2 border-gray-400 border-r-2 ">
           <img src="/lumyri-logo.png" alt="logo" className="h-20 w-36" />
         </div>
 
         {/* Slide 2 */}
-        <div className=" coxs:px-2 lg:px-10 py-8 border-t-2 border-gray-400 border-r-2">
+        <div className=" px-2 lg:px-10 py-8 border-t-2 border-gray-400 border-r-2">
           <img src="/servicelead.png" alt="logo" className="h-20 w-44" />
         </div>
 
         {/* Slide 3 */}
-        <div className="coxs:px-12 lg:px-20 py-8 border-t-2 border-gray-400 border-r-2">
+        <div className="px-12 lg:px-20 py-8 border-t-2 border-gray-400 border-r-2">
           <img src="/hytlogo.png" alt="logo" className="h-20 w-44" />
         </div>
       </Slider>

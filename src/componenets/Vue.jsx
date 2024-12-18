@@ -163,7 +163,7 @@ window.scrollTo(0,0)
     className="absolute top-0 left-0 w-full h-full  z-0"
     alt="Background"
   />
-  <div className="relative w-[90%] mx-auto max-w-[1690px] text-white grid coxs:grid-cols-1 gap:10 lg:grid-cols-2   ">
+  <div className="relative w-[90%] mx-auto max-w-[1690px] text-white grid grid-cols-1 gap:10 lg:grid-cols-2   ">
     {/* Grid Layout */}
     
       {/* Left Section */}
@@ -275,7 +275,7 @@ window.scrollTo(0,0)
       </div>
 
       <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74] box-shadow md:grid-cols-2 lg:grid-cols-3'>
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
     <div className='flex items-center py-4  gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-extrabold'>Trusted Vue.js Partner</h3>
@@ -286,7 +286,7 @@ window.scrollTo(0,0)
     updating them consistently, and ensuring 
     timely delivery of business-oriented Vue.Js solutions to achieve desired business goals.</p>
    
-<ul className='flex coxs:flex-col  text-sm  mt-7 gap-5 list-disc pl-5 '>
+<ul className='flex flex-col  text-sm  mt-7 gap-5 list-disc pl-5 '>
   <li>100% Quality Assurance</li>
   <li>User-Oriented End products</li>
   <li>Guaranteed User Satisfaction</li>
@@ -299,7 +299,7 @@ window.scrollTo(0,0)
 
 
 
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
     <div className='flex  py-4  items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-extrabold'>Diversely Qualified Team</h3>
@@ -311,7 +311,7 @@ window.scrollTo(0,0)
     our collaborative work approach to deliver products 
     that work efficiently while satisfying user viewing pleasures.</p>
    
-<ul className='flex coxs:flex-col gap-5  text-sm mt-7 list-disc pl-5 pb-12 '>
+<ul className='flex flex-col gap-5  text-sm mt-7 list-disc pl-5 pb-12 '>
   <li>Export UI/UX Designers</li>
   <li>Holistic Development Approach</li>
   <li>Advanced Technologies' Experts</li>
@@ -324,7 +324,7 @@ window.scrollTo(0,0)
 
 
 
-    <div className='coxs:border-b-[6px]  border-[#f72d74] p-5'>
+    <div className='border-b-[6px]  border-[#f72d74] p-5'>
     <div className='flex items-center gap-5 py-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-black'>Flexible Development Cost</h3>
@@ -332,7 +332,7 @@ window.scrollTo(0,0)
     </div>
    <p className='text-sm leading-7'>
    We offer more than what we charge. The cost we may charge you is barely compensation for our developers’ tireless effort who dedicatedly do full justice to their jobs We don’t just partner up with you on a project basis, we fully internalize this partnership and go the extra mile to not just deliver Vue.Js products but excellence.   </p>
-<ul className='flex coxs:flex-col text-sm gap-5 mt-7 list-disc pl-5 '>
+<ul className='flex flex-col text-sm gap-5 mt-7 list-disc pl-5 '>
   <li>Zero Added Expense</li>
   <li>Competitively-priced Service</li>
   <li>Budget-oriented Development</li>
@@ -362,10 +362,10 @@ window.scrollTo(0,0)
      </div>
     
      
-<div className=' grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
+<div className=' grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
 
-<div className='coxs:space-y-4 2xl:space-y-5 '>
-<div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5   hover:bg-[#2b2a2a] hover:text-white'>
+<div className='space-y-4 2xl:space-y-5 '>
+<div className='  rounded-lg bg-[#f7f7f7] px-3 py-5   hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
        <h2 className='text-xl mt-4 font-extrabold'>Vue.js Expert Consultancy</h2>
@@ -406,7 +406,7 @@ window.scrollTo(0,0)
 </div>
 
 
-<div className=' coxs:space-y-4 2xl:space-y-5 mt-5 '>
+<div className=' space-y-4 2xl:space-y-5 mt-5 '>
 
 
 
@@ -465,7 +465,7 @@ window.scrollTo(0,0)
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10 max-w-[1440px]  w-[90%] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h1 className="text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               Let's Build Your Dream Website{" "}
               <span className="text-[#f72d74]">Together!</span>
             </h1>
@@ -664,12 +664,12 @@ window.scrollTo(0,0)
     <div className="mt-20 mx-auto w-[90%] max-w-[1440px] flex">
 
         {/* Slide 1 */}
-        <div className=" w-[50%] coxs:px-12 lg:px-20 py-8 border-t-2 border-gray-400 border-r-2 ">
-          <img src="/cvmakerhublogo.png" alt="logo" className="h-20 w-42" />
+        <div className=" w-[50%] px-4 lg:px-20 py-8 border-t-2 border-gray-400 border-r-2 ">
+          <img src="/cvmakerhublogo.png" alt="logo" className="h-20 w-56" />
         </div>
 
         {/* Slide 2 */}
-        <div className=" coxs:px-2  w-[50%] lg:px-10 py-8 border-t-2 border-gray-400 ">
+        <div className=" px-2  w-[50%] lg:px-10 py-8 border-t-2 border-gray-400 ">
           
         </div>
 
@@ -688,7 +688,7 @@ window.scrollTo(0,0)
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] max-w-[1440px]  mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h1 className="text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               <span className='text-[#f72d74]'>Hire Remote & Project</span> Based Developers for Wodwes
               
             </h1>
@@ -709,7 +709,7 @@ window.scrollTo(0,0)
 
 
       <div className="my-12 lg:my-16 mx-auto w-[90%] max-w-[1440px]">
-        <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
+        <h2 className="text-left text-2xl font-bold lg:text-3xl">
           Frequently Asked <span className="text-[#f72d74]">Questions!</span>
         </h2>
         <p className="mb-7 mt-4 text-left text-base font-normal text-[#272821]">

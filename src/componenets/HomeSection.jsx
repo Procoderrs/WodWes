@@ -117,16 +117,18 @@ const HomeSection = () => {
 
   return (
     <>
+    
+
     <section className="z-0 bg-banner-image bg-cover py-20">
       <div className="flex items-center justify-center">
         <div className="mx-auto text-center w-full">
           {/* Heading and Slider */}
-          <h1 className="font-black text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+          <h1 className="font-black text-white text-3xl  md:text-4xl lg:text-5xl xl:text-6xl">
             <div className="flex flex-wrap items-center justify-center">
-              <p className="mx-2 coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl">
+              <p className="mx-2 px-3 text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                 We’re a Full Service
               </p>
-              <div className="inline-block  md:mt-5    coxs:mt-3  ">
+              <div className="inline-block  ">
                 <Swiper
                   direction="vertical"
                   autoplay={{
@@ -136,39 +138,40 @@ const HomeSection = () => {
                   }}
                   
                   modules={[Pagination, Autoplay]} // Ensure Autoplay is added here
-                  className="my-swiper coxs:h-[50px]    md:h-[50px]  md:w-[170px] lg:w-[290px] lg:mt-4 lg:h-[100px]    2xl:w-[350px] 2xl:h-[100px]"
+                  className="my-swiper h-[50px]    md:h-[50px]  md:w-[170px] lg:w-[290px] lg:mt-4 lg:h-[70px]    2xl:w-[350px] 2xl:h-[100px]"
                 >
                   <SwiperSlide>
-                    <div className="font-black text-[#f72d74] coxs:text-4xl md:text-3xl lg:text-5xl xl:text-6xl">
+                    <div className="font-black text-[#f72d74] text-4xl md:text-3xl lg:text-5xl xl:text-6xl">
                       with ease
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="font-black text-[#f72d74] coxs:text-4xl md:text-3xl lg:text-5xl xl:text-6xl">
+                    <div className="font-black text-[#f72d74] text-4xl md:text-3xl lg:text-5xl xl:text-6xl">
                       efficiency
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="font-black sm:ml[-30px] md:ml-[-70px] text-[#f72d74] coxs:text-4xl md:text-3xl lg:text-5xl xl:text-6xl">
+                    <div className="font-black sm:ml[-30px] md:ml-[-70px] text-[#f72d74] text-4xl md:text-3xl lg:text-5xl xl:text-6xl">
                       design
                     </div>
                   </SwiperSlide>
                 </Swiper>
               </div>
             </div>
+            <h1 className="text-3xl px-3 md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mx-auto">
+            Development Agency
+          </h1>
           </h1>
 
           {/* Subheading */}
-          <h1 className="coxs:text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-black text-white mx-auto">
-            Development Agency
-          </h1>
+          
 
           {/* Description */}
-          <h2 className="py-6 coxs:text-xl md:text-xl px-5 font-medium text-[#f72d74] md:my-8">
+          <h2 className="py-6 text-lg md:text-xl px-5 font-medium text-[#f72d74] md:my-8">
             Empowering Businesses with Cutting-Edge Web Technologies
           </h2>
 
-          <p className="mb-12 text-white coxs:text-base leading-7 px-3  md:text-base lg:text-lg">
+          <p className="mb-12 text-white text-base leading-7 px-3  md:text-base lg:text-lg">
             A web design and development agency crafting seamless web and
             software apps for startups, <br className="max-lg:hidden" />
             businesses, and large enterprises to help them build a strong online
@@ -187,15 +190,19 @@ const HomeSection = () => {
     </section>
 
 
-      <div className=" w-[90%] max-w-[1440px] mt-[90px] mb-[50px] mx-auto">
+
+
+
+
+      <div className=" w-[90%]  max-w-[1440px] my-12 mx-auto">
         <div className="grid lg:grid-cols-2 gap-6 ">
-          <div className="px-3 lg:pr-8 flex items-start justify-center lg:pb-10 xl:max-w-[690px] flex-col">
-            <h2 className=" sm:text-4xl  coxs:text-[22px] font-extrabold">
+          <div className=" lg:pr-8 flex items-start justify-center lg:pb-10 xl:max-w-[690px] flex-col">
+            <h2 className=" text-xl  md:text-3xl font-extrabold">
               <span className="text-[#f72d74]">Empowering Digital Dreams:</span>{" "}
               Our Commitment to Crafting Exceptional Designs and Solutions for a
               Connected World.
             </h2>
-            <p className="pb-10 mt-6 leading-9 text-[#282922] text-lg font-normal">
+            <p className="pb-10 mt-6 leading-9 text-[#282922] text-base font-normal">
               At our design and development agency, we are dedicated to
               empowering your digital dreams. Our mission is to create
               exceptional designs and innovative solutions that resonate with
@@ -223,10 +230,10 @@ const HomeSection = () => {
                 key={index}
                 className="flex items-center flex-col border hover:cursor-default border-[#ededed] justify-center shadow font-Inter py-8  rounded-md   xs:flex xs:flex-col "
               >
-                <h3 className="text-[#f72d74]  text-5xl font-black sm:text-3xl md:text-4xl">
+                <h3 className="text-[#f72d74]  text-5xl font-bold ">
                   {stat.count}
                 </h3>
-                <p className="xl:text-lg font-semibold text-[#282922] sm:text-base md:text-lg">
+                <p className="sm:text-lg font-medium leading-7 text-[#282922] xs:text-base ">
                   {stat.label}
                 </p>
               </div>
@@ -261,11 +268,11 @@ const HomeSection = () => {
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10 max-w-[1440px]  w-[90%] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h2 className="text-4xl coxs:text-3xl font-bold font-Inter sm:text-4xl text-white mb-3">
+            <h2 className="text-3xl font-semibold font-Inter text-white mb-3">
               Let's Build Your Dream Website{" "}
               <span className="text-[#f72d74]">Together!</span>
             </h2>
-            <p className="text-white text-lg font-Inter">
+            <p className="text-white leading-7 ">
               Whether you need a website redesign, development from scratch, or
               any other web-related services, team WODWES got you covered. Our
               experienced team of designers and developers will work closely
@@ -286,7 +293,7 @@ const HomeSection = () => {
       <div className="py-12 lg:py-20">
         <div className="w-[90%] max-w-[1440px] mx-auto">
           <div className="max-w-[890px] ">
-            <h2 className="mb-3 text-4xl font-bold ">
+            <h2 className="mb-3 text-3xl font-bold ">
               Web Design and Development{" "}
               <span className="text-[#f72d74]">Outsourcing Company</span>
             </h2>
@@ -298,7 +305,7 @@ const HomeSection = () => {
           </div>
 
           {/* 3 columns grid */}
-          <div className="grid coxs:grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mx-auto mt-14 md-w-[90%]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mx-auto mt-14 md-w-[90%]">
             <div className="w-full border-b sm:border-r border-[#d6d6d6] shadow hover:rounded-md">
               <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
                 <img
@@ -306,10 +313,10 @@ const HomeSection = () => {
                   alt="resource as a service"
                   className="w-8 h-8  "
                 />
-                <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-4">
+                <h3 className="h-14 text-xl xs:text-2xl md:text-xl  mt-3 flex items-center font-bold mb-4">
                   Resource as a service
                 </h3>
-                <p className="mb-4 text-lg">
+                <p className="mb-4 ">
                   Unlock unparalleled talent and expertise with our
                   Resource-as-a-Service. Access top-notch designers and
                   developers to enhance your projects and accelerate growth.{" "}
@@ -317,16 +324,16 @@ const HomeSection = () => {
               </div>
             </div>
             <div className="w-full border-b  xl:border-r   border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="./img.png"
                   alt="resource as a service"
                   className="w-8 h-8  "
                 />
-                <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-4">
+                <h3 className="h-14 text-xl xs:text-2xl md:text-xl  mt-3 flex items-center font-bold mb-4">
                   Front-End Development
                 </h3>
-                <p className="mb-4 text-lg">
+                <p className="mb-4 ">
                   Elevate user experiences with our Front-End Development
                   expertise. Craft visually stunning, responsive, and intuitive
                   interfaces that captivate and engage your audience.
@@ -334,16 +341,16 @@ const HomeSection = () => {
               </div>
             </div>
             <div className="w-full border-b sm:border-r border-[#d6d6d6]  xl:border-r-0  shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="./img.png"
                   alt="resource as a service"
                   className="w-8 h-8  "
                 />
-                <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-4">
+                <h3 className="h-14 text-xl xs:text-2xl md:text-xl  mt-3 flex items-center font-bold mb-4">
                   Web Application Development
                 </h3>
-                <p className="mb-4 text-lg">
+                <p className="mb-4 ">
                   Empower your business with our Web Application Development
                   services. We turn ideas into robust, scalable, and
                   user-friendly web solutions that drive success.{" "}
@@ -351,16 +358,16 @@ const HomeSection = () => {
               </div>
             </div>
             <div className="w-full border-b  xl:border-r border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="./img.png"
                   alt="resource as a service"
                   className="w-8 h-8  "
                 />
-                <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-4">
+                <h3 className="h-14 text-xl xs:text-2xl md:text-xl  mt-3 flex items-center font-bold mb-4">
                   Full-Stack Development
                 </h3>
-                <p className="mb-4 text-lg">
+                <p className="mb-4">
                   Experience end-to-end digital excellence with our Full-Stack
                   Development services. We seamlessly blend front-end finesse
                   with back-end robustness to bring your vision to life.{" "}
@@ -368,16 +375,16 @@ const HomeSection = () => {
               </div>
             </div>
             <div className="w-full border-b sm:border-r border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="./img.png"
                   alt="resource as a service"
                   className="w-8 h-8  "
                 />
-                <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-4">
+                <h3 className="h-14 text-xl xs:text-2xl md:text-xl  mt-3 flex items-center font-bold mb-4">
                   CMS Development
                 </h3>
-                <p className="mb-4 text-lg">
+                <p className="mb-4 ">
                   Empower your online presence with our CMS Development. We
                   build versatile and user-friendly content management systems
                   tailored to streamline your digital content and operations.{" "}
@@ -385,16 +392,16 @@ const HomeSection = () => {
               </div>
             </div>
             <div className="w-full border-b border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="./img.png"
                   alt="resource as a service"
                   className="w-8 h-8  "
                 />
-                <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-4">
+                <h3 className="h-14 text-xl xs:text-2xl md:text-xl  mt-3 flex items-center font-bold mb-4">
                   DevOps
                 </h3>
-                <p className="mb-4 text-lg">
+                <p className="mb-4">
                   Streamline development pipelines and enhance project
                   efficiency with our DevOps solutions. Achieve seamless
                   collaboration, rapid deployments, and optimal performance for
@@ -403,16 +410,16 @@ const HomeSection = () => {
               </div>
             </div>
             <div className="w-full border-b sm:border-b-0  sm:border-r border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="./img.png"
                   alt="resource as a service"
                   className="w-8 h-8  "
                 />
-                <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-4">
+                <h3 className="h-14 text-xl xs:text-2xl md:text-xl  mt-3 flex items-center font-bold mb-4">
                   Software Development
                 </h3>
-                <p className="mb-4 text-lg">
+                <p className="mb-4">
                   Transform ideas into powerful solutions. Our Software
                   Development services harness innovation and precision to
                   create robust, scalable, and tailored software solutions for
@@ -421,16 +428,16 @@ const HomeSection = () => {
               </div>
             </div>
             <div className="w-full border-b sm:border-b-0 border-[#d6d6d6] shadow  hover:rounded-md">
-              <div className="coxs:pt-5 coxs:pr-4 coxs:pb-12 coxs:pl-4">
+              <div className="pt-5 pr-4 pb-12 pl-4">
                 <img
                   src="./img.png"
                   alt="resource as a service"
                   className="w-8 h-8  "
                 />
-                <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-4">
+                <h3 className="h-14 text-xl xs:text-2xl md:text-xl  mt-3 flex items-center font-bold mb-4">
                   Quality Assurance & Testing
                 </h3>
-                <p className="mb-4 text-lg">
+                <p className="mb-4 ">
                   Ensure flawless performance and user satisfaction with our
                   Quality Assurance & Testing services. We meticulously
                   scrutinize every detail to deliver excellence.{" "}
@@ -452,12 +459,12 @@ const HomeSection = () => {
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10 max-w-[1440px]  w-[90%] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h2 className="text-4xl coxs:text-3xl font-bold font-Inter sm:text-4xl text-white mb-3">
+            <h2 className="text-3xl font-semibold  text-white mb-3">
               
               <span className="text-[#f72d74]">Hire Remote & Project</span>
               Based Developers for Wodwes
             </h2>
-            <p className="text-white text-lg font-Inter">
+            <p className="text-white leading-7">
             Power up your projects with WODWES remote developers. Boost productivity and achieve 
             exceptional results. Get started today to unlock your project's full potential!
             </p>
@@ -474,7 +481,7 @@ const HomeSection = () => {
 
       
 
-      <div className="  gap:10 justify-between  w-[90%] max-w-[1440px] mx-auto pb-20 pt-12 flex coxs:flex-col lg:flex-row">
+      <div className="  gap:10 justify-between  w-[90%] max-w-[1440px] mx-auto pb-20 pt-12 flex flex-col lg:flex-row">
         {/* Left Column: Sticky Content */}
         <div className="h-full lg:sticky lg:top-32 lg:max-w-[500px] lg:w-[50%] ">
           <h2 className="text-4xl font-black text-[#282922]">
@@ -496,10 +503,10 @@ const HomeSection = () => {
         </div>
 
         {/* Right Column: Grid Boxes */}
-        <div className="grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-[50%]">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1     xl:grid-cols-2 lg:w-[50%]">
           {/* Box 1 */}
           <div className="space-y-2 sm:order-1">
-            <div className="coxs:p-5 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
+            <div className="p-5 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
               <img
                 src="./img.png"
                 alt="resource as a service"
@@ -518,7 +525,7 @@ const HomeSection = () => {
 
           {/* Box 2 */}
           <div className="space-y-4 sm:order-3">
-            <div className="coxs:p-5 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
+            <div className="p-5 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
               <img
                 src="./img.png"
                 alt="resource as a service"
@@ -537,8 +544,8 @@ const HomeSection = () => {
 
           {/* Box 3 */}
           <div className="sm:mt-5 sm:order-2">
-            <div className="coxs:space-y-4">
-              <div className="coxs:p-5 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
+            <div className="space-y-4">
+              <div className="p-5 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
                 <img
                   src="./img.png"
                   alt="resource as a service"
@@ -567,12 +574,12 @@ const HomeSection = () => {
         <div className="relative w-[90%] mx-auto max-w-[1440px] text-white z-10">
 
 
-          <div className="flex  coxs:flex-col md:flex-row  md:items-center justify-between gap-10 text-white">
+          <div className="flex flex-col md:flex-row  md:items-center justify-between gap-10 text-white">
             <div className="max-w-[540px] 3xl:max-w-[700px]">
-              <h1 className="md:text-3xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+              <h1 className="md:text-4xl text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
                 <span className="text-[#f72d74] text-3xl font-bold" >Product</span> We Develop
               </h1>
-              <p className="text-white mt-5 text-lg font-Inter max-w-[572px]">
+              <p className="text-white mt-5  max-w-[572px]">
                 Hire testers and QA experts to perform end-to-end testing of
                 your existing product, website, or software solution.
               </p>
@@ -584,7 +591,7 @@ const HomeSection = () => {
               Give it a Try?
             </Link>
           </div>
-          <div className="grid coxs:grid-cols-1 md:grid-cols-2  mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2  mt-8">
             <img src="cv-maker.png" alt="CV Maker" />
             <img src="cv-maker-2.png" alt="CV Maker 2" />
           </div>
@@ -637,7 +644,7 @@ const HomeSection = () => {
 
           {/* Dropdown content */}
           <div className="mt-6   rounded-lg">
-            <div className="mt-4 flex flex-wrap coxs:gap-10 md:gap-20 xl:gap-36  justify-center">
+            <div className="mt-4 flex flex-wrap gap-10 md:gap-20 xl:gap-36  justify-center">
               {technologies[activeDropdown].map((tech, index) => (
                 <div
                   key={index}
@@ -661,7 +668,7 @@ const HomeSection = () => {
           className="absolute top-0 z-0  h-full w-full  "
           alt=""
         />
-        <div className=" relative  flex  coxs:flex-col   lg:gap-56  w-[90%] max-w-[1440px] mx-auto  lg:flex lg:flex-row">
+        <div className=" relative  flex  flex-col    lg:gap-56  w-[90%] max-w-[1440px] mx-auto lg:flex-row">
           {/* Left Column: Sticky Content */}
           <div className="h-full flex-1    lg:sticky lg:top-32 lg:max-w-[505px] ">
             <h2 className="text-4xl font-black text-white">
@@ -675,7 +682,7 @@ const HomeSection = () => {
           </div>
 
           {/* Right Column: Grid Boxes */}
-          <div className="grid coxs:grid-cols-1 mt-4 gap-5 flex-1  lg:grid-cols-1 xl:grid-cols-1 space-y-10 lg:mt-24 lg:max-w-[699px] lg:space-y-20">
+          <div className="grid grid-cols-1 mt-4 gap-5 flex-1  lg:grid-cols-1 xl:grid-cols-1 space-y-10 lg:mt-24 lg:max-w-[699px] lg:space-y-20">
             {/* Box 1 */}
             <div className=" ">
               <div className=" ">
@@ -741,15 +748,15 @@ const HomeSection = () => {
         </div>
       </div>
 
-      <div className="flex coxs:flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto my-16  lg:flex lg:flex-row">
+      <div className="flex flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto my-16  lg:flex lg:flex-row">
         {/* Left Column: Sticky Content */}
         <div className="h-full flex-1  lg:sticky lg:top-32  ">
           <img src="./team.png" className="rounded-lg" alt="" />
         </div>
 
         {/* Right Column: Grid Boxes */}
-        <div className="flex flex-1 coxs:flex-col   gap-4 lg:flex-col ">
-          <h2 className="text-3xl font-black">
+        <div className="flex flex-1 flex-col   gap-4 lg:flex-col ">
+          <h2 className="text-3xl font-bold">
             Your Development <span className="text-[#f72d74]">Partner!</span>
           </h2>
           <p className="text-[18px] font-Inter leading-9">
@@ -765,11 +772,11 @@ const HomeSection = () => {
                 alt="resource as a service"
                 className="w-9 h-9"
               />
-              <h3 className=" text-[22px] mt-3 flex items-center font-bold mb-4">
+              <h3 className=" text-xl mt-3 flex items-center font-bold mb-4">
                 Developing feature-enriched web and software solutions for
                 businesses
               </h3>
-              <p className="text-lg leading-9">
+              <p className="text-base leading-9">
                 At WODWES, we understand that technology is constantly evolving,
                 and we're committed to staying ahead of the curve. Whether you
                 need a simple website or a complex web application, we have the
@@ -787,10 +794,10 @@ const HomeSection = () => {
                 alt="resource as a service"
                 className="w-9 h-9"
               />
-              <h3 className=" text-xl mt-3 flex items-center font-bold mb-4">
+              <h3 className=" text-xl  mt-3 flex items-center font-bold mb-4">
                 Tailored development solutions to meet your business needs!
               </h3>
-              <p className="text-lg leading-9 mb-5">
+              <p className="text-base leading-9 mb-5">
                 Team WODWES believes that every business is unique, and that's
                 why we offer tailored development solutions to meet your
                 specific needs. We work closely with our clients to identify
@@ -811,7 +818,7 @@ const HomeSection = () => {
       </div>
 
       <div className="  mx-auto maxlg:max-w-[90%] max:w-[90%] max:max-w-[1690px] ">
-        <div className="flex coxs:flex-col coxs:items-center    h-full w-full lg:flex-row  gap-10">
+        <div className="flex flex-col items-center    h-full w-full lg:flex-row  gap-10">
           {/* Left Div */}
           <div className="h-full w-full lg:top-32    max-w-md lg:sticky  lg:mt-[-10%]  lg:ml-[10%]">
             <h2 className="mb-5 text-3xl  font-extrabold md:text-4xl xl:text-5xl">
@@ -824,7 +831,7 @@ const HomeSection = () => {
           </div>
 
           {/* Right Div */}
-          <div className="rounded-lg  coxs:w-full   coxs:p-9 bg-[#272821] 2xl:p-28">
+          <div className="rounded-lg  w-full   p-9 bg-[#272821] 2xl:p-28">
             <form action="">
               <div className="grid max-w-2xl xs:grid-cols-2 gap-10">
                 <input
@@ -850,7 +857,7 @@ const HomeSection = () => {
                 <button className="mb-5 ml-[-10px]">
                   <Link
                     to={"/contact"}
-                    className="border-2 font-semibold px-12 py-3 text-white   hover:bg-[#f72d74] hover:text-white  border-[#f72d74]"
+                    className="border-2 font-semibold px-9 py-3 text-white   hover:bg-[#f72d74] hover:text-white  border-[#f72d74]"
                   >
                     Get Started
                   </Link>
@@ -861,166 +868,41 @@ const HomeSection = () => {
         </div>
       </div>
 
-      <div className="my-12 lg:my-16 mx-auto w-[90%] max-w-[1440px]">
-  <h2 className="text-left coxs:text-2xl font-black lg:text-3xl">
-    Frequently Asked <span className="text-[#f72d74]">Questions!</span>
-  </h2>
-  <p className="mb-7 mt-4 text-left text-[17px] font-normal text-[#272821]">
-    We love hearing about how our work has helped businesses succeed and how WODWES became their go-to development team.
-  </p>
-  <div className="mx-auto md:max-w-[1000px]">
-    {/* FAQ Item 1 */}
-    <div className="border-t border-gray-200 first:!border-t-0">
-      <button
-        onClick={() => toggleAnswer(0)}
-        className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
-      >
-        <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
-          What is Wodwes?
-        </span>
-        <span
-          className={`h-5 w-5 flex items-center justify-center text-[#f72d74] font-bold rounded-full`}
-        >
-          <img
-            src={activeIndex === 0 ? "/minusicon.png" : "/plusiconpng.png"}
-            alt={activeIndex === 0 ? "Collapse" : "Expand"}
-          />
-        </span>
-      </button>
-      {activeIndex === 0 && (
-        <p className="py-4 text-base text-[#272821]">
-          WODWES (Women-Driven Web Solutions) is a well-recognized US-based
-          agency offering a wide range of services including website design and
-          development, CMS development, ERP development, custom Ecommerce
-          development, and UI/UX design. We house a professional team of
-          designers, developers, consultants, and engineers, who are dedicatedly
-          available to help businesses in achieving digital goals.
-        </p>
-      )}
-    </div>
-
-    {/* FAQ Item 2 */}
-    <div className="border-t border-gray-200 ">
-      <button
-        onClick={() => toggleAnswer(1)}
-        className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
-      >
-        <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
-          How long does it keep to develop a website or web application?
-        </span>
-        <span
-          className={`h-8 w-8 flex items-center justify-center text-[#f72d74] font-bold rounded-full`}
-        >
-          <img
-            src={activeIndex === 1 ? "/minusicon.png" : "/plusiconpng.png"}
-            alt={activeIndex === 1 ? "Collapse" : "Expand"}
-          />
-        </span>
-      </button>
-      {activeIndex === 1 && (
-        <p className="py-4 text-base text-[#272821]">
-          The time it takes to develop a website or web application varies
-          depending on the complexity of the project, the number of features and
-          pages, and the level of customization required. We typically provide an
-          estimated timeline during the discovery phase based on our assessment
-          of the project requirements. To get a free quote, email us at
-          sales@wodwes.com.
-        </p>
-      )}
-    </div>
-
-    {/* FAQ Item 3 */}
-    <div className="border-t border-gray-200 ">
-      <button
-        onClick={() => toggleAnswer(2)}
-        className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
-      >
-        <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
-          What programming languages and frameworks do you use?
-        </span>
-        <span
-          className={`h-8 w-8 flex items-center justify-center text-[#f72d74] font-bold rounded-full`}
-        >
-          <img
-            src={activeIndex === 2 ? "/minusicon.png" : "/plusiconpng.png"}
-            alt={activeIndex === 2 ? "Collapse" : "Expand"}
-          />
-        </span>
-      </button>
-      {activeIndex === 2 && (
-        <p className="py-4 text-base text-[#272821]">
-          We use a variety of programming languages and frameworks depending on
-          the project requirements. Some of the languages and frameworks we
-          commonly use include PHP, JavaScript, React, Angular, Vue, Node.js,
-          Python, and Django.
-        </p>
-      )}
-    </div>
-
-    {/* FAQ Item 4 */}
-    <div className="border-t border-gray-200 ">
-      <button
-        onClick={() => toggleAnswer(3)}
-        className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
-      >
-        <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
-          Do you provide website hosting and maintenance services?
-        </span>
-        <span
-          className={`h-8 w-8 flex items-center justify-center text-[#f72d74] font-bold rounded-full`}
-        >
-          <img
-            src={activeIndex === 3 ? "/minusicon.png" : "/plusiconpng.png"}
-            alt={activeIndex === 3 ? "Collapse" : "Expand"}
-          />
-        </span>
-      </button>
-      {activeIndex === 3 && (
-        <p className="py-4 text-base text-[#272821]">
-          Yes, we offer website hosting and maintenance services to ensure that
-          our client's websites are secure, up-to-date, and performing optimally.
-          Our hosting services include server maintenance, security updates, and
-          backups. Our maintenance services include content updates, bug fixes,
-          and feature enhancements.
-        </p>
-      )}
-    </div>
-
-    {/* FAQ Item 5 */}
-    <div className="border-t border-gray-200">
-      <button
-        onClick={() => toggleAnswer(4)}
-        className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
-      >
-        <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
-          What is your web development process?
-        </span>
-        <span
-          className={`h-5 w-5 flex items-center justify-center text-[#f72d74] font-bold rounded-full`}
-        >
-          <img
-            src={activeIndex === 4 ? "/minusicon.png" : "/plusiconpng.png"}
-            alt={activeIndex === 4 ? "Collapse" : "Expand"}
-          />
-        </span>
-      </button>
-      {activeIndex === 4 && (
-        <p className="py-4 text-base text-[#272821]">
-          Our web development process typically involves the following steps:
-          discovery, design, development, testing, and launch. During the
-          discovery phase, we gather requirements, define the project scope, and
-          create a project plan. The design phase involves creating wireframes,
-          mockups, and visual designs. The development phase involves coding,
-          integrating with third-party services, and setting up databases. The
-          testing phase involves conducting functional testing, usability
-          testing, and performance testing. Finally, we launch the website or
-          application and provide ongoing support. To get started with our web
-          development services, please email us at sales@wodwes.com.
-        </p>
-      )}
-    </div>
-  </div>
-</div>
+     <div className="my-12 lg:my-16 mx-auto w-[90%] max-w-[1440px]">
+             <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
+               Frequently Asked <span className="text-[#f72d74]">Questions!</span>
+             </h2>
+             <p className="mb-7 mt-4 text-left text-base font-normal text-[#272821]">
+               We love hearing about how our work has helped businesses succeed and
+               how WODWES became their go-to development team.
+             </p>
+             <div className="mx-auto md:max-w-[1000px]">
+               {faqData.map((item, index) => (
+                 <div
+                   key={index}
+                   className="border-t border-gray-200 first:!border-t-0"
+                 >
+                   <button
+                     onClick={() => toggleAnswer(index)}
+                     className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
+                   >
+                     <span className="text-left text-base font-bold text-[#272821] md:text-lg">
+                       {item.question}
+                     </span>
+                     <span
+                       className={`h-10 w-10 flex items-center justify-center text-[#f72d74] font-bold  p-2  rounded-full`}
+                     >
+                    <img src=  {activeIndex === index ? "/minusicon.png" : "/plusicon.png"}
+                     alt={activeIndex === index ? "Collapse" : "Expand"} />
+                     </span>
+                   </button>
+                   {activeIndex === index && (
+                     <p className="py-4 text-base text-[#272821]">{item.answer}</p>
+                   )}
+                 </div>
+               ))}
+             </div>
+           </div>
 
     </>
   );

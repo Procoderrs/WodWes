@@ -230,8 +230,8 @@ window.scrollTo(0,0)
         </div>
       </section>
 
-      <div className="flex-col w-[90%] py-12 max-w-[1440px] mx-auto justify-between">
-        <div className="flex coxs:flex-col md:flex-row gap-6 justify-between mb-16 py-4">
+      <div className="flex-col  flex w-[90%] py-12 max-w-[1440px] mx-auto justify-between">
+        <div className="flex flex-col md:flex-row gap-6 justify-between mb-16 py-4">
           <div className="max-w-[600px]">
             <h2 className="text-3xl font-black">
               Why Choose <span className="text-[#f72d74]">WODWES</span> for Website Design and Development Services?
@@ -245,7 +245,7 @@ window.scrollTo(0,0)
           </p>
         </div>
 
-        <div className='grid coxs:grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4'>
+        <div className='grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4'>
 <div className=' py-2 px-4'>
 <h2 className='text-3xl text-[#f72d74] font-bold'>1.67x</h2>
 <p>It is a long established fact that a reader will be
@@ -274,7 +274,7 @@ window.scrollTo(0,0)
       </div>
 
       <div className='w-[90%] max-w-[1440px] mx-auto'>
-      <div className="flex coxs:flex-col md:flex-row gap-6 justify-between mb-7 py-4 ">
+      <div className="flex flex-col md:flex-row gap-6 justify-between mb-7 py-4 ">
           <div className="max-w-[600px]">
             <h2 className="text-3xl font-black">
               Featured<span className="text-[#f72d74]">Projects</span> 

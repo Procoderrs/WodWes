@@ -154,7 +154,7 @@ useEffect(()=>{
     className="absolute top-0 left-0 w-full h-full  z-0"
     alt="Background"
   />
-  <div className="relative w-[90%] mx-auto max-w-[1690px] text-white grid coxs:grid-cols-1 gap:10 lg:grid-cols-2   ">
+  <div className="relative w-[90%] mx-auto max-w-[1690px] text-white grid grid-cols-1 gap:10 lg:grid-cols-2   ">
     {/* Grid Layout */}
     
       {/* Left Section */}
@@ -264,7 +264,7 @@ useEffect(()=>{
       </div>
 
       <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74] box-shadow md:grid-cols-2 lg:grid-cols-3'>
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
     <div className='flex items-center py-4  gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-extrabold'>BigCommerce Dedicated Integrations</h3>
@@ -274,7 +274,7 @@ useEffect(()=>{
     
     
    
-<ul className='flex coxs:flex-col  text-sm  mt-7 gap-5 list-disc pl-5 '>
+<ul className='flex flex-col  text-sm  mt-7 gap-5 list-disc pl-5 '>
   <li>API Integration</li>
   <li>Theme Integration</li>
   <li>ERP Integration</li>
@@ -290,7 +290,7 @@ useEffect(()=>{
 
 
 
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
     <div className='flex  py-4  items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-extrabold'>BigCommerce Development & Customization</h3>
@@ -298,7 +298,7 @@ useEffect(()=>{
     </div>
     
    
-<ul className='flex coxs:flex-col gap-5 text-sm  mt-7 list-disc pl-5 pb-7 '>
+<ul className='flex flex-col gap-5 text-sm  mt-7 list-disc pl-5 pb-7 '>
   <li>Custom Scripting</li>
   <li> API Development</li>
   <li>Template Development</li>
@@ -311,7 +311,7 @@ useEffect(()=>{
     </div>
 
 
-    <div className='coxs:border-b-[6px]  border-[#f72d74] p-5'>
+    <div className='border-b-[6px]  border-[#f72d74] p-5'>
     <div className='flex items-center gap-5 py-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-extrabold'>BigCommerce Maintenance & Add-On Services</h3>
@@ -319,7 +319,7 @@ useEffect(()=>{
     </div>
     
    
-<ul className='flex coxs:flex-col text-sm gap-5 mt-7 list-disc pl-5 '>
+<ul className='flex flex-col text-sm gap-5 mt-7 list-disc pl-5 '>
   <li>BigCommerce Updates & Bug Fixes</li>
   <li>BigCommerce Site Performance</li>
   <li>BigCommerce Migration</li>
@@ -355,9 +355,9 @@ useEffect(()=>{
      </div>
     
      
-<div className=' grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
+<div className=' grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
 
-<div className='coxs:space-y-4 2xl:space-y-5 '>
+<div className='space-y-4 2xl:space-y-5 '>
 <div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5   hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
@@ -418,7 +418,7 @@ useEffect(()=>{
 </div>
 
 
-<div className=' coxs:space-y-4 2xl:space-y-5 mt-5 '>
+<div className=' space-y-4 2xl:space-y-5 mt-5 '>
 
 
 
@@ -614,7 +614,7 @@ useEffect(()=>{
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto max-w-[1440px] font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h1 className="text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               <span className='text-[#f72d74]'>Hire Remote & Project</span> Based Developers for Wodwes
               
             </h1>
@@ -634,7 +634,7 @@ useEffect(()=>{
       </div>
 
       <div className="my-12 lg:my-16 mx-auto w-[90%] max-w-[1440px]">
-        <h2 className="text-left coxs:text-2xl font-bold lg:text-3xl">
+        <h2 className="text-left text-2xl font-bold lg:text-3xl">
           Frequently Asked <span className="text-[#f72d74]">Questions!</span>
         </h2>
         <p className="mb-7 mt-4 text-left text-base font-normal text-[#272821]">

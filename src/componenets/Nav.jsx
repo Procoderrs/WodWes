@@ -59,7 +59,7 @@ const Nav = () => {
         },
 
         {
-          logo: "cms.png",
+          logo: "./cms.png",
           title: "CMS Development",
           items: [
             { label: "WordPress Development", to: "services/wordpress-development-services" },
@@ -84,7 +84,7 @@ const Nav = () => {
 
             { logo: "./healthlogo.png", label: "Travel", to: "industries/" },
 
-            { logo: "healthlogo.png", label: "Insurance", to: "industries/" },
+            { logo: "./healthlogo.png", label: "Insurance", to: "industries/" },
           ],
         },
         {
@@ -99,8 +99,8 @@ const Nav = () => {
         },
         {
           items: [
-            { logo: "healthlogo.png", label: "EdTech", to: "industries/" },
-            { logo: "healthlogo.png", label: "Enterprise", to: "industries/" },
+            { logo: "./healthlogo.png", label: "EdTech", to: "industries/" },
+            { logo: "./healthlogo.png", label: "Enterprise", to: "industries/" },
           ],
         },
         {
@@ -126,33 +126,33 @@ const Nav = () => {
         {
           items: [
             {
-              logo: "healthlogo.png",
+              logo: "./healthlogo.png",
               label: "IOS Developers",
               to: "technologies/",
             },
-            { logo: "healthlogo.png", label: "Android Developers", to: "technologies/" },
-            { logo: "healthlogo.png", label: "Node Js Developers", to: "technologies/" },
+            { logo: "./healthlogo.png", label: "Android Developers", to: "technologies/" },
+            { logo: "./healthlogo.png", label: "Node Js Developers", to: "technologies/" },
           ],
         },
 
         {
           items: [
-            { logo: "healthlogo.png", label: "Blockchain Developers", to: "technologies/" },
+            { logo: "./healthlogo.png", label: "Blockchain Developers", to: "technologies/" },
             {
-              logo: "healthlogo.png",
+              logo: "./healthlogo.png",
               label: "TypeScript  Developers",
               to: "technologies/",
             },
-            { logo: "healthlogo.png", label: "MEAN Stack Developers", to: "technologies/" },
+            { logo: "./healthlogo.png", label: "MEAN Stack Developers", to: "technologies/" },
           ],
         },
 
         {
           items: [
-            { logo: "healthlogo.png", label: "MERN Stack Developers", to: "technologies/" },
-            { logo: "healthlogo.png", label: "Python Developers", to: "technologies/" },
+            { logo: "./healthlogo.png", label: "MERN Stack Developers", to: "technologies/" },
+            { logo: "./healthlogo.png", label: "Python Developers", to: "technologies/" },
             {
-              logo: "healthlogo.png",
+              logo: "./healthlogo.png",
               label: "Mobile Application Developers",
               to: "technologies/",
             },
@@ -161,9 +161,9 @@ const Nav = () => {
 
         {
           items: [
-            { logo: "healthlogo.png", label: "WordPress Developers", to: "technologies/" },
-            { logo: "healthlogo.png", label: "React Js Developers", to: "technologies/" },
-            { logo: "healthlogo.png", label: "Node Js Developers", to: "technologies/" },
+            { logo: "./healthlogo.png", label: "WordPress Developers", to: "technologies/" },
+            { logo: "./healthlogo.png", label: "React Js Developers", to: "technologies/" },
+            { logo: "./healthlogo.png", label: "Node Js Developers", to: "technologies/" },
           ],
         },
       ],
@@ -308,7 +308,7 @@ const Nav = () => {
 
         {/* Mobile View */}
         <div className="flex lg:hidden justify-between max-w-[1690px]  mx-auto items-center  px-8 py-4 ">
-          <div className=" coxs:w-24 sm:w-32    w-36">
+          <div className=" w-24 sm:w-32    ">
             <img src="/wodweslogo.png" alt="" />
           </div>
           <div className="flex items-center space-x-4 ">

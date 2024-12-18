@@ -166,10 +166,10 @@ window.scrollTo(0,0)
         />
         <div className="relative w-[90%] mx-auto max-w-[1690px] text-white z-10">
 
-        <div className='grid coxs:grid-cols-1 gap-6 lg:grid-cols-2 '>
+        <div className='grid grid-cols-1 gap-6 lg:grid-cols-2 '>
 
         
-          <div className="flex   coxs:flex-col  mb-5  md:items-center justify-between gap-10 text-white">
+          <div className="flex   flex-col  mb-5  md:items-center justify-between gap-10 text-white">
             <div className="max-w-[540px] 3xl:max-w-[700px]">
               <h1 className="lg:text-6xl coxs:text-3xl font-black font-Inter  sm:text-4xl text-white mb-3">
               <span className='text-[#f72d74]'>WordPress</span>  Development 
@@ -263,14 +263,14 @@ window.scrollTo(0,0)
       </div>
 
       <div className='mx-auto mt-8 grid w-[90%]  rounded-lg border-[#f72d74] box-shadow md:grid-cols-2 lg:grid-cols-3'>
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] md:border-r p-5'>
     <div className='flex items-center  gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-extrabold'>WordPress Website Maintenance</h3>
 
     </div>
    
-<ul className='flex coxs:flex-col  mt-7 gap-5 list-disc pl-5 '>
+<ul className='flex flex-col  mt-7 gap-5 list-disc pl-5 '>
   <li>Store Configuration Services</li>
   <li>Custom WordPress Development</li>
   <li>WordPress Theme Customization</li>
@@ -284,14 +284,14 @@ window.scrollTo(0,0)
 
 
 
-    <div className='coxs:border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
+    <div className='border-b border-gray-400 md:border-b-[6px]  md:border-b-[#f72d74] lg:border-r p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-extrabold'>RWordPress Website Design</h3>
 
     </div>
    
-<ul className='flex coxs:flex-col gap-5 mt-7 list-disc pl-5 '>
+<ul className='flex flex-col gap-5 mt-7 list-disc pl-5 '>
   <li>Custom WordPress Web Design</li>
   <li>Responsive WordPress Site</li>
   <li>WordPress Theme Customization</li>
@@ -305,14 +305,14 @@ window.scrollTo(0,0)
 
 
 
-    <div className='coxs:border-b-[6px]  border-[#f72d74] p-5'>
+    <div className='border-b-[6px]  border-[#f72d74] p-5'>
     <div className='flex items-center gap-5'>
     <img src="/grid-img.png" alt="grid-img" className='h-9 w-9' />
     <h3 className='text-2xl font-extrabold'>WordPress Customized Development</h3>
 
     </div>
    
-<ul className='flex coxs:flex-col gap-5 mt-7 list-disc pl-5 '>
+<ul className='flex flex-col gap-5 mt-7 list-disc pl-5 '>
   <li>WordPress Storefront Designs</li>
   <li>WordPress Template Development</li>
   <li>WordPress Web Development</li>
@@ -342,10 +342,10 @@ window.scrollTo(0,0)
      </div>
     
      
-<div className=' grid coxs:grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
+<div className=' grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:w-1/2'>
 
 <div className='coxs:space-y-4 2xl:space-y-5 '>
-<div className='  rounded-lg bg-[#f7f7f7] coxs:px-3 coxs:py-5   hover:bg-[#2b2a2a] hover:text-white'>
+<div className='  rounded-lg bg-[#f7f7f7] px-3 py-5   hover:bg-[#2b2a2a] hover:text-white'>
        <img src="/full-stack.png" alt="ful-stack-img" className='h-9 w-9' />
 
        <h2 className='text-xl mt-4 font-extrabold'>WordPress Plugin Development Services</h2>
@@ -396,7 +396,7 @@ window.scrollTo(0,0)
 </div>
 
 
-<div className=' coxs:space-y-4 2xl:space-y-5 mt-5 '>
+<div className=' space-y-4 2xl:space-y-5 mt-5 '>
 
 
 
@@ -460,7 +460,7 @@ window.scrollTo(0,0)
         <div className="relative flex flex-col items-start lg:flex-row lg:items-center   lg:justify-between gap-10  w-[90%] mx-auto font-Inter">
           {/* Content Container */}
           <div className=" w-full max-w-[1020px] ">
-            <h1 className="text-4xl coxs:text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+            <h1 className="text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
               Let's Build Your Dream Website{" "}
               <span className="text-[#f72d74]">Together!</span>
             </h1>
