@@ -213,13 +213,13 @@ window.scrollTo(0,0)
   return (
     <>
       <section className="z-0 bg-banner-image  py-24">
-        <div className="flex items-center pb-12 justify-center">
+        <div className="flex items-center py-12 justify-center">
           <div className="mx-auto text-center w-full">
-            <h1 className="font-bold mb-7 text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <h1 className="font-black mb-9 text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               Featured <span className="text-[#f72d74]">Projects</span>
             </h1>
-            <p className="mb-7 mt-7 text-[#e8e6e6] text-[20px] !leading-9 max-w-[800px] mx-auto">
-              As a leading React development company, our specialized React developers build scalable and robust user interfaces, delivering an unparalleled user experience.
+            <p className="mb-9 mt-7 text-[#e8e6e6] text-[20px] !leading-9 max-w-[800px] mx-auto">
+            As a leading React development company, our specialized React developers build scalable and robust user interfaces, delivering an unparalleled user experience. We develop Dev solutions of As a leading React development company,.
             </p>
             <div className="flex justify-center">
               <button className="hover:bg-[#f72d74] text-white px-10 md:px-14 font-bold py-3 bg-transparent border-2 border-[#f72d74] transition-colors duration-300">
