@@ -195,13 +195,13 @@ const Nav = () => {
 <UpperNav/>
       <nav className="bg-white sticky w-full  top-0 z-[100]  shadow-xl mx-auto ">
         {/* Desktop View */}
-        <div className="hidden lg:flex lg:px-12  max-w-[1690px] mx-auto  justify-between items-center relative">
-          <div className="w-52 p-4">
+        <div className="hidden lg:flex   max-w-[1440px] w-[90%] py-4 mx-auto  justify-between items-center lg:relative">
+          <div className="w-32 coxs:w-36 md:w-40 xl:w-48 ">
             <img src="/wodweslogo.png" alt="" />
           </div>
-          <ul className="flex lg:flex-row items-center py-2  space-x-4   pr-8 gap-4">
+          <ul className="flex lg:flex-row items-center py-2  space-x-4   gap-4">
             {navItems.map((item, index) => (
-              <li key={index} className="p-3">
+              <li key={index} className="">
                 {item.dropdown ? (
                   <>
                     <div
@@ -221,7 +221,7 @@ const Nav = () => {
                       />
                     </div>
                     {openDropdown === item.label && (
-                      <div className="absolute top-20 bg-white left-6 right-6 px-10 ml-10 mr-10 pb-16    rounded-b-lg shadow-lg grid grid-cols-4 gap-6 z-[10] ">
+                      <div className="absolute top-[98px] bg-white  pb-16  px-10 left-6 right-6  ml-10 mr-10    rounded-b-lg shadow-lg grid grid-cols-4 gap-6 z-[10] ">
                         {item.dropdownItems.map((category, idx) => (
                           <div key={idx} className="pt-16 mx-auto">
                             <div className="flex gap-2 items-center">
@@ -297,7 +297,7 @@ const Nav = () => {
             <li className="flex items-center justify-center">
               <Link
                 to={"/contact"}
-                className="ml-4 px-3 py-2  bg-[#f72d74] text-white  font-bold hover:bg-[#f74d74]"
+                className="ml-4 px-5 py-3  bg-[#f72d74] text-white  font-semibold hover:bg-[#f74d74]"
                 onClick={()=>setActiveParent(null)}
               >
                 Contact Us

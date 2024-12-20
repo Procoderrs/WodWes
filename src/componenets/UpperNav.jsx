@@ -7,25 +7,31 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const UpperNav = () => {
   return (
     <>
-      <div className="lg:relative flex flex-wrap  items-center  justify-center gap-x-12 gap-y-2 bg-banner-image px-2 py-[8px] text-xl text-white sm:gap-y-3 sm:text-[13px] lg:z-[60] ">
-        <div className="flex items-center justify-center gap-2">
-          <p className="text-sm">
+
+      <div className='w-full bg-banner-image sans-serif'>
+
+      
+
+      <div className="relative flex max-w-[1440px] w-[90%] mx-auto  py-[11px] px-[8px] text-[13px] leading-4   flex-wrap  items-center  justify-center gap-x-12 gap-y-2   text-xl text-white sm:gap-y-3 sm:text-[13px] lg:z-[60] ">
+        <div className="flex     items-center justify-center gap-2 leading-4">
+          <p className="text-[13px] leading-4">
             <span>
-              <Link to="/contact" className="border-b-[1px] text-sm mr-2  ">
+              <Link to="/contact" className="border-b-[1px] text-[13px] mr-2 leading-4  ">
                 Get a Quote
               </Link>
             </span>
-            <span>today to claim $200 free credit.</span>
+            today to claim $200 free credit.
           </p>
         </div>
-        <div className="flex items-center justify-center gap-2">
-          <FontAwesomeIcon icon={faPhone} className="text-sm" />
-          <span className="text-sm">+ 92 306 1070 768</span>
+        <div className="flex items-center justify-center gap-2 ">
+          <FontAwesomeIcon icon={faPhone} className="h-[20px] w-[20px] leading-4 " />
+          <span className="text-[13px] leading-4">+ 92 306 1070 768</span>
         </div>
-        <div className="flex items-center justify-center gap-2">
-          <FontAwesomeIcon icon={faEnvelope} className="text-xl" />
-          <span className="text-sm">sales@wodwes.com</span>
+        <div className="flex items-center justify-center gap-2  ">
+          <FontAwesomeIcon icon={faEnvelope} className="h-[20px] w-[20px] leading-4" />
+          <span className="text-[13px] leading-4">sales@wodwes.com</span>
         </div>
+      </div>
       </div>
     </>
   )
