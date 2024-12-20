@@ -297,7 +297,7 @@ const HomeSection = () => {
         Web Design and Development{" "}
         <span className="text-[#f72d74]">Outsourcing Company</span>
       </h2>
-      <p className="text-lg leading-9">
+      <p className="text-lg max-w-[900px] leading-9">
         Your Reliable Partner for Digital Excellence - Delivering Outstanding
         Web Solutions with Precision and Expertise, On Time, Every Time.
       </p>
@@ -305,7 +305,7 @@ const HomeSection = () => {
 
     {/* Adjust grid spacing */}
     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mx-auto mt-14 md:w-[90%] ">
-      <div className="w-full shadow  pt-6 pr-14 pb-6 border-b sm:border-r border-[#d5d5d5] pl-4 hover:rounded-md">
+      <div className="w-full  shadow pt-5 pb-[53px]  pl-4 pr-14   border-b  sm:border-r border-[#d5d5d5]  ">
         <div className="">
           <img
             src="./img.png"
@@ -315,7 +315,7 @@ const HomeSection = () => {
           <h3 className="h-14 text-xl xs:text-2xl md:text-xl mt-3 flex items-center font-bold mb-4">
             Resource as a service
           </h3>
-          <p className="text-[16px] leading-7 max-w-[280px]">
+          <p className="text-[16px]  font-Inter leading-[30px] max-w-[280px]">
             Unlock unparalleled talent and expertise with our
             Resource-as-a-Service. Access top-notch designers and developers to
             enhance your projects and accelerate growth.
@@ -324,13 +324,13 @@ const HomeSection = () => {
       </div>
 
       {/* Similar adjustments for all other grid items */}
-      <div className="w-full pt-6 pb-6 pl-4 border-b xl:border-r border-[#d5d5d5] shadow hover:rounded-md">
+      <div className="w-full  shadow pt-5 pb-[53px]  pl-4 pr-14 border-b xl:border-r border-[#d5d5d5]  ">
         <div>
           <img src="./img.png" alt="Front-End Development" className="w-8 h-8" />
           <h3 className="h-14 text-xl xs:text-2xl md:text-xl mt-3 flex items-center font-bold mb-4">
             Front-End Development
           </h3>
-          <p className="text-[16px] leading-7 max-w-[280px]">
+          <p className="text-[16px]font-Inter leading-[30px] max-w-[280px]">
             Elevate user experiences with our Front-End Development expertise.
             Craft visually stunning, responsive, and intuitive interfaces that
             captivate and engage your audience.
@@ -340,77 +340,77 @@ const HomeSection = () => {
 
       {/* Repeat similar updates for other items */}
 
-      <div className="w-full pt-6 pb-6 pl-4 border-b  border-[#d5d5d5] shadow hover:rounded-md">
+      <div className="w-full shadow pt-5 pb-[53px]  pl-4 pr-14  border-b  border-[#d5d5d5] ">
         <div>
           <img src="./img.png" alt="Front-End Development" className="w-8 h-8" />
           <h3 className="h-14 text-xl xs:text-2xl md:text-xl mt-3 flex items-center font-bold mb-4">
             Web Application Development
           </h3>
-          <p className="text-[16px] leading-7 max-w-[280px]">
+          <p className="text-[16px] font-Inter leading-[30px] max-w-[280px]">
           Empower your business with our Web Application Development services. We turn ideas into 
           robust, scalable, and user-friendly web solutions that drive success.
           </p>
         </div>
       </div>
 
-      <div className="w-full pt-6 pb-6 pl-4 border-b xl:border-r border-[#d5d5d5] shadow hover:rounded-md">
+      <div className="w-full shadow pt-5 pb-[53px]  pl-4 pr-14  border-b xl:border-r border-[#d5d5d5]  ">
         <div>
           <img src="./img.png" alt="Front-End Development" className="w-8 h-8" />
           <h3 className="h-14 text-xl xs:text-2xl md:text-xl mt-3 flex items-center font-bold mb-4">
             Full-Stack  Development
           </h3>
-          <p className="text-[16px] leading-7 max-w-[280px]">
+          <p className="text-[16px] font-Inter leading-[30px] max-w-[280px]">
           Experience end-to-end digital excellence with our Full-Stack Development services. We seamlessly blend front-end 
           finesse with back-end robustness to bring your vision to life.
           </p>
         </div>
       </div>
 
-      <div className="w-full pt-6 pb-6 pl-4 border-b xl:border-r border-[#d5d5d5] shadow hover:rounded-md">
+      <div className="w-full shadow pt-5 pb-[53px]  pl-4 pr-14  border-b xl:border-r border-[#d5d5d5]  ">
         <div>
           <img src="./img.png" alt="Front-End Development" className="w-8 h-8" />
           <h3 className="h-14 text-xl xs:text-2xl md:text-xl mt-3 flex items-center font-bold mb-4">
             CMS Development
           </h3>
-          <p className="text-[16px] leading-7 max-w-[280px]">
+          <p className="text-[16px] font-Inter leading-[30px] max-w-[280px]">
           Empower your online presence with our CMS Development. We build versatile and user-friendly content management systems
            tailored to streamline your digital content and operations.
           </p>
         </div>
       </div>
 
-      <div className="w-full pt-6 pb-6 pl-4 border-b  border-[#d5d5d5] shadow hover:rounded-md">
+      <div className="w-full shadow pt-5 pb-[53px]  pl-4 pr-14  border-b  border-[#d5d5d5]  ">
         <div>
           <img src="./img.png" alt="Front-End Development" className="w-8 h-8" />
           <h3 className="h-14 text-xl xs:text-2xl md:text-xl mt-3 flex items-center font-bold mb-4">
             DevOps
           </h3>
-          <p className="text-[16px] leading-7 max-w-[280px]">
+          <p className="text-[16px] font-Inter leading-[30px] max-w-[280px]">
           EStreamline development pipelines and enhance project efficiency with our DevOps solutions. Achieve seamless collaboration, rapid deployments,
            and optimal performance for your digital projects.
           </p>
         </div>
       </div>
-      <div className="w-full pt-6 pb-6 pl-4 border-b xl:border-r border-[#d5d5d5] shadow hover:rounded-md">
+      <div className="w-full shadow pt-5 pb-[53px]  pl-4 pr-14  border-b xl:border-r border-[#d5d5d5] ">
         <div>
           <img src="./img.png" alt="Front-End Development" className="w-8 h-8" />
           <h3 className="h-14 text-xl xs:text-2xl md:text-xl mt-3 flex items-center font-bold mb-4">
             Software Development
           </h3>
-          <p className="text-[16px] leading-7 max-w-[280px]">
+          <p className="text-[16px] font-Inter leading-[30px] max-w-[280px]">
           Transform ideas into powerful solutions. Our Software Development services harness innovation and precision to create robust, 
           scalable, and tailored software solutions for your business.
           </p>
         </div>
       </div>
 
-      <div className="w-full pt-6 pb-6 pl-4 border-b  border-[#d5d5d5] shadow hover:rounded-md">
+      <div className="w-full shadow pt-5 pb-[53px]  pl-4 pr-14 border-b  border-[#d5d5d5]  ">
         <div>
           <img src="./img.png" alt="Front-End Development" className="w-8 h-8" />
           <h3 className="h-14 text-xl xs:text-2xl md:text-xl mt-3 flex items-center font-bold mb-4">
            Quality Assurance & Testing
           </h3>
-          <p className="text-[16px] leading-7 max-w-[280px]">
+          <p className="text-[16px] font-Inter leading-[30px] max-w-[280px]">
           Transform ideas into powerful solutions. Our Software Development services harness innovation and precision to create robust, 
           scalable, and tailored software solutions for your business.
           </p>
@@ -429,7 +429,7 @@ const HomeSection = () => {
 
      
         
-       <div className="relative w-full py-12 lg:py-20">
+       <div className="relative font-Inter w-full py-12 lg:py-20">
         <img
           src="./section-img.png"
           className="absolute top-0 left-0 w-full h-full "
@@ -443,7 +443,7 @@ const HomeSection = () => {
               <span className="text-[#f72d74]">Hire Remote & Project {''}</span>
               Based Developers for Wodwes
             </h2>
-            <p className="text-white max-w-[850px] leading-7">
+            <p className="text-white max-w-[850px] text-base leading-7">
             Power up your projects with WODWES remote developers. Boost productivity and achieve 
             exceptional results. Get started today to unlock your project's full potential!
             </p>
@@ -451,7 +451,7 @@ const HomeSection = () => {
           {/* Button */}
           <Link
             to={"/contact"}
-            className="text-white border-2 border-[#f72d74] hover:bg-[#f72d74]  px-5 py-3 max-w-xs w-44 font-bold text-center "
+            className="text-white border-2 border-[#f72d74] hover:bg-[#f72d74]   px-5 py-3  w-[200px] font-bold text-center "
           >
             Let's Talk
           </Link>
@@ -460,14 +460,14 @@ const HomeSection = () => {
 
       
 
-      <div className="  gap:10 justify-between  w-[90%] max-w-[1440px] mx-auto pb-20 pt-12 flex flex-col lg:flex-row">
+      <div className="  gap:10 justify-between  w-[90%] max-w-[1440px] mx-auto pb-20 mt-20 flex flex-col lg:flex-row">
         {/* Left Column: Sticky Content */}
         <div className="h-full lg:sticky lg:top-32 lg:max-w-[500px] lg:w-[50%] ">
-          <h2 className="text-4xl font-black text-[#282922]">
+          <h2 className="text-4xl font-black max-w-[400px] text-[#272821]">
             What you get with <span className="text-[#f72d74]">WODWES</span>{" "}
             product and service design
           </h2>
-          <p className="my-5 text-sm leading-8">
+          <p className="my-5 text-base leading-8">
             With WODWES product and service design, you get a transformative
             experience that marries innovation, aesthetics, and functionality.
             We craft solutions that resonate with your audience, fuel growth,
@@ -476,22 +476,24 @@ const HomeSection = () => {
             in today's competitive landscape. We're your partners in turning
             ideas into tangible success stories.
           </p>
-          <button className="border-[#f72d74] border-2 px-12 py-3 font-bold hover:bg-[#f72d74] hover:text-white">
+          <button className="border-[#f72d74] border-2 px-5 py-3  w-[200px] font-bold hover:bg-[#f72d74] hover:text-white">
             <Link to={"/contact"}>Get Started</Link>
           </button>
         </div>
 
         {/* Right Column: Grid Boxes */}
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1     xl:grid-cols-2 lg:w-[50%]">
+          <div>
+          
           {/* Box 1 */}
-          <div className="space-y-2 sm:order-1">
-            <div className="p-5 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
+          <div className="space-y-4  sm:order-1">
+            <div className="p-4 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
               <img
                 src="./img.png"
                 alt="resource as a service"
-                className="w-8 h-8"
+                className="w-9 h-9"
               />
-              <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-2">
+              <h3 className=" text-lg mt-3 flex items-center font-bold mb-2">
                 Product Design
               </h3>
               <p className="text-sm leading-6">
@@ -503,14 +505,14 @@ const HomeSection = () => {
           </div>
 
           {/* Box 2 */}
-          <div className="space-y-4 sm:order-3">
-            <div className="p-5 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
+          <div className="space-y-4 mt-5 sm:order-3">
+            <div className="p-4 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
               <img
                 src="./img.png"
                 alt="resource as a service"
-                className="w-8 h-8"
+                className="w-9 h-9"
               />
-              <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-2">
+              <h3 className=" text-lg mt-3 flex items-center font-bold mb-2">
                 Business Design
               </h3>
               <p className="text-sm leading-6">
@@ -520,17 +522,18 @@ const HomeSection = () => {
               </p>
             </div>
           </div>
+          </div>
 
           {/* Box 3 */}
           <div className="sm:mt-5 sm:order-2">
             <div className="space-y-4">
-              <div className="p-5 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
+              <div className="p-4 rounded-lg hover:text-white hover:bg-[#272821] bg-[#f7f7f7]">
                 <img
                   src="./img.png"
                   alt="resource as a service"
-                  className="w-8 h-8"
+                  className="w-9 h-9"
                 />
-                <h3 className="h-14 text-xl mt-3 flex items-center font-bold mb-2">
+                <h3 className=" text-lg mt-3 flex items-center font-bold mb-2">
                   Service Design
                 </h3>
                 <p className="text-sm leading-6">
@@ -555,7 +558,7 @@ const HomeSection = () => {
 
           <div className="flex flex-col md:flex-row  md:items-center justify-between gap-10 text-white">
             <div className="max-w-[540px] 3xl:max-w-[700px]">
-              <h1 className="md:text-4xl text-3xl font-black font-Inter sm:text-4xl text-white mb-3">
+              <h1 className="text-3xl font-bold font-Inter  text-white ">
                 <span className="text-[#f72d74] text-3xl font-bold" >Product</span> We Develop
               </h1>
               <p className="text-white mt-5  max-w-[572px]">
@@ -565,14 +568,14 @@ const HomeSection = () => {
             </div>
             <Link
               to={"/"}
-              className="text-white border-2 border-[#f72d74] w-44 px-9 py-3 hover:bg-[#f72d74] font-bold "
+              className="text-white border-2 border-[#f72d74] w-[200px] px-5 py-3 text-center hover:bg-[#f72d74] font-bold "
             >
               Give it a Try?
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2  mt-8">
-            <img src="cv-maker.png" alt="CV Maker" />
-            <img src="cv-maker-2.png" alt="CV Maker 2" />
+          <div className="grid grid-cols-1 md:grid-cols-2  mt-10">
+            <img src="cv-maker-2.png" alt="CV Maker2" />
+            <img src="cv-maker.png" alt="CV Maker " />
           </div>
         </div>
       </div>
@@ -581,14 +584,14 @@ const HomeSection = () => {
         <h2 className="text-3xl font-bold">
           <span className="text-[#f72d74]">Technologies</span> We Use
         </h2>
-        <p className="mt-4  max-w-[896px] text-[20px]  leading-8  text-[#272821]">
+        <p className="mt-4  max-w-[750px] text-lg  leading-7  text-[#272821]">
           We leverage cutting-edge technologies to create innovative solutions,
           ensuring your digital projects remain at the forefront of industry
           standards.
         </p>
         <div className="mx-auto max-w-[950px]">
           {/* Buttons for selecting dropdown */}
-          <div className="my-10 gap-4 flex items-center justify-between">
+          <div className="my-14 gap-4 flex items-center justify-between">
             <button
               onClick={() => handleButtonClick("frontend")}
               className={`border-b-2 ${
@@ -623,7 +626,7 @@ const HomeSection = () => {
 
           {/* Dropdown content */}
           <div className="mt-6   rounded-lg">
-            <div className="mt-4 flex flex-wrap gap-10 md:gap-20 xl:gap-36  justify-center">
+            <div className="flex flex-wrap gap-10 md:gap-x-32 md:gap-y-20 lg:max-w-[854px] max-w-[700px]  mx-auto   justify-center">
               {technologies[activeDropdown].map((tech, index) => (
                 <div
                   key={index}
@@ -647,14 +650,14 @@ const HomeSection = () => {
           className="absolute top-0 z-0  h-full w-full  "
           alt=""
         />
-        <div className=" relative  flex  flex-col    lg:gap-56  w-[90%] max-w-[1440px] mx-auto lg:flex-row">
+        <div className=" relative  flex  flex-col    gap-10  w-[90%] max-w-[1440px] mx-auto lg:flex-row">
           {/* Left Column: Sticky Content */}
           <div className="h-full flex-1    lg:sticky lg:top-32 lg:max-w-[505px] ">
-            <h2 className="text-4xl font-black text-white">
+            <h2 className="text-4xl font-bold text-white">
               Why Choose <span className="text-[#f72d74]">WODWES</span> for
               Website Design and Development Services?
             </h2>
-            <p className="my-5 text-[20px] leading-9 text-white">
+            <p className="my-5 text-[20px] max-w-[460px] leading-7 text-white">
               We’re not a typical development agency — We’re your technology
               partner striving to achieve your specific goals.
             </p>
@@ -663,14 +666,14 @@ const HomeSection = () => {
           {/* Right Column: Grid Boxes */}
           <div className="grid grid-cols-1 mt-4 gap-5 flex-1  lg:grid-cols-1 xl:grid-cols-1 space-y-10 lg:mt-24 lg:max-w-[699px] lg:space-y-20">
             {/* Box 1 */}
-            <div className=" ">
+            <div className=" space-y-2 ">
               <div className=" ">
                 <img
                   src="./experience.png"
                   alt="experience"
                   className="w-9 h-9 object-contain"
                 />
-                <h3 className=" text-base my-2 font-bold  text-white lg:text-[28px]">
+                <h3 className=" text-base my-2  leading-[42px]  font-bold  text-white lg:text-[28px]">
                   Pool of Experience and Expertise
                 </h3>
                 <p className="text-[18px] text-white  font-normal   leading-9">
@@ -738,7 +741,7 @@ const HomeSection = () => {
           <h2 className="text-3xl font-bold">
             Your Development <span className="text-[#f72d74]">Partner!</span>
           </h2>
-          <p className="text-[18px] font-Inter leading-9">
+          <p className="text-[16px] font-Inter leading-9">
             We love hearing about how our work has helped businesses succeed and
             how WODWES became their go-to development team. Don't just take our
             word for it - read what our satisfied clients have to say!
@@ -751,11 +754,11 @@ const HomeSection = () => {
                 alt="resource as a service"
                 className="w-9 h-9"
               />
-              <h3 className=" text-xl mt-3 flex items-center font-bold mb-4">
+              <h3 className=" text-xl mt-3 flex items-center font-semibold ">
                 Developing feature-enriched web and software solutions for
                 businesses
               </h3>
-              <p className="text-base leading-9">
+              <p className="text-base mt-1 leading-9">
                 At WODWES, we understand that technology is constantly evolving,
                 and we're committed to staying ahead of the curve. Whether you
                 need a simple website or a complex web application, we have the
@@ -773,10 +776,10 @@ const HomeSection = () => {
                 alt="resource as a service"
                 className="w-9 h-9"
               />
-              <h3 className=" text-xl  mt-3 flex items-center font-bold mb-4">
+              <h3 className=" text-xl  mt-3 flex items-center font-semibold ">
                 Tailored development solutions to meet your business needs!
               </h3>
-              <p className="text-base leading-9 mb-5">
+              <p className="text-base leading-9 mb-7">
                 Team WODWES believes that every business is unique, and that's
                 why we offer tailored development solutions to meet your
                 specific needs. We work closely with our clients to identify
@@ -865,7 +868,7 @@ const HomeSection = () => {
                      onClick={() => toggleAnswer(index)}
                      className="flex w-full items-center gap-6 justify-between py-4 md:py-6 maxsm:text-sm"
                    >
-                     <span className="text-left text-base font-bold text-[#272821] md:text-lg">
+                     <span className="text-left text-base font-semibold text-[#272821] md:text-lg">
                        {item.question}
                      </span>
                      <span

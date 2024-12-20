@@ -205,8 +205,8 @@ const Nav = () => {
                 {item.dropdown ? (
                   <>
                     <div
-                      className={`flex items-center justify-between cursor-pointer  hover:text-pink-700 font-medium ${
-                      activeParent === item.label ? 'text-[#f72d74]':''
+                      className={`flex items-center justify-between cursor-pointer tracking-[0.32] px-2  hover:text-pink-700 font-medium ${
+                      activeParent === item.label ? 'text-[#f72d74] tracking-[0.32]':' tracking-[0.32]'
                       }`}
                         onClick={() => toggleDropdown(item.label)}
                     >
@@ -269,7 +269,7 @@ const Nav = () => {
                   <NavLink
                     to={item.to}
                     className={({ isActive }) =>
-                      `${isActive ? "text-[#f72d74] font-medium" : "font-medium"}`
+                      `${isActive ? "text-[#f72d74] font-medium tracking-[0.32]" : " hover:text-[#f72d74] tracking-[0.32] font-medium"}`
                     }
                     onClick={()=>{
                       setActiveParent(item.label)

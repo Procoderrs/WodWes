@@ -7,6 +7,7 @@ export default {
   theme: {
     fontFamily: {
       Inter: ['Inter', 'sans-serif'],
+      sans: ['Arial', 'Helvetica', 'sans-serif'],
     },
     screens: {
       coxm:'325',

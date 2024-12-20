@@ -15,7 +15,7 @@
 
 
 .shadow:hover{
-  box-shadow: 4px 4px 15px #f62c7326
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(246, 44, 115, 0.15) 4px 4px 15px 6px;
 }
 .shadow-2:hover{
   box-shadow: 4px 4px 15px #6e203b26
