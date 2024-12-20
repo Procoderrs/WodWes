@@ -730,7 +730,7 @@ const HomeSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-col  gap-10 w-[90%] max-w-[1440px] mx-auto my-16  lg:flex lg:flex-row">
+      <div className="flex flex-col gap-10  2xl:gap-36 w-[90%] max-w-[1440px] mx-auto my-16  lg:flex lg:flex-row">
         {/* Left Column: Sticky Content */}
         <div className="h-full flex-1  lg:sticky lg:top-32  ">
           <img src="./team.png" className="rounded-lg" alt="" />
