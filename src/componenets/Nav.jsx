@@ -199,13 +199,13 @@ const Nav = () => {
           <div className="w-32 coxs:w-36 md:w-40 xl:w-48 ">
             <img src="/wodweslogo.png" alt="" />
           </div>
-          <ul className="flex lg:flex-row items-center py-2  space-x-4   gap-4">
+          <ul className="flex lg:flex-row items-center py-2   space-x-4   gap-4">
             {navItems.map((item, index) => (
               <li key={index} className="">
                 {item.dropdown ? (
                   <>
                     <div
-                      className={`flex items-center justify-between cursor-pointer tracking-[0.32] px-2  hover:text-pink-700 font-medium ${
+                      className={`flex items-center justify-between cursor-pointer tracking-[0.32]   hover:text-pink-700 font-semibold ${
                       activeParent === item.label ? 'text-[#f72d74] tracking-[0.32]':' tracking-[0.32]'
                       }`}
                         onClick={() => toggleDropdown(item.label)}
@@ -269,7 +269,7 @@ const Nav = () => {
                   <NavLink
                     to={item.to}
                     className={({ isActive }) =>
-                      `${isActive ? "text-[#f72d74] font-medium tracking-[0.32]" : " hover:text-[#f72d74] tracking-[0.32] font-medium"}`
+                      `${isActive ? "text-[#f72d74] font-semibold tracking-[0.32]" : " hover:text-[#f72d74] tracking-[0.32] font-semibold"}`
                     }
                     onClick={()=>{
                       setActiveParent(item.label)
@@ -297,7 +297,7 @@ const Nav = () => {
             <li className="flex items-center justify-center">
               <Link
                 to={"/contact"}
-                className="ml-4 px-5 py-3  bg-[#f72d74] text-white  font-semibold hover:bg-[#f74d74]"
+                className="ml-4  px-5 py-3  bg-[#f72d74] text-white  font-semibold hover:bg-[#f74d74]"
                 onClick={()=>setActiveParent(null)}
               >
                 Contact Us
