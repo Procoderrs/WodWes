@@ -786,7 +786,7 @@ const HomeSection = () => {
                 their unique business requirements and develop customized
                 solutions that help them achieve their goals.
               </p>
-              <button className="mb-5">
+              <button className="mb-5  ">
                 <Link
                   to={"/contact"}
                   className="border-2 font-semibold px-9 py-3   hover:bg-[#f72d74] hover:text-white  border-[#f72d74]"

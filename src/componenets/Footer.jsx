@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#272821]">
-    <div className="w-[90%] mx-auto pb-12 max-w-[1440px] gap-6 grid py-12 xl:grid-cols-2">
+    <div className="w-[90%] mx-auto pb-12 max-w-[1440px] gap-10 grid py-12 xl:grid-cols-2">
       <div className="">
       <h3 className="text-lg font-bold text-[#f72d74]">Services</h3>
       <ul className="mt-2 sm:columns-2">
